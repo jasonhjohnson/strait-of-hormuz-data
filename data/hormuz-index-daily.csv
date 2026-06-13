@@ -1,0 +1,11 @@
+date,crisis_open,crisis_close,crisis_min,crisis_max,crisis_mean,crisis_band,forecast_open,forecast_close,forecast_min,forecast_max,forecast_mean,forecast_band
+2026-06-03,94,94,94,94,94,extreme,62,62,62,62,62,high
+2026-06-04,94,94,94,94,94,extreme,62,62,62,62,62,high
+2026-06-05,94,94,94,94,94,extreme,62,62,62,62,62,high
+2026-06-06,94,94,94,94,94,extreme,62,62,62,62,62,high
+2026-06-07,94,94,94,94,94,extreme,62,62,62,62,62,high
+2026-06-08,94,94,94,94,94,extreme,62,68,62,68,66.7,high
+2026-06-09,94,94,94,94,94,extreme,68,68,68,68,68,high
+2026-06-10,94,94,94,94,94,extreme,68,68,68,68,68,high
+2026-06-11,94,94,94,94,94,extreme,68,68,68,68,68,high
+2026-06-12,94,94,94,94,94,extreme,68,68,68,68,68,high

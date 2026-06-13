@@ -1,0 +1,39 @@
+name: Refresh datasets
+
+# Daily mirror of the public straits.live datasets. Runs on GitHub-hosted
+# runners against the live public API, so it needs no secrets and no servers.
+on:
+  schedule:
+    # 14:30 UTC daily. IMF PortWatch publishes weekly on Tuesdays around
+    # 13:00-14:00 UTC, so this catches the new transit numbers same day and
+    # keeps the other series current the rest of the week.
+    - cron: '30 14 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch latest datasets
+        run: bash scripts/refresh.sh
+
+      - name: Commit changes
+        run: |
+          git config user.name "straits-data-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "data: refresh $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
