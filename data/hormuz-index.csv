@@ -1,8 +1,4 @@
 timestamp_iso,crisis_pressure,crisis_band,escalation_forecast,forecast_band
-2026-06-06T02:16:08.034Z,94,extreme,62,high
-2026-06-06T02:21:04.038Z,94,extreme,62,high
-2026-06-06T02:26:03.790Z,94,extreme,62,high
-2026-06-06T02:31:10.962Z,94,extreme,62,high
 2026-06-06T02:36:03.874Z,94,extreme,62,high
 2026-06-06T02:41:27.108Z,94,extreme,62,high
 2026-06-06T02:46:04.324Z,94,extreme,62,high
@@ -2016,3 +2012,7 @@ timestamp_iso,crisis_pressure,crisis_band,escalation_forecast,forecast_band
 2026-06-13T02:01:03.697Z,94,extreme,68,high
 2026-06-13T02:06:03.013Z,94,extreme,68,high
 2026-06-13T02:11:03.067Z,94,extreme,68,high
+2026-06-13T02:16:03.672Z,94,extreme,68,high
+2026-06-13T02:21:04.119Z,94,extreme,68,high
+2026-06-13T02:26:06.172Z,94,extreme,68,high
+2026-06-13T02:31:03.121Z,94,extreme,68,high
