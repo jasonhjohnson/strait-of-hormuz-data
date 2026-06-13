@@ -1,0 +1,193 @@
+{
+  "name": "strait-of-hormuz-crisis-data",
+  "title": "Strait of Hormuz Crisis Data",
+  "description": "Open, daily-refreshed time series behind straits.live, the real-time Strait of Hormuz crisis monitor: IMF PortWatch daily transit counts, the composite Hormuz Index (Crisis Pressure and Escalation Forecast), Brent and WTI spot prices, an indexed event log, and the live status snapshot.",
+  "homepage": "https://straits.live/data",
+  "created": "2026-06-12",
+  "keywords": [
+    "strait of hormuz",
+    "maritime chokepoint",
+    "shipping",
+    "oil",
+    "energy",
+    "geopolitics",
+    "imf portwatch",
+    "time series",
+    "osint"
+  ],
+  "licenses": [
+    {
+      "name": "CC0-1.0",
+      "path": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "title": "CC0 1.0 Universal"
+    }
+  ],
+  "sources": [
+    { "title": "straits.live", "path": "https://straits.live" },
+    { "title": "IMF PortWatch", "path": "https://portwatch.imf.org" }
+  ],
+  "resources": [
+    {
+      "name": "transits",
+      "path": "data/transits.csv",
+      "title": "Daily transit counts",
+      "description": "Daily vessel-transit counts through the Strait of Hormuz from IMF PortWatch. The series the major prediction-market reopening contracts resolve on, via its 7-day moving average against a 60-transit threshold.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "licenses": [
+        {
+          "name": "other",
+          "path": "https://straits.live/data",
+          "title": "Free to use; underlying data (c) IMF PortWatch, cite IMF PortWatch when republishing"
+        }
+      ],
+      "schema": {
+        "fields": [
+          { "name": "date", "type": "date", "title": "Calendar date of the count (UTC)" },
+          { "name": "n_total", "type": "integer", "title": "Total vessel transits that day" },
+          { "name": "n_tanker", "type": "integer", "title": "Tanker transits that day" },
+          { "name": "n_cargo", "type": "integer", "title": "Cargo-vessel transits that day" }
+        ]
+      }
+    },
+    {
+      "name": "hormuz-index",
+      "path": "data/hormuz-index.csv",
+      "title": "Hormuz Index history (5-minute)",
+      "description": "The two composite 0-100 indices at 5-minute resolution for the last 7 days. Versioned methodology at https://straits.live/methodology.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          { "name": "timestamp_iso", "type": "datetime", "title": "ISO 8601 timestamp" },
+          { "name": "crisis_pressure", "type": "number", "title": "Crisis Pressure Index, 0 to 100" },
+          { "name": "crisis_band", "type": "string", "title": "Band label for Crisis Pressure" },
+          { "name": "escalation_forecast", "type": "number", "title": "Escalation Forecast Index, 0 to 100" },
+          { "name": "forecast_band", "type": "string", "title": "Band label for Escalation Forecast" }
+        ]
+      }
+    },
+    {
+      "name": "hormuz-index-daily",
+      "path": "data/hormuz-index-daily.csv",
+      "title": "Hormuz Index daily rollup",
+      "description": "Daily open/high/low/close/mean rollup of both index composites, full history.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          { "name": "date", "type": "date", "title": "Calendar date (UTC)" },
+          { "name": "crisis_open", "type": "number", "title": "Crisis Pressure at day open" },
+          { "name": "crisis_close", "type": "number", "title": "Crisis Pressure at day close" },
+          { "name": "crisis_min", "type": "number", "title": "Crisis Pressure daily minimum" },
+          { "name": "crisis_max", "type": "number", "title": "Crisis Pressure daily maximum" },
+          { "name": "crisis_mean", "type": "number", "title": "Crisis Pressure daily mean" },
+          { "name": "crisis_band", "type": "string", "title": "Closing band label for Crisis Pressure" },
+          { "name": "forecast_open", "type": "number", "title": "Escalation Forecast at day open" },
+          { "name": "forecast_close", "type": "number", "title": "Escalation Forecast at day close" },
+          { "name": "forecast_min", "type": "number", "title": "Escalation Forecast daily minimum" },
+          { "name": "forecast_max", "type": "number", "title": "Escalation Forecast daily maximum" },
+          { "name": "forecast_mean", "type": "number", "title": "Escalation Forecast daily mean" },
+          { "name": "forecast_band", "type": "string", "title": "Closing band label for Escalation Forecast" }
+        ]
+      }
+    },
+    {
+      "name": "oil",
+      "path": "data/oil.csv",
+      "title": "Brent and WTI spot prices",
+      "description": "Timestamped Brent and WTI crude spot prices, sampled every five minutes over a rolling seven-day window.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "licenses": [
+        {
+          "name": "other",
+          "path": "https://straits.live/data",
+          "title": "Free to use; attribution requested"
+        }
+      ],
+      "schema": {
+        "fields": [
+          { "name": "timestamp_iso", "type": "datetime", "title": "ISO 8601 timestamp of the sample" },
+          { "name": "brent_usd", "type": "number", "title": "Brent crude spot price, USD per barrel" },
+          { "name": "wti_usd", "type": "number", "title": "WTI crude spot price, USD per barrel" }
+        ]
+      }
+    },
+    {
+      "name": "events",
+      "path": "data/events.csv",
+      "title": "Crisis event log",
+      "description": "Indexed strikes, ship incidents, closures, and diplomatic developments, each with a cited source URL.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "licenses": [
+        {
+          "name": "other",
+          "path": "https://straits.live/data",
+          "title": "Free to use; per-row sources cited inline"
+        }
+      ],
+      "schema": {
+        "fields": [
+          { "name": "occurred_at_iso", "type": "datetime", "title": "ISO 8601 time the event occurred" },
+          { "name": "type", "type": "string", "title": "Event class: strike, ship_incident, closure, or negotiation" },
+          { "name": "severity", "type": "string", "title": "Severity label where assigned" },
+          { "name": "title", "type": "string", "title": "Short event headline" },
+          { "name": "description", "type": "string", "title": "Event summary" },
+          { "name": "lat", "type": "number", "title": "Latitude where geolocated" },
+          { "name": "lng", "type": "number", "title": "Longitude where geolocated" },
+          { "name": "source_name", "type": "string", "title": "Publication cited" },
+          { "name": "source_url", "type": "string", "format": "uri", "title": "Link to the cited source" }
+        ]
+      }
+    },
+    {
+      "name": "status",
+      "path": "data/status.csv",
+      "title": "Live status snapshot",
+      "description": "One-row snapshot of the current dashboard state. Re-poll on a schedule to build your own history. Column order is a stable contract; new columns are appended.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          { "name": "as_of", "type": "datetime" },
+          { "name": "days_since_closure", "type": "integer" },
+          { "name": "verdict_status", "type": "string" },
+          { "name": "verdict_short", "type": "string" },
+          { "name": "ais_status", "type": "string" },
+          { "name": "brent_usd", "type": "number" },
+          { "name": "wti_usd", "type": "number" },
+          { "name": "brent_change_24h_pct", "type": "number" },
+          { "name": "insurance_multiple", "type": "number" },
+          { "name": "transits_count", "type": "integer" },
+          { "name": "transits_baseline", "type": "integer" },
+          { "name": "transits_throughput_pct", "type": "number" },
+          { "name": "transits_basis", "type": "string" },
+          { "name": "transits_cadence", "type": "string" },
+          { "name": "transits_source", "type": "string" },
+          { "name": "ships_transiting", "type": "integer" },
+          { "name": "ships_anchored", "type": "integer" },
+          { "name": "ships_stopped", "type": "integer" },
+          { "name": "ships_stranded", "type": "integer" },
+          { "name": "ais_dark_tankers", "type": "integer" },
+          { "name": "ais_dark_baseline_7d", "type": "number" },
+          { "name": "ais_dark_vessels_tracked", "type": "integer" },
+          { "name": "sanctioned_in_window", "type": "integer" },
+          { "name": "jwc_circular_date", "type": "string" },
+          { "name": "jwc_arabian_gulf_mentioned", "type": "boolean" },
+          { "name": "carriers_total", "type": "integer" },
+          { "name": "carriers_suspended", "type": "integer" },
+          { "name": "carriers_rerouting", "type": "integer" },
+          { "name": "tehran_toman_per_usd", "type": "number" },
+          { "name": "tehran_rial_delta_day_pct", "type": "number" },
+          { "name": "tehran_rial_delta_7d_pct", "type": "number" },
+          { "name": "events_recent_count", "type": "integer" },
+          { "name": "data_oil_source", "type": "string" },
+          { "name": "data_ships_source", "type": "string" },
+          { "name": "data_events_source", "type": "string" }
+        ]
+      }
+    }
+  ]
+}

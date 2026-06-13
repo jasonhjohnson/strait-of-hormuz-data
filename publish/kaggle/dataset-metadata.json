@@ -1,0 +1,42 @@
+{
+  "title": "Strait of Hormuz Crisis Data",
+  "subtitle": "Daily transits, the Hormuz Index, oil prices, and a cited event log",
+  "id": "REPLACE_WITH_KAGGLE_USERNAME/strait-of-hormuz-crisis-data",
+  "licenses": [{ "name": "CC0-1.0" }],
+  "keywords": [
+    "geopolitics",
+    "maritime",
+    "shipping",
+    "energy",
+    "oil and gas",
+    "time series",
+    "middle east",
+    "economics"
+  ],
+  "resources": [
+    {
+      "path": "transits.csv",
+      "description": "Daily vessel-transit counts through the Strait of Hormuz (IMF PortWatch). Columns: date, n_total, n_tanker, n_cargo. The series the major prediction-market reopening contracts resolve on. Underlying data (c) IMF PortWatch; cite IMF when republishing."
+    },
+    {
+      "path": "hormuz-index.csv",
+      "description": "Composite Hormuz Index at 5-minute resolution, last 7 days. Columns: timestamp_iso, crisis_pressure (0-100), crisis_band, escalation_forecast (0-100), forecast_band. CC0."
+    },
+    {
+      "path": "hormuz-index-daily.csv",
+      "description": "Daily open/high/low/close/mean rollup of both index composites. CC0."
+    },
+    {
+      "path": "oil.csv",
+      "description": "Brent and WTI crude spot prices, timestamped. Columns: timestamp_iso, brent_usd, wti_usd. Free to use, attribution requested."
+    },
+    {
+      "path": "events.csv",
+      "description": "Indexed strikes, ship incidents, closures, and diplomatic developments, each with a cited source URL. Free to use, per-row sources inline."
+    },
+    {
+      "path": "status.csv",
+      "description": "One-row snapshot of the current dashboard state (verdict, throughput, Brent, insurance multiple, Hormuz Index summary). CC0."
+    }
+  ]
+}
