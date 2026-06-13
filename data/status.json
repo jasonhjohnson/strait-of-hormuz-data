@@ -9,7 +9,7 @@
         ],
         "note": "shipsTransiting, stranded, throughputPercent, transitsBaseline, and insuranceMultiple mix sources or are scalar projections of richer objects. Use transits.*, insurance.*, and dailyTransits.* instead."
     },
-    "aisConcurrentInZone": 60,
+    "aisConcurrentInZone": 47,
     "aisGaps": {
         "baseline7d": 11.6,
         "baselineSampleHours": 168,
@@ -139,7 +139,7 @@
         "updatedAt": "2026-06-13T02:09:08.246Z",
         "vesselsTracked": 2849
     },
-    "asOf": "2026-06-13T02:13:32.352Z",
+    "asOf": "2026-06-13T02:28:54.773Z",
     "brent": 86.71,
     "capeSnapshot": {
         "arrivals24hTotal": 62,
@@ -374,7 +374,7 @@
         },
         "chokepoint": {
             "source": "live",
-            "verifiedAt": "2026-06-13T01:22:01.060Z"
+            "verifiedAt": "2026-06-13T02:22:01.107Z"
         },
         "dailyBrief": {
             "source": "live",
@@ -386,7 +386,7 @@
         },
         "events": {
             "source": "live",
-            "verifiedAt": "2026-06-13T02:04:32.000Z"
+            "verifiedAt": "2026-06-13T02:15:14.000Z"
         },
         "gas": {
             "source": "live",
@@ -398,11 +398,11 @@
         },
         "markets": {
             "source": "live",
-            "verifiedAt": "2026-06-13T02:12:08.671Z"
+            "verifiedAt": "2026-06-13T02:27:09.278Z"
         },
         "oil": {
             "source": "live",
-            "verifiedAt": "2026-06-13T02:11:48.561Z"
+            "verifiedAt": "2026-06-13T02:22:04.561Z"
         },
         "pipelines": {
             "source": "curated",
@@ -414,11 +414,11 @@
         },
         "sanctioned": {
             "source": "live",
-            "verifiedAt": "2026-06-13T02:13:06.755Z"
+            "verifiedAt": "2026-06-13T02:28:15.081Z"
         },
         "ships": {
             "source": "live",
-            "verifiedAt": "2026-06-13T02:06:46.585Z"
+            "verifiedAt": "2026-06-13T02:24:04.655Z"
         },
         "spr": {
             "source": "live",
@@ -439,6 +439,30 @@
     },
     "events": [
         {
+            "description": "Iran peace deal looms while new military action flares near Strait of Hormuz Fine Day 102.3",
+            "id": "rss_1mgx0cf",
+            "lat": null,
+            "lng": null,
+            "occurredAt": "2026-06-13T02:15:14.000Z",
+            "severity": "low",
+            "source": "live",
+            "title": "Iran peace deal looms while new military action flares near Strait of Hormuz",
+            "type": "negotiation",
+            "vessel": null
+        },
+        {
+            "description": "US says it stopped Iranian drone attack in Strait of Hormuz Breakingthenews.net",
+            "id": "rss_k72uxo",
+            "lat": null,
+            "lng": null,
+            "occurredAt": "2026-06-13T02:12:00.000Z",
+            "severity": "high",
+            "source": "live",
+            "title": "US says it stopped Iranian drone attack in Strait of Hormuz",
+            "type": "strike",
+            "vessel": null
+        },
+        {
             "description": "US forces down Iranian drones targeting Strait of Hormuz shipping: CENTCOM Anadolu Ajans\u0131",
             "id": "rss_l6wzve",
             "lat": null,
@@ -451,15 +475,15 @@
             "vessel": null
         },
         {
-            "description": "Iran peace deal looms while new military action flares near Strait of Hormuz Deccan Herald",
-            "id": "rss_6kvngn",
+            "description": "US says it thwarted Iranian drone attack on commercial ships in Strait of Hormuz WION",
+            "id": "rss_12w9wjs",
             "lat": null,
             "lng": null,
-            "occurredAt": "2026-06-13T01:39:07.000Z",
-            "severity": "low",
+            "occurredAt": "2026-06-13T02:02:00.000Z",
+            "severity": "high",
             "source": "live",
-            "title": "Iran peace deal looms while new military action flares near Strait of Hormuz",
-            "type": "negotiation",
+            "title": "US says it thwarted Iranian drone attack on commercial ships in Strait of Hormuz",
+            "type": "strike",
             "vessel": null
         },
         {
@@ -533,30 +557,6 @@
             "title": "U.S. Shoots Down Iranian Drones as Tensions Escalate Near Strait of Hormuz",
             "type": "strike",
             "vessel": null
-        },
-        {
-            "description": "BIMCO, ICS, INTERCARGO, INTERTANKO Condemn Strait of Hormuz Attacks on Seafarers - News and Statistics IndexBox",
-            "id": "rss_14clhr7",
-            "lat": null,
-            "lng": null,
-            "occurredAt": "2026-06-13T00:41:00.000Z",
-            "severity": "high",
-            "source": "live",
-            "title": "BIMCO, ICS, INTERCARGO, INTERTANKO Condemn Strait of Hormuz Attacks on Seafarers - News and Statistics",
-            "type": "strike",
-            "vessel": null
-        },
-        {
-            "description": "Iranian attack drones targeting Strait of Hormuz traffic shot down by US forces: Report The Economic Times",
-            "id": "rss_4rl466",
-            "lat": null,
-            "lng": null,
-            "occurredAt": "2026-06-13T00:39:52.000Z",
-            "severity": "high",
-            "source": "live",
-            "title": "Iranian attack drones targeting Strait of Hormuz traffic shot down by US forces: Report",
-            "type": "strike",
-            "vessel": null
         }
     ],
     "gas": {
@@ -566,7 +566,7 @@
         "stateCount": 51
     },
     "hormuzIndex": {
-        "asOf": "2026-06-13T02:11:03.067Z",
+        "asOf": "2026-06-13T02:31:03.121Z",
         "crisisPressure": {
             "band": "extreme",
             "confidence": 3,
@@ -586,7 +586,7 @@
     },
     "hormuzSnapshot": {
         "arrivals24hTotal": 409,
-        "asOf": "2026-06-13T01:22:01.060Z",
+        "asOf": "2026-06-13T02:22:01.107Z",
         "departures24hTotal": null,
         "expectedTotal": 171,
         "inPortTotal": 398,
@@ -663,7 +663,7 @@
         "transitsByType": "https://straits.live/api/v1/transits-by-type",
         "vessels": "https://straits.live/api/v1/vessels"
     },
-    "oilAsOf": "2026-06-13T02:11:48.561Z",
+    "oilAsOf": "2026-06-13T02:22:04.561Z",
     "pipelineBypass": [
         {
             "capacityBpd": 5000000,
@@ -709,125 +709,125 @@
         {
             "closeAt": "2026-12-31T00:00:00Z",
             "id": "polymarket_665374",
-            "liquidityUsd": 431069.6237,
+            "liquidityUsd": 430654.3699,
             "probability": 0.175,
             "question": "Will the U.S. invade Iran before 2027?",
             "sourceUrl": "https://polymarket.com/event/will-the-us-invade-iran-before-2027",
             "title": "Will the U.S. invade Iran before 2027?",
-            "updatedAt": "2026-06-13T02:12:08.671Z",
+            "updatedAt": "2026-06-13T02:27:09.278Z",
             "venue": "polymarket",
-            "volumeUsd": 36670940.12043222
+            "volumeUsd": 36670957.235986225
         },
         {
             "closeAt": "2026-06-15T00:00:00Z",
             "id": "polymarket_2270330",
-            "liquidityUsd": 494452.50056,
-            "probability": 0.1645,
+            "liquidityUsd": 493332.12119,
+            "probability": 0.1635,
             "question": "US x Iran permanent peace deal by June 15, 2026?",
             "sourceUrl": "https://polymarket.com/event/us-x-iran-permanent-peace-deal-by",
             "title": "US x Iran permanent peace deal by...?",
-            "updatedAt": "2026-06-13T02:12:08.671Z",
+            "updatedAt": "2026-06-13T02:27:09.278Z",
             "venue": "polymarket",
-            "volumeUsd": 34512448.43032975
+            "volumeUsd": 34516594.54121774
         },
         {
             "closeAt": "2026-12-31T00:00:00Z",
             "id": "polymarket_1472548",
-            "liquidityUsd": 111891.7512,
+            "liquidityUsd": 110694.72117,
             "probability": 0.0535,
             "question": "Will Reza Pahlavi lead Iran in 2026?",
             "sourceUrl": "https://polymarket.com/event/will-reza-pahlavi-lead-iran-in-2026",
             "title": "Will Reza Pahlavi lead Iran in 2026?",
-            "updatedAt": "2026-06-13T02:12:08.671Z",
+            "updatedAt": "2026-06-13T02:27:09.278Z",
             "venue": "polymarket",
-            "volumeUsd": 11425221.855488075
+            "volumeUsd": 11425232.364198076
         },
         {
             "closeAt": "2026-12-31T00:00:00Z",
             "id": "polymarket_2155052",
-            "liquidityUsd": 359662.9521,
+            "liquidityUsd": 353690.4687,
             "probability": 0.785,
             "question": "US x Iran permanent peace deal by December 31, 2026?",
             "sourceUrl": "https://polymarket.com/event/us-x-iran-permanent-peace-deal-by",
             "title": "US x Iran permanent peace deal by...?",
-            "updatedAt": "2026-06-13T02:12:08.671Z",
+            "updatedAt": "2026-06-13T02:27:09.278Z",
             "venue": "polymarket",
-            "volumeUsd": 10370998.687989011
+            "volumeUsd": 10371002.105707012
         },
         {
             "closeAt": "2026-06-30T23:55:00Z",
             "id": "polymarket_1708086",
-            "liquidityUsd": 271631.01064,
+            "liquidityUsd": 288257.62734,
             "probability": 0.0255,
             "question": "Kharg Island no longer under Iranian control by June 30?",
             "sourceUrl": "https://polymarket.com/event/kharg-island-no-longer-under-iranian-control-by-march-31",
             "title": "Kharg Island no longer under Iranian control by...?",
-            "updatedAt": "2026-06-13T02:12:08.671Z",
+            "updatedAt": "2026-06-13T02:27:09.278Z",
             "venue": "polymarket",
-            "volumeUsd": 8769778.140329232
+            "volumeUsd": 8769795.538249232
         },
         {
             "closeAt": "2026-06-30T00:00:00Z",
             "id": "polymarket_957019",
-            "liquidityUsd": 154930.0797,
+            "liquidityUsd": 144083.2777,
             "probability": 0.445,
             "question": "US-Iran nuclear deal by June 30?",
             "sourceUrl": "https://polymarket.com/event/us-iran-nuclear-deal-by-june-30",
             "title": "US-Iran nuclear deal by June 30?",
-            "updatedAt": "2026-06-13T02:12:08.671Z",
+            "updatedAt": "2026-06-13T02:27:09.278Z",
             "venue": "polymarket",
-            "volumeUsd": 8385658.725469037
+            "volumeUsd": 8385987.340465036
         },
         {
             "closeAt": "2026-07-31T00:00:00Z",
             "id": "polymarket_2270338",
-            "liquidityUsd": 188138.3478,
+            "liquidityUsd": 189554.2208,
             "probability": 0.555,
             "question": "US x Iran permanent peace deal by July 31, 2026?",
             "sourceUrl": "https://polymarket.com/event/us-x-iran-permanent-peace-deal-by",
             "title": "US x Iran permanent peace deal by...?",
-            "updatedAt": "2026-06-13T02:12:08.671Z",
+            "updatedAt": "2026-06-13T02:27:09.278Z",
             "venue": "polymarket",
             "volumeUsd": 6867939.999844105
         },
         {
             "closeAt": "2026-06-30T00:00:00Z",
             "id": "polymarket_1484987",
-            "liquidityUsd": 89944.90845,
-            "probability": 0.0145,
+            "liquidityUsd": 93819.72789,
+            "probability": 0.0135,
             "question": "Netanyahu out by June 30?",
             "sourceUrl": "https://polymarket.com/event/netanyahu-out-before-2027",
             "title": "Netanyahu out by...?",
-            "updatedAt": "2026-06-13T02:12:08.671Z",
+            "updatedAt": "2026-06-13T02:27:09.278Z",
             "venue": "polymarket",
-            "volumeUsd": 6091062.86666592
+            "volumeUsd": 6092568.44666592
         },
         {
             "closeAt": "2026-06-30T00:00:00Z",
             "id": "polymarket_1090199",
-            "liquidityUsd": 133565.59769,
+            "liquidityUsd": 129728.16768,
             "probability": 0.0035,
             "question": "Will Reza Pahlavi enter Iran by June 30?",
             "sourceUrl": "https://polymarket.com/event/will-reza-pahlavi-enter-iran-by-june-30",
             "title": "Will Reza Pahlavi enter Iran by...?",
-            "updatedAt": "2026-06-13T02:12:08.671Z",
+            "updatedAt": "2026-06-13T02:27:09.278Z",
             "venue": "polymarket",
-            "volumeUsd": 6051980.8078830335
+            "volumeUsd": 6052000.8078830335
         },
         {
             "closeAt": "2026-06-30T00:00:00Z",
             "id": "polymarket_2333713",
-            "liquidityUsd": 4174471.92332,
+            "liquidityUsd": 4170279.88508,
             "probability": 0.9995,
             "question": "Will Trump restart Project Freedom by June 30?",
             "sourceUrl": "https://polymarket.com/event/will-trump-restart-project-freedom-by",
             "title": "Will Trump restart Project Freedom by...?",
-            "updatedAt": "2026-06-13T02:12:08.671Z",
+            "updatedAt": "2026-06-13T02:27:09.278Z",
             "venue": "polymarket",
-            "volumeUsd": 5754049.5627770005
+            "volumeUsd": 5759049.5627770005
         }
     ],
-    "shipsTransiting": 60,
+    "shipsTransiting": 47,
     "spr": {
         "asOfDate": "2026-06-05",
         "change4wMbbl": -34.9,
@@ -835,7 +835,7 @@
         "updatedAt": "2026-06-12T15:01:01.217Z"
     },
     "status": "restricted",
-    "stranded": 440,
+    "stranded": 453,
     "throughputPercent": 2,
     "tradeImpact": {
         "alternativeRouteExtraDays": 14,
