@@ -1,12 +1,12 @@
 {
-    "asOf": "2026-07-09T15:33:05.237Z",
+    "asOf": "2026-07-10T15:19:10.869Z",
     "disclaimer": "Informational only. Not investment, financial, legal, or tax advice. Not a benchmark for any financial instrument.",
     "indices": {
         "crisisPressure": {
             "band": "extreme",
             "components": {
                 "aisTransitDeviation": {
-                    "asOf": "2026-07-09T14:00:10.614Z",
+                    "asOf": "2026-07-10T14:00:24.133Z",
                     "contribution": 21.40909090909091,
                     "health": "fresh",
                     "raw": 38.63636363636363,
@@ -14,23 +14,23 @@
                     "weight": 0.3
                 },
                 "brentOptionsDread": {
-                    "asOf": "2026-07-09T15:18:01.738Z",
-                    "contribution": 12.666666666666668,
+                    "asOf": "2026-07-10T15:18:13.611Z",
+                    "contribution": 11.803333333333333,
                     "health": "fresh",
-                    "raw": 48,
-                    "score": 63.333333333333336,
+                    "raw": 45.41,
+                    "score": 59.01666666666666,
                     "weight": 0.2
                 },
                 "gdeltEventPressure": {
-                    "asOf": "2026-07-09T15:17:19.000Z",
-                    "contribution": 24.56892043665191,
+                    "asOf": "2026-07-10T14:03:24.000Z",
+                    "contribution": 21.50768175979311,
                     "health": "fresh",
-                    "raw": 33.102726986430596,
-                    "score": 98.27568174660765,
+                    "raw": 15.515363519586215,
+                    "score": 86.03072703917243,
                     "weight": 0.25
                 },
                 "insuranceMultiple": {
-                    "asOf": "2026-07-05T12:00:27.498Z",
+                    "asOf": "2026-07-09T15:42:10.619Z",
                     "contribution": 22.5,
                     "health": "fresh",
                     "raw": 8,
@@ -39,72 +39,72 @@
                 }
             },
             "confidence": 5,
-            "delta24h": 0,
-            "delta7d": 3,
+            "delta24h": -1,
+            "delta7d": 4,
             "indexHealth": "fresh",
             "reconciliation": {
                 "anchor24h": 89,
-                "decayed": 88.95,
+                "decayed": 88.34,
                 "hoursSincePrevious": 0.08,
-                "note": "Components sum to rawComposite (\u03a3 score \u00d7 weight). The published value applies anti-whipsaw smoothing \u2014 asymmetric decay (36h halflife) then per-24h rails (max +25 / -10). smoothedValue rounds to value (89). Method: https://straits.live/methodology#index-smoothing",
-                "rawComposite": 81.14,
-                "smoothedValue": 88.95
+                "note": "Components sum to rawComposite (\u03a3 score \u00d7 weight). The published value applies anti-whipsaw smoothing \u2014 asymmetric decay (36h halflife) then per-24h rails (max +25 / -10). smoothedValue rounds to value (88). Method: https://straits.live/methodology#index-smoothing",
+                "rawComposite": 77.22,
+                "smoothedValue": 88.34
             },
-            "value": 89
+            "value": 88
         },
         "escalationProbability": {
             "band": "high",
             "components": {
                 "brentTermStructureSlope": {
-                    "asOf": "2026-07-09T15:22:04.698Z",
-                    "contribution": 8.330000000000002,
+                    "asOf": "2026-07-10T14:52:04.459Z",
+                    "contribution": 8.120000000000003,
                     "health": "fresh",
-                    "raw": 4.57,
-                    "score": 41.650000000000006,
+                    "raw": 4.48,
+                    "score": 40.60000000000001,
                     "totalVolumeUsd": 0,
                     "weight": 0.2
                 },
                 "kalshiForwardContracts": {
-                    "asOf": "2026-07-09T15:18:07.676Z",
-                    "contribution": 12.770946403995195,
+                    "asOf": "2026-07-10T15:18:15.520Z",
+                    "contribution": 12.991784683209202,
                     "health": "fresh",
-                    "raw": 0.851396426933013,
-                    "score": 85.1396426933013,
-                    "totalVolumeUsd": 9333603.35,
+                    "raw": 0.8661189788806135,
+                    "score": 86.61189788806135,
+                    "totalVolumeUsd": 9490195.69,
                     "weight": 0.15
                 },
                 "manifoldForwardContracts": {
-                    "asOf": "2026-07-09T15:18:07.676Z",
-                    "contribution": 3.251596963968374,
+                    "asOf": "2026-07-10T15:18:15.520Z",
+                    "contribution": 3.464775144075306,
                     "health": "fresh",
-                    "raw": 0.13006387855873497,
-                    "score": 13.006387855873497,
-                    "totalVolumeUsd": 36459.846270946575,
+                    "raw": 0.13859100576301223,
+                    "score": 13.859100576301223,
+                    "totalVolumeUsd": 36546.576265535885,
                     "weight": 0.25
                 },
                 "polymarketAggregate": {
-                    "asOf": "2026-07-09T15:18:07.676Z",
-                    "contribution": 34.63417778350938,
+                    "asOf": "2026-07-10T15:18:15.520Z",
+                    "contribution": 34.55639658736395,
                     "health": "fresh",
-                    "raw": 0.8658544445877345,
-                    "score": 86.58544445877345,
-                    "totalVolumeUsd": 26641241.351205125,
+                    "raw": 0.8639099146840986,
+                    "score": 86.39099146840987,
+                    "totalVolumeUsd": 26969433.5034391,
                     "weight": 0.4
                 }
             },
             "confidence": 13,
-            "delta24h": -3,
-            "delta7d": 5,
+            "delta24h": -1,
+            "delta7d": 1,
             "indexHealth": "fresh",
             "reconciliation": {
-                "anchor24h": 65,
-                "decayed": 62.31,
+                "anchor24h": 62,
+                "decayed": 61.24,
                 "hoursSincePrevious": 0.08,
-                "note": "Components sum to rawComposite (\u03a3 score \u00d7 weight). The published value applies anti-whipsaw smoothing \u2014 asymmetric decay (36h halflife) then per-24h rails (max +25 / -10). smoothedValue rounds to value (62). Method: https://straits.live/methodology#index-smoothing",
-                "rawComposite": 58.99,
-                "smoothedValue": 62.31
+                "note": "Components sum to rawComposite (\u03a3 score \u00d7 weight). The published value applies anti-whipsaw smoothing \u2014 asymmetric decay (36h halflife) then per-24h rails (max +25 / -10). smoothedValue rounds to value (61). Method: https://straits.live/methodology#index-smoothing",
+                "rawComposite": 59.13,
+                "smoothedValue": 61.24
             },
-            "value": 62
+            "value": 61
         }
     },
     "methodologyUrl": "https://straits.live/methodology#hormuz-index",

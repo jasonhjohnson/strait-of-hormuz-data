@@ -1,6 +1,6 @@
 {
-    "asOf": "2026-07-09T15:35:33.068Z",
-    "asOfAgeDays": 4,
+    "asOf": "2026-07-10T15:21:05.801Z",
+    "asOfAgeDays": 5,
     "history": [
         {
             "date": "2026-07-05",
@@ -2211,12 +2211,12 @@
         "previousNTotal": 25,
         "sourceName": "IMF PortWatch",
         "sourceUrl": "https://portwatch.imf.org/pages/chokepoint6",
-        "updatedAt": "2026-07-09T14:00:10.614Z"
+        "updatedAt": "2026-07-10T14:00:24.133Z"
     },
     "methodology": "IMF PortWatch daily vessel transit count for chokepoint6 (Strait of Hormuz), derived from global AIS via Oxford / UN Global Pulse. preCrisisBaselineMedian is the median nTotal across all records dated before 2026-02-28, the stable peacetime anchor for throughput-% computation. baselineMedian is the rolling 30-day median; it drifts downward as a sustained closure becomes the new normal.",
     "premium": {
         "mcp": "https://straits.live/api/mcp",
-        "note": "Machine-payable premium tier (x402, USDC on Base): year-deep hourly history, full vessel manifest with sanctions cross-reference, one-call snapshot, structured daily brief. $0.01-$0.02 per request, no key or account.",
+        "note": "Machine-payable premium tier (x402, USDC on Base): full vessel manifest with sanctions cross-reference, single-vessel dossiers, year-deep hourly history, bulk export, one-call snapshot, structured daily brief, real-time streaming, and threshold-alert webhooks. $0.01-$0.50 per request, no key or account.",
         "url": "https://straits.live/api#premium"
     },
     "schema": "https://straits.live/api/v1/transits",
