@@ -1,6 +1,6 @@
 {
-    "asOf": "2026-07-12T14:46:22.824Z",
-    "asOfAgeDays": 7,
+    "asOf": "2026-07-13T15:27:17.050Z",
+    "asOfAgeDays": 8,
     "history": [
         {
             "date": "2026-07-05",
@@ -2211,7 +2211,7 @@
         "previousNTotal": 25,
         "sourceName": "IMF PortWatch",
         "sourceUrl": "https://portwatch.imf.org/pages/chokepoint6",
-        "updatedAt": "2026-07-12T14:00:33.867Z"
+        "updatedAt": "2026-07-13T14:00:41.189Z"
     },
     "methodology": "IMF PortWatch daily vessel transit count for chokepoint6 (Strait of Hormuz), derived from global AIS via Oxford / UN Global Pulse. preCrisisBaselineMedian is the median nTotal across all records dated before 2026-02-28, the stable peacetime anchor for throughput-% computation. baselineMedian is the rolling 30-day median; it drifts downward as a sustained closure becomes the new normal.",
     "premium": {
