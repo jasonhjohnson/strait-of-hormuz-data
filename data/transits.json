@@ -1,78 +1,120 @@
 {
-    "asOf": "2026-07-13T15:27:17.050Z",
-    "asOfAgeDays": 8,
+    "asOf": "2026-07-14T15:04:37.191Z",
+    "asOfAgeDays": 2,
     "history": [
         {
-            "date": "2026-07-05",
-            "nCargo": 17,
-            "nTanker": 17,
-            "nTotal": 34
+            "date": "2026-07-12",
+            "nCargo": 9,
+            "nTanker": 1,
+            "nTotal": 10
         },
         {
-            "date": "2026-07-04",
-            "nCargo": 14,
-            "nTanker": 11,
-            "nTotal": 25
-        },
-        {
-            "date": "2026-07-03",
-            "nCargo": 13,
-            "nTanker": 21,
-            "nTotal": 34
-        },
-        {
-            "date": "2026-07-02",
-            "nCargo": 18,
-            "nTanker": 18,
-            "nTotal": 36
-        },
-        {
-            "date": "2026-07-01",
-            "nCargo": 19,
-            "nTanker": 23,
-            "nTotal": 42
-        },
-        {
-            "date": "2026-06-30",
-            "nCargo": 16,
-            "nTanker": 6,
-            "nTotal": 22
-        },
-        {
-            "date": "2026-06-29",
-            "nCargo": 19,
-            "nTanker": 13,
-            "nTotal": 32
-        },
-        {
-            "date": "2026-06-28",
+            "date": "2026-07-11",
             "nCargo": 10,
-            "nTanker": 11,
-            "nTotal": 21
+            "nTanker": 4,
+            "nTotal": 14
         },
         {
-            "date": "2026-06-27",
-            "nCargo": 19,
-            "nTanker": 9,
+            "date": "2026-07-10",
+            "nCargo": 5,
+            "nTanker": 4,
+            "nTotal": 9
+        },
+        {
+            "date": "2026-07-09",
+            "nCargo": 7,
+            "nTanker": 4,
+            "nTotal": 11
+        },
+        {
+            "date": "2026-07-08",
+            "nCargo": 10,
+            "nTanker": 5,
+            "nTotal": 15
+        },
+        {
+            "date": "2026-07-07",
+            "nCargo": 16,
+            "nTanker": 12,
             "nTotal": 28
         },
         {
+            "date": "2026-07-06",
+            "nCargo": 14,
+            "nTanker": 14,
+            "nTotal": 28
+        },
+        {
+            "date": "2026-07-05",
+            "nCargo": 10,
+            "nTanker": 16,
+            "nTotal": 26
+        },
+        {
+            "date": "2026-07-04",
+            "nCargo": 11,
+            "nTanker": 11,
+            "nTotal": 22
+        },
+        {
+            "date": "2026-07-03",
+            "nCargo": 10,
+            "nTanker": 21,
+            "nTotal": 31
+        },
+        {
+            "date": "2026-07-02",
+            "nCargo": 16,
+            "nTanker": 18,
+            "nTotal": 34
+        },
+        {
+            "date": "2026-07-01",
+            "nCargo": 17,
+            "nTanker": 23,
+            "nTotal": 40
+        },
+        {
+            "date": "2026-06-30",
+            "nCargo": 15,
+            "nTanker": 6,
+            "nTotal": 21
+        },
+        {
+            "date": "2026-06-29",
+            "nCargo": 18,
+            "nTanker": 13,
+            "nTotal": 31
+        },
+        {
+            "date": "2026-06-28",
+            "nCargo": 9,
+            "nTanker": 11,
+            "nTotal": 20
+        },
+        {
+            "date": "2026-06-27",
+            "nCargo": 18,
+            "nTanker": 9,
+            "nTotal": 27
+        },
+        {
             "date": "2026-06-26",
-            "nCargo": 19,
+            "nCargo": 18,
             "nTanker": 19,
-            "nTotal": 38
+            "nTotal": 37
         },
         {
             "date": "2026-06-25",
-            "nCargo": 28,
+            "nCargo": 27,
             "nTanker": 23,
-            "nTotal": 51
+            "nTotal": 50
         },
         {
             "date": "2026-06-24",
-            "nCargo": 31,
+            "nCargo": 30,
             "nTanker": 21,
-            "nTotal": 52
+            "nTotal": 51
         },
         {
             "date": "2026-06-23",
@@ -2149,69 +2191,27 @@
             "nCargo": 41,
             "nTanker": 54,
             "nTotal": 95
-        },
-        {
-            "date": "2025-07-12",
-            "nCargo": 52,
-            "nTanker": 67,
-            "nTotal": 119
-        },
-        {
-            "date": "2025-07-11",
-            "nCargo": 25,
-            "nTanker": 50,
-            "nTotal": 75
-        },
-        {
-            "date": "2025-07-10",
-            "nCargo": 41,
-            "nTanker": 58,
-            "nTotal": 99
-        },
-        {
-            "date": "2025-07-09",
-            "nCargo": 44,
-            "nTanker": 71,
-            "nTotal": 115
-        },
-        {
-            "date": "2025-07-08",
-            "nCargo": 47,
-            "nTanker": 47,
-            "nTotal": 94
-        },
-        {
-            "date": "2025-07-07",
-            "nCargo": 34,
-            "nTanker": 37,
-            "nTotal": 71
-        },
-        {
-            "date": "2025-07-06",
-            "nCargo": 40,
-            "nTanker": 47,
-            "nTotal": 87
         }
     ],
     "latest": {
-        "baselineMedian": 15,
-        "capacity": 1140248,
-        "capacityCargo": 313354,
-        "capacityTanker": 826893,
-        "date": "2026-07-05",
-        "nCargo": 17,
-        "nContainer": 8,
-        "nDryBulk": 6,
-        "nGeneralCargo": 3,
+        "baselineMedian": 20,
+        "capacity": 170440,
+        "capacityCargo": 111700,
+        "capacityTanker": 58739,
+        "date": "2026-07-12",
+        "nCargo": 9,
+        "nContainer": 3,
+        "nDryBulk": 1,
+        "nGeneralCargo": 5,
         "nRoro": 0,
-        "nTanker": 17,
-        "nTotal": 34,
+        "nTanker": 1,
+        "nTotal": 10,
         "preCrisisBaselineMedian": 88,
-        "previousDate": "2026-07-04",
-        "previousNTotal": 25,
+        "previousDate": "2026-07-11",
+        "previousNTotal": 14,
         "sourceName": "IMF PortWatch",
         "sourceUrl": "https://portwatch.imf.org/pages/chokepoint6",
-        "updatedAt": "2026-07-13T14:00:41.189Z"
+        "updatedAt": "2026-07-14T14:00:47.382Z"
     },
     "methodology": "IMF PortWatch daily vessel transit count for chokepoint6 (Strait of Hormuz), derived from global AIS via Oxford / UN Global Pulse. preCrisisBaselineMedian is the median nTotal across all records dated before 2026-02-28, the stable peacetime anchor for throughput-% computation. baselineMedian is the rolling 30-day median; it drifts downward as a sustained closure becomes the new normal.",
     "premium": {
