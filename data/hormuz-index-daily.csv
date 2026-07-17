@@ -42,3 +42,4 @@ date,crisis_open,crisis_close,crisis_min,crisis_max,crisis_mean,crisis_band,fore
 2026-07-13,86,90,86,90,88.9,extreme,61,62,61,62,61.2,high
 2026-07-14,90,91,89,91,90.3,extreme,62,65,62,66,63.9,high
 2026-07-15,91,91,91,91,91,extreme,65,64,64,65,64.6,high
+2026-07-16,91,91,91,91,91,extreme,64,76,64,78,68.4,high
