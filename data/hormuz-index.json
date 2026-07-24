@@ -1,5 +1,5 @@
 {
-    "asOf": "2026-07-23T15:12:06.141Z",
+    "asOf": "2026-07-24T15:02:03.659Z",
     "disclaimer": "Informational only. Not investment, financial, legal, or tax advice. Not a benchmark for any financial instrument.",
     "indices": {
         "crisisPressure": {
@@ -14,19 +14,19 @@
                     "weight": 0.3
                 },
                 "brentOptionsDread": {
-                    "asOf": "2026-07-23T15:03:14.735Z",
-                    "contribution": 17.786,
+                    "asOf": "2026-07-24T14:48:01.727Z",
+                    "contribution": 17.3,
                     "health": "fresh",
-                    "raw": 68.93,
-                    "score": 88.93,
+                    "raw": 66.5,
+                    "score": 86.5,
                     "weight": 0.2
                 },
                 "gdeltEventPressure": {
-                    "asOf": "2026-07-23T14:29:45.000Z",
-                    "contribution": 24.50249159971494,
+                    "asOf": "2026-07-24T14:51:39.000Z",
+                    "contribution": 24.086939794722007,
                     "health": "fresh",
-                    "raw": 32.03986559543906,
-                    "score": 98.00996639885976,
+                    "raw": 25.39103671555211,
+                    "score": 96.34775917888803,
                     "weight": 0.25
                 },
                 "insuranceMultiple": {
@@ -40,59 +40,59 @@
             },
             "confidence": 2,
             "delta24h": 0,
-            "delta7d": 1,
+            "delta7d": 0,
             "indexHealth": "fresh",
             "reconciliation": {
                 "anchor24h": 92,
-                "decayed": 91.72,
+                "decayed": 92.02,
                 "hoursSincePrevious": 0.08,
                 "note": "Components sum to rawComposite (\u03a3 score \u00d7 weight). The published value applies anti-whipsaw smoothing \u2014 asymmetric decay (36h halflife) then per-24h rails (max +25 / -10). smoothedValue rounds to value (92). Method: https://straits.live/methodology#index-smoothing",
-                "rawComposite": 91.72,
-                "smoothedValue": 91.72
+                "rawComposite": 90.82,
+                "smoothedValue": 92.02
             },
             "value": 92
         },
         "escalationProbability": {
-            "band": "elevated",
+            "band": "high",
             "components": {
                 "brentTermStructureSlope": {
-                    "asOf": "2026-07-23T14:52:05.968Z",
-                    "contribution": 5.626666666666665,
+                    "asOf": "2026-07-24T14:53:04.232Z",
+                    "contribution": 19.48444444444444,
                     "health": "fresh",
-                    "raw": 2.61,
-                    "score": 21.099999999999998,
+                    "raw": 7.46,
+                    "score": 73.06666666666666,
                     "totalVolumeUsd": 0,
                     "weight": 0.2666666666666666
                 },
                 "kalshiForwardContracts": {
-                    "asOf": "2026-07-23T15:03:11.922Z",
-                    "contribution": 17.27507219871489,
+                    "asOf": "2026-07-24T14:48:07.322Z",
+                    "contribution": 17.457421189365398,
                     "health": "fresh",
-                    "raw": 0.8637536099357448,
-                    "score": 86.37536099357447,
-                    "totalVolumeUsd": 10174647.86,
+                    "raw": 0.8728710594682701,
+                    "score": 87.28710594682701,
+                    "totalVolumeUsd": 10375948.68,
                     "weight": 0.19999999999999996
                 },
                 "manifoldForwardContracts": {
-                    "asOf": "2026-07-23T15:03:11.922Z",
+                    "asOf": "2026-07-24T14:48:07.322Z",
                     "contribution": 0,
                     "health": "stale",
-                    "raw": 0.389576824502806,
-                    "score": 38.9576824502806,
-                    "totalVolumeUsd": 2386.524250806598,
+                    "raw": 0.38924721232685683,
+                    "score": 38.924721232685684,
+                    "totalVolumeUsd": 2409.1863988260607,
                     "weight": 0
                 },
                 "polymarketAggregate": {
-                    "asOf": "2026-07-23T15:03:11.922Z",
-                    "contribution": 22.83573507607301,
+                    "asOf": "2026-07-24T14:48:07.322Z",
+                    "contribution": 22.72603971290811,
                     "health": "fresh",
-                    "raw": 0.42817003267636905,
-                    "score": 42.817003267636906,
-                    "totalVolumeUsd": 99349533.53634971,
+                    "raw": 0.42611324461702715,
+                    "score": 42.611324461702715,
+                    "totalVolumeUsd": 100681870.6943118,
                     "weight": 0.5333333333333332
                 }
             },
-            "confidence": 9,
+            "confidence": 8,
             "degraded": {
                 "components": [
                     {
@@ -103,18 +103,18 @@
                 ],
                 "note": "manifoldForwardContracts (nominal 25%, stale) unavailable this tick. Nominal weight redistributed across the remaining fresh components \u2014 the published component weights are renormalized, not the methodology defaults."
             },
-            "delta24h": 0,
-            "delta7d": -5,
+            "delta24h": 2,
+            "delta7d": -12,
             "indexHealth": "fresh",
             "reconciliation": {
                 "anchor24h": 59,
-                "decayed": 59.28,
+                "decayed": 60.61,
                 "hoursSincePrevious": 0.08,
-                "note": "Components sum to rawComposite (\u03a3 score \u00d7 weight). The published value applies anti-whipsaw smoothing \u2014 asymmetric decay (36h halflife) then per-24h rails (max +25 / -10). smoothedValue rounds to value (59). Method: https://straits.live/methodology#index-smoothing",
-                "rawComposite": 45.74,
-                "smoothedValue": 59.28
+                "note": "Components sum to rawComposite (\u03a3 score \u00d7 weight). The published value applies anti-whipsaw smoothing \u2014 asymmetric decay (36h halflife) then per-24h rails (max +25 / -10). smoothedValue rounds to value (61). Method: https://straits.live/methodology#index-smoothing",
+                "rawComposite": 59.67,
+                "smoothedValue": 60.61
             },
-            "value": 59
+            "value": 61
         }
     },
     "methodologyUrl": "https://straits.live/methodology#hormuz-index",
