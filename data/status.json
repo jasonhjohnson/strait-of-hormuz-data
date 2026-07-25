@@ -9,27 +9,28 @@
         ],
         "note": "shipsTransiting, stranded, throughputPercent, transitsBaseline, and insuranceMultiple mix sources or are scalar projections of richer objects. Use transits.*, insurance.*, and dailyTransits.* instead."
     },
-    "aisBaselineNote": "transitsBaseline is withheld (null) until 72 hourly samples exist on the active30m basis, roughly 3 days after the 2026-07-20 cutover. Pre-cutover samples used a different counting basis and are not mixed in.",
+    "aisBaselineNote": "transitsBaseline is withheld (null) until 72 hourly samples exist on the active30m basis, roughly 3 days after the 2026-07-20 cutover, and is published once that gate is met. Pre-cutover samples used a different counting basis and are not mixed in. It is an AIS concurrent-presence median, a different population from transits.baseline (IMF PortWatch daily crossings); do not divide one by the other.",
     "aisBasis": "active30m",
     "aisBasisChangedAt": "2026-07-20",
-    "aisConcurrentInZone": 114,
+    "aisConcurrentInZone": 110,
     "aisGaps": {
-        "baseline7d": 57,
+        "baseline7d": 58.1,
         "baselineSampleHours": 168,
-        "count": 87,
-        "updatedAt": "2026-07-24T14:36:07.115Z",
-        "vesselsTracked": 5500
+        "count": 78,
+        "updatedAt": "2026-07-25T14:36:12.721Z",
+        "vesselsTracked": 5554
     },
-    "asOf": "2026-07-24T15:03:05.449Z",
-    "brent": 97.23,
+    "asOf": "2026-07-25T14:47:06.838Z",
+    "brent": 96.78,
     "capeSnapshot": {
-        "arrivals24hTotal": 63,
-        "asOf": "2026-07-24T13:59:03.569Z",
+        "arrivals24hTotal": 74,
+        "asOf": "2026-07-25T14:28:00.961Z",
         "departures24hTotal": null,
-        "expectedTotal": 163,
-        "inPortTotal": 251,
+        "expectedTotal": 177,
+        "inPortTotal": 243,
+        "note": "transitsLast24h counts port arrivals only (departures are not published upstream), across ports on both sides of the strait. Not a Hormuz crossing count. Use transits.count for that.",
         "portsContributing": 4,
-        "transitsLast24h": 63
+        "transitsLast24h": 74
     },
     "carrierSuspensions": [
         {
@@ -159,11 +160,13 @@
             "vesselsTrapped": null
         }
     ],
-    "change24h": -3.32,
-    "change24hUsd": -3.34,
+    "change24h": -0.9,
+    "change24hUsd": -0.88,
     "chokepoints": [
         {
             "baselineMedian": 18.5,
+            "baselineWindowEnd": null,
+            "baselineWindowStart": null,
             "date": "2026-07-19",
             "deltaDay": -2,
             "key": "hormuz",
@@ -173,6 +176,8 @@
         },
         {
             "baselineMedian": 233,
+            "baselineWindowEnd": null,
+            "baselineWindowStart": null,
             "date": "2026-07-19",
             "deltaDay": -21,
             "key": "malacca",
@@ -181,16 +186,9 @@
             "preCrisisBaselineMedian": 236
         },
         {
-            "baselineMedian": 35.5,
-            "date": "2026-07-19",
-            "deltaDay": -7,
-            "key": "bab-el-mandeb",
-            "label": "Bab el-Mandeb",
-            "nTotal": 33,
-            "preCrisisBaselineMedian": 33
-        },
-        {
             "baselineMedian": 93,
+            "baselineWindowEnd": null,
+            "baselineWindowStart": null,
             "date": "2026-07-19",
             "deltaDay": 6,
             "key": "cape",
@@ -200,27 +198,41 @@
         },
         {
             "baselineMedian": 42.5,
+            "baselineWindowEnd": null,
+            "baselineWindowStart": null,
             "date": "2026-07-19",
             "deltaDay": -3,
             "key": "suez",
             "label": "Suez Canal",
             "nTotal": 43,
             "preCrisisBaselineMedian": 39
+        },
+        {
+            "baselineMedian": 35.5,
+            "baselineWindowEnd": null,
+            "baselineWindowStart": null,
+            "date": "2026-07-19",
+            "deltaDay": -7,
+            "key": "bab-el-mandeb",
+            "label": "Bab el-Mandeb",
+            "nTotal": 33,
+            "preCrisisBaselineMedian": 33
         }
     ],
+    "chokepointsNote": "preCrisisBaselineMedian on every row is computed over one fixed window (baselineWindowStart to baselineWindowEnd) anchored to the Hormuz crisis. For hormuz that window is a genuine pre-crisis baseline. For bab-el-mandeb, suez and cape it is not: those routes were already carrying diverted Red Sea traffic within that window, so preCrisisBaselineMedian for those rows reads as wartime volume, not a peacetime figure.",
     "dailyBrief": {
-        "brent": 97.23,
-        "brentDeltaPct": -2.39,
+        "brent": 96.78,
+        "brentDeltaPct": -0.9,
         "bullets": [
-            "Unverified reports claim the Strait of Hormuz is closed, a development not independently confirmed by US or CENTCOM sources.",
-            "PortWatch recorded 15 transits on 2026-07-19, against a pre-crisis baseline of 88 per day, as tanker crossings fall to their lowest level in over two months per gCaptain.",
-            "Brent stood at $97.23, down 2.39% over 24 hours as of 14:52 UTC, while port arrivals across Hormuz-area ports in the most recent 24 hours reached 455 vessels."
+            "Iran reports no new US strikes overnight, per CBS8, though tensions remain high and US airstrikes on Iranian infrastructure continue to expand per Gulf News.",
+            "A top IRGC general has declared Iran can close the Strait of Hormuz if needed, per JNS.org; the US reports vessels are still transiting and disputes any effective closure.",
+            "Crisis Pressure holds at extreme with Escalation Forecast at high; at 11:52 UTC, Brent stood at $96.78, down 0.90% over 24 hours."
         ],
-        "date": "2026-07-24",
-        "generatedAt": "2026-07-24T14:52:24.535Z",
+        "date": "2026-07-25",
+        "generatedAt": "2026-07-25T11:52:39.274Z",
         "source": "claude",
-        "summary": "The Strait of Hormuz is at the center of an acute operational crisis, with unverified single-source reporting claiming a formal closure; US and CENTCOM sources have not confirmed that claim, and it must be treated as unconfirmed. Physical throughput data independently supports the severity of the disruption: PortWatch's most recently published day, 2026-07-19, recorded 15 transits against a pre-crisis baseline of 88 per day, and gCaptain reports tanker crossings fell to just one vessel on Thursday, the lowest reading since May. Port arrivals across Hormuz-area ports on both the Persian Gulf and Gulf of Oman sides totaled 455 in the most recent 24 hours, a separate methodology not comparable to the PortWatch transit count; separately, our AIS tracking showed 379 vessels anchored or stopped as of 14:52 UTC. Brent slid to $97.23, off 2.39% over 24 hours as of 14:52 UTC, with price pressure reflecting competing forces: physical supply disruption pulling prices up against demand-destruction fears pulling them down. The Crisis Pressure composite sits in the extreme band, flat over 24 hours, with physical transit deviation as the top contributor. The Escalation Forecast composite reads high and is rising, driven primarily by Polymarket escalation contract pricing. Those two composites diverge in direction, with the state measure flat while the forward-looking forecast climbs. A US ceasefire proposal transmitted through the Iraqi prime minister was rejected by Tehran, per International Business Times, and Kpler's Matt Smith told CNBC the strait is not expected to reopen until next year. CENTCOM struck Iranian military sites amid the tensions, per Crypto Briefing, an unverified single-source report.",
-        "transitsAgeDays": 5,
+        "summary": "The Strait of Hormuz remains the focal point of a contested and escalating crisis. Iranian state media and IRGC officials assert the capability and willingness to close the strait, with a top IRGC general quoted by JNS.org declaring closure is achievable on demand; US and CENTCOM positions, as reflected in reported vessel transit activity, dispute that any effective closure is in force, and the physical picture remains unresolved. This site's posture is a cautious closed on carrier routing, but the transit picture is genuinely contested. PortWatch data for 2026-07-19, the most recent published day, recorded 15 transits against a pre-crisis baseline of 88 per day, a figure reflecting methodology limited to strait transits; separately, port arrivals across the Hormuz-area ports in the most recent 24 hours reached 582 vessels, covering both Persian Gulf and Gulf of Oman sides, under a different counting method that should not be equated with the PortWatch number. At 11:52 UTC, 405 vessels were anchored or stopped in the region. Brent was trading at $96.78, off 0.90% over 24 hours, with the modest decline suggesting markets are pricing in sustained disruption rather than acute shock. The Hormuz Index Crisis Pressure composite sits in the extreme band, flat over 24 hours, with physical transit deviation as the top contributor; the Escalation Forecast sits in the high band, also flat, led by Polymarket escalation contract pricing. The two indices diverge in band, reflecting a gap between current physical conditions and forward risk expectations. UKMTO has reported a maritime incident in the Gulf of Oman involving an oil tanker and military forces, per Mehr News, a Tehran state media outlet whose claim has not been independently confirmed.",
+        "transitsAgeDays": 6,
         "transitsAsOfDate": "2026-07-19",
         "transitsToday": 15
     },
@@ -240,16 +252,16 @@
         "preCrisisBaselineMedian": 88,
         "previousDate": "2026-07-18",
         "previousNTotal": 17,
-        "updatedAt": "2026-07-24T14:00:09.369Z"
+        "updatedAt": "2026-07-25T14:00:30.227Z"
     },
     "dataHealth": {
         "aisGaps": {
             "source": "live",
-            "verifiedAt": "2026-07-24T14:36:07.115Z"
+            "verifiedAt": "2026-07-25T14:36:12.721Z"
         },
         "cape": {
             "source": "live",
-            "verifiedAt": "2026-07-24T13:59:03.569Z"
+            "verifiedAt": "2026-07-25T14:28:00.961Z"
         },
         "carriers": {
             "source": "curated",
@@ -257,11 +269,11 @@
         },
         "chokepoint": {
             "source": "live",
-            "verifiedAt": "2026-07-24T14:22:01.037Z"
+            "verifiedAt": "2026-07-25T14:22:00.606Z"
         },
         "dailyBrief": {
             "source": "live",
-            "verifiedAt": "2026-07-24T14:52:24.535Z"
+            "verifiedAt": "2026-07-25T11:52:39.274Z"
         },
         "dailyTransits": {
             "source": "live",
@@ -269,11 +281,11 @@
         },
         "events": {
             "source": "live",
-            "verifiedAt": "2026-07-24T14:51:39.000Z"
+            "verifiedAt": "2026-07-25T12:30:00.000Z"
         },
         "gas": {
             "source": "live",
-            "verifiedAt": "2026-07-24T14:42:08.465Z"
+            "verifiedAt": "2026-07-25T14:42:07.682Z"
         },
         "insurance": {
             "source": "curated",
@@ -281,11 +293,11 @@
         },
         "markets": {
             "source": "live",
-            "verifiedAt": "2026-07-24T14:48:07.322Z"
+            "verifiedAt": "2026-07-25T14:33:12.362Z"
         },
         "oil": {
             "source": "live",
-            "verifiedAt": "2026-07-24T14:59:04.623Z"
+            "verifiedAt": "2026-07-25T14:43:25.816Z"
         },
         "pipelines": {
             "source": "curated",
@@ -293,15 +305,15 @@
         },
         "ports": {
             "source": "live",
-            "verifiedAt": "2026-07-24T14:35:07.249Z"
+            "verifiedAt": "2026-07-25T14:35:14.068Z"
         },
         "sanctioned": {
             "source": "live",
-            "verifiedAt": "2026-07-24T14:59:09.473Z"
+            "verifiedAt": "2026-07-25T14:44:16.643Z"
         },
         "ships": {
             "source": "live",
-            "verifiedAt": "2026-07-24T14:44:44.441Z"
+            "verifiedAt": "2026-07-25T14:35:25.556Z"
         },
         "spr": {
             "source": "live",
@@ -309,7 +321,7 @@
         },
         "stranded": {
             "source": "live",
-            "verifiedAt": "2026-07-24T14:35:07.249Z"
+            "verifiedAt": "2026-07-25T14:35:14.068Z"
         },
         "tradeImpact": {
             "source": "curated",
@@ -317,127 +329,124 @@
         },
         "vesselRisk": {
             "source": "live",
-            "verifiedAt": "2026-07-24T14:43:08.351Z"
+            "verifiedAt": "2026-07-25T14:43:08.311Z"
         }
     },
     "dataHealthNote": "dataHealth.events reflects producer health, not event recency. A quiet news period no longer reads as stale. Use dataHealth.events.verifiedAt for the newest event time.",
     "events": [
         {
-            "description": "Tehran, IRNA \u2014 The Islamic Revolution Guards Corps (IRGC) says that it has destroyed US military quarters and several fighter jets in Jordan, alongside a Patriot air defense system, a spy balloon, and residential quarters of US forces in Erbil.",
-            "id": "rss_1q47j3k",
+            "description": "Source: arkansasonline.com",
+            "id": "gdelt_20260725T123000Z_5",
             "lat": null,
             "lng": null,
-            "occurredAt": "2026-07-24T14:51:39.000Z",
-            "severity": "high",
+            "occurredAt": "2026-07-25T12:30:00.000Z",
             "source": "live",
-            "title": "Iran destroys US military residences, fighter jets in Jordan, Erbil",
+            "title": "US fires on vessel attempting to breach Iran port blockade | The Arkansas Democrat - Gazette",
+            "type": "ship_incident",
+            "vessel": null
+        },
+        {
+            "description": "Source: greekherald.com",
+            "id": "gdelt_20260725T121500Z_7",
+            "lat": null,
+            "lng": null,
+            "occurredAt": "2026-07-25T12:15:00.000Z",
+            "source": "live",
+            "title": "Iran - Backed Houthis Claim Missile Strike On Saudi Arabia",
             "type": "strike",
             "vessel": null
         },
         {
-            "description": "Strait of Hormuz is closed. So is the migrant worker\u2019s kitchen The Indian Express",
-            "id": "rss_102hka7",
+            "description": "Iran Guards say stopped four ships trying to transit Strait of Hormuz The Times of Israel",
+            "id": "rss_1re22em",
             "lat": null,
             "lng": null,
-            "occurredAt": "2026-07-24T13:35:15.000Z",
+            "occurredAt": "2026-07-25T11:58:59.000Z",
+            "severity": "medium",
+            "source": "live",
+            "title": "Iran Guards say stopped four ships trying to transit Strait of Hormuz",
+            "type": "ship_incident",
+            "vessel": null
+        },
+        {
+            "description": "Source: kenyastar.com",
+            "id": "gdelt_20260725T113000Z_8",
+            "lat": null,
+            "lng": null,
+            "occurredAt": "2026-07-25T11:30:00.000Z",
+            "source": "live",
+            "title": "Houthis Claim Missile Strike On Saudi Arabia",
+            "type": "strike",
+            "vessel": null
+        },
+        {
+            "description": "Source: aninews.in",
+            "id": "gdelt_20260725T113000Z_11",
+            "lat": null,
+            "lng": null,
+            "occurredAt": "2026-07-25T11:30:00.000Z",
+            "source": "live",
+            "title": "Iran records first  peaceful night  following 13 days of US strikes",
+            "type": "strike",
+            "vessel": null
+        },
+        {
+            "description": "Iraq seeks Iranian assurances for oil tankers as Hormuz crisis threatens state revenues Iraqi News",
+            "id": "rss_k112c8",
+            "lat": null,
+            "lng": null,
+            "occurredAt": "2026-07-25T11:17:02.000Z",
+            "severity": "medium",
+            "source": "live",
+            "title": "Iraq seeks Iranian assurances for oil tankers as Hormuz crisis threatens state revenues",
+            "type": "ship_incident",
+            "vessel": null
+        },
+        {
+            "description": "How expanding US airstrikes are reaching deep into Iran's bridges, infrastructure and interior Gulf News",
+            "id": "rss_e23r7v",
+            "lat": null,
+            "lng": null,
+            "occurredAt": "2026-07-25T10:43:51.000Z",
             "severity": "high",
             "source": "live",
-            "title": "Strait of Hormuz is closed. So is the migrant worker\u2019s kitchen",
+            "title": "How expanding US airstrikes are reaching deep into Iran's bridges, infrastructure and interior",
+            "type": "strike",
+            "vessel": null
+        },
+        {
+            "description": "Top IRGC general: \u2018If we need to close the Strait of Hormuz, we can do it\u2019 JNS.org",
+            "id": "rss_1my74xu",
+            "lat": null,
+            "lng": null,
+            "occurredAt": "2026-07-25T10:37:10.000Z",
+            "severity": "high",
+            "source": "live",
+            "title": "Top IRGC general: \u2018If we need to close the Strait of Hormuz, we can do it\u2019",
             "type": "closure",
             "vessel": null
         },
         {
-            "description": "Source: oilprice.com",
-            "id": "gdelt_20260724T133000Z_0",
+            "description": "US urges UK to host summit on reopening Strait of Hormuz Caliber.Az",
+            "id": "rss_1dqxjix",
             "lat": null,
             "lng": null,
-            "occurredAt": "2026-07-24T13:30:00.000Z",
-            "source": "live",
-            "title": "Hormuz Tanker Crossings Sink to Lowest Level Since May as War Risk Spikes",
-            "type": "ship_incident",
-            "vessel": null
-        },
-        {
-            "description": "Oil tanker traffic through the Strait of Hormuz fell to its lowest level since May \u0635\u062d\u064a\u0641\u0629 \u0645\u0627\u0644",
-            "id": "rss_vu2yzd",
-            "lat": null,
-            "lng": null,
-            "occurredAt": "2026-07-24T13:13:59.000Z",
-            "severity": "medium",
-            "source": "live",
-            "title": "Oil tanker traffic through the Strait of Hormuz fell to its lowest level since May",
-            "type": "ship_incident",
-            "vessel": null
-        },
-        {
-            "description": "Drones target northern Iraqi city where US forces are based as US-Iran fighting escalates Boston Herald",
-            "id": "rss_1pasjyj",
-            "lat": null,
-            "lng": null,
-            "occurredAt": "2026-07-24T12:39:45.000Z",
+            "occurredAt": "2026-07-25T10:16:46.000Z",
             "severity": "high",
             "source": "live",
-            "title": "Drones target northern Iraqi city where US forces are based as US-Iran fighting escalates",
-            "type": "strike",
-            "vessel": null
-        },
-        {
-            "description": "CENTCOM strikes Iranian military sites amid Strait of Hormuz tensions Crypto Briefing",
-            "id": "rss_a39v4k",
-            "lat": null,
-            "lng": null,
-            "occurredAt": "2026-07-24T12:32:21.000Z",
-            "severity": "high",
-            "source": "live",
-            "title": "CENTCOM strikes Iranian military sites amid Strait of Hormuz tensions",
-            "type": "strike",
-            "vessel": null
-        },
-        {
-            "description": "U.S Will Use Iranian Funds To Pay For Ship Damages In Strait Of Hormuz, Trump Announces Marine Insight",
-            "id": "rss_bnaejx",
-            "lat": null,
-            "lng": null,
-            "occurredAt": "2026-07-24T12:19:11.000Z",
-            "severity": "medium",
-            "source": "live",
-            "title": "U.S Will Use Iranian Funds To Pay For Ship Damages In Strait Of Hormuz, Trump Announces",
-            "type": "ship_incident",
-            "vessel": null
-        },
-        {
-            "description": "The IRGC and the Collapse of the Strait of Hormuz Deal RealClearDefense",
-            "id": "rss_13i41o3",
-            "lat": null,
-            "lng": null,
-            "occurredAt": "2026-07-24T12:08:43.000Z",
-            "severity": "low",
-            "source": "live",
-            "title": "The IRGC and the Collapse of the Strait of Hormuz Deal",
-            "type": "negotiation",
-            "vessel": null
-        },
-        {
-            "description": "We don't expect the Strait of Hormuz to reopen until next year, says Kpler's Matt Smith CNBC",
-            "id": "rss_zra86l",
-            "lat": null,
-            "lng": null,
-            "occurredAt": "2026-07-24T12:01:24.000Z",
-            "severity": "high",
-            "source": "live",
-            "title": "We don't expect the Strait of Hormuz to reopen until next year, says Kpler's Matt Smith",
+            "title": "US urges UK to host summit on reopening Strait of Hormuz",
             "type": "closure",
             "vessel": null
         },
         {
-            "description": "Strait of Hormuz tanker crossings fall to lowest level in more than two months, data shows thenationalnews.com",
-            "id": "rss_r8ckkt",
+            "description": "TEHRAN, Jul. 25 (MNA) \u2013 The United Kingdom Maritime Trade Operation (UKMTO) on Saturday reported a maritime incident in the Gulf of Oman involving an oil tanker and military forces.",
+            "id": "rss_16805gc",
             "lat": null,
             "lng": null,
-            "occurredAt": "2026-07-24T11:26:13.000Z",
+            "occurredAt": "2026-07-25T10:06:14.000Z",
             "severity": "medium",
             "source": "live",
-            "title": "Strait of Hormuz tanker crossings fall to lowest level in more than two months, data shows",
+            "title": "UKMTO reports a maritime incident in Gulf of Oman",
             "type": "ship_incident",
             "vessel": null
         }
@@ -445,11 +454,11 @@
     "gas": {
         "nationalAvgCents": 412,
         "nationalAvgUsd": 4.12,
-        "newestUpdatedAt": "2026-07-24T14:42:08.465Z",
+        "newestUpdatedAt": "2026-07-25T14:42:07.682Z",
         "stateCount": 51
     },
     "hormuzIndex": {
-        "asOf": "2026-07-24T15:02:03.659Z",
+        "asOf": "2026-07-25T14:47:04.524Z",
         "crisisPressure": {
             "band": "extreme",
             "confidence": 2,
@@ -460,7 +469,7 @@
         "escalationProbability": {
             "band": "high",
             "confidence": 8,
-            "delta24h": 2,
+            "delta24h": 0,
             "indexHealth": "fresh",
             "value": 61
         },
@@ -468,13 +477,14 @@
         "methodologyVersion": "0.5.0"
     },
     "hormuzSnapshot": {
-        "arrivals24hTotal": 455,
-        "asOf": "2026-07-24T14:22:01.037Z",
+        "arrivals24hTotal": 594,
+        "asOf": "2026-07-25T14:22:00.606Z",
         "departures24hTotal": null,
-        "expectedTotal": 187,
-        "inPortTotal": 617,
+        "expectedTotal": 169,
+        "inPortTotal": 627,
+        "note": "transitsLast24h counts port arrivals only (departures are not published upstream), across ports on both sides of the strait. Not a Hormuz crossing count. Use transits.count for that.",
         "portsContributing": 5,
-        "transitsLast24h": 455
+        "transitsLast24h": 594
     },
     "insurance": {
         "multiple": 8,
@@ -494,15 +504,15 @@
     },
     "insuranceMultiple": 8,
     "iranRate": {
-        "buyRial": 9355000,
-        "buyToman": 935500,
-        "delta7dPct": -1.8032352161230443,
-        "deltaDayPct": -0.3230148048452221,
-        "midRial": 9257500,
+        "buyRial": 9025000,
+        "buyToman": 902500,
+        "delta7dPct": -0.4459308807134894,
+        "deltaDayPct": -2.5375170532060025,
+        "midRial": 8930000,
         "pair": "IRR_USD",
-        "sellRial": 9160000,
-        "sellToman": 916000,
-        "updatedAt": "2026-07-24T14:09:07.976Z"
+        "sellRial": 8835000,
+        "sellToman": 883500,
+        "updatedAt": "2026-07-25T14:09:06.032Z"
     },
     "jwc": {
         "arabianGulfMentioned": true,
@@ -511,7 +521,7 @@
         "circularUrl": "https://lmalloyds.com/wp-content/uploads/2025/06/JWLA-033-Iran.docx",
         "contentHash": "2dff4b42352d3ab1",
         "lastChangedAt": "2026-05-09T01:49:57.040Z",
-        "updatedAt": "2026-07-24T10:01:09.227Z"
+        "updatedAt": "2026-07-25T10:01:08.529Z"
     },
     "links": {
         "aisGaps": "https://straits.live/api/v1/ais-gaps",
@@ -546,8 +556,8 @@
         "transitsByType": "https://straits.live/api/v1/transits-by-type",
         "vessels": "https://straits.live/api/v1/vessels"
     },
-    "marketClosed": false,
-    "oilAsOf": "2026-07-24T14:59:04.623Z",
+    "marketClosed": true,
+    "oilAsOf": "2026-07-25T14:43:25.816Z",
     "pipelineBypass": [
         {
             "capacityBpd": 5000000,
@@ -593,130 +603,130 @@
         {
             "closeAt": "2026-12-31T00:00:00Z",
             "id": "polymarket_665374",
-            "liquidityUsd": 695636.5948,
-            "probability": 0.285,
+            "liquidityUsd": 545750.4578,
+            "probability": 0.265,
             "question": "Will the U.S. invade Iran before 2027?",
             "sourceUrl": "https://polymarket.com/event/will-the-us-invade-iran-before-2027",
             "title": "Will the U.S. invade Iran before 2027?",
-            "updatedAt": "2026-07-24T14:48:07.322Z",
+            "updatedAt": "2026-07-25T14:33:12.362Z",
             "venue": "polymarket",
-            "volumeUsd": 46663290.59708033
+            "volumeUsd": 47490005.11293669
         },
         {
             "closeAt": "2026-12-31T00:00:00Z",
             "id": "polymarket_663583",
-            "liquidityUsd": 705125.5626,
+            "liquidityUsd": 704241.9064,
             "probability": 0.095,
             "question": "Will the Iranian regime fall before 2027?",
             "sourceUrl": "https://polymarket.com/event/will-the-iranian-regime-fall-by-the-end-of-2026",
             "title": "Will the Iranian regime fall before 2027?",
-            "updatedAt": "2026-07-24T14:48:07.322Z",
+            "updatedAt": "2026-07-25T14:33:12.362Z",
             "venue": "polymarket",
-            "volumeUsd": 23043836.630062263
+            "volumeUsd": 23093319.161128275
         },
         {
             "closeAt": "2026-07-31T00:00:00Z",
             "id": "polymarket_2176262",
-            "liquidityUsd": 532196.9563,
-            "probability": 0.0065,
+            "liquidityUsd": 589661.47083,
+            "probability": 0.0055,
             "question": "Strait of Hormuz traffic returns to normal by July 31?",
             "sourceUrl": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-july-31",
             "title": "Strait of Hormuz traffic returns to normal by July 31?",
-            "updatedAt": "2026-07-24T14:48:07.322Z",
+            "updatedAt": "2026-07-25T14:33:12.362Z",
             "venue": "polymarket",
-            "volumeUsd": 20296877.87552423
+            "volumeUsd": 20454019.849083256
         },
         {
             "closeAt": "2026-12-31T00:00:00Z",
             "id": "polymarket_1472548",
-            "liquidityUsd": 105733.05411,
+            "liquidityUsd": 108022.37706,
             "probability": 0.047,
             "question": "Will Reza Pahlavi lead Iran in 2026?",
             "sourceUrl": "https://polymarket.com/event/will-reza-pahlavi-lead-iran-in-2026",
             "title": "Will Reza Pahlavi lead Iran in 2026?",
-            "updatedAt": "2026-07-24T14:48:07.322Z",
+            "updatedAt": "2026-07-25T14:33:12.362Z",
             "venue": "polymarket",
-            "volumeUsd": 11652430.31295597
+            "volumeUsd": 11653522.001816036
         },
         {
             "closeAt": "2026-12-31T00:00:00Z",
             "id": "polymarket_2176270",
-            "liquidityUsd": 253640.9422,
-            "probability": 0.515,
+            "liquidityUsd": 217215.651,
+            "probability": 0.535,
             "question": "Strait of Hormuz traffic returns to normal by December 31?",
             "sourceUrl": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-december-31",
             "title": "Strait of Hormuz traffic returns to normal by December 31?",
-            "updatedAt": "2026-07-24T14:48:07.322Z",
+            "updatedAt": "2026-07-25T14:33:12.362Z",
             "venue": "polymarket",
-            "volumeUsd": 5838251.742510995
+            "volumeUsd": 5972468.01089199
         },
         {
             "closeAt": "2026-08-01T13:59:00Z",
             "id": "kalshi_KXHORMUZNORM-26MAR17-B260801",
-            "liquidityUsd": 973382.1,
+            "liquidityUsd": 969573.75,
             "probability": 0.01,
             "question": "Will the 7-day moving average of transit calls through the Strait of Hormuz as reported by the IMF PortWatch be above 60 before August 1, 2026? (Before Aug 1, 2026)",
             "sourceUrl": "https://kalshi.com/markets/KXHORMUZNORM-26MAR17",
             "title": "Will the 7-day moving average of transit calls through the Strait of Hormuz as reported by the IMF PortWatch be above 60 before August 1, 2026?",
-            "updatedAt": "2026-07-24T14:48:07.322Z",
+            "updatedAt": "2026-07-25T14:33:12.362Z",
             "venue": "kalshi",
-            "volumeUsd": 5099411.52
+            "volumeUsd": 5106178.8
         },
         {
             "closeAt": "2026-12-31T00:00:00Z",
             "id": "polymarket_1469755",
-            "liquidityUsd": 39920.51912,
-            "probability": 0.0035,
+            "liquidityUsd": 51948.90946,
+            "probability": 0.0025,
             "question": "Will Mohammad Khatami be head of state in Iran end of 2026?",
             "sourceUrl": "https://polymarket.com/event/iran-leader-end-of-2026",
             "title": "Iran leader end of 2026?",
-            "updatedAt": "2026-07-24T14:48:07.322Z",
+            "updatedAt": "2026-07-25T14:33:12.362Z",
             "venue": "polymarket",
-            "volumeUsd": 5054366.835648997
+            "volumeUsd": 5081928.149980997
         },
         {
             "closeAt": "2026-12-31T00:00:00Z",
             "id": "polymarket_1469737",
-            "liquidityUsd": 53243.32813,
-            "probability": 0.7245,
+            "liquidityUsd": 56171.58766,
+            "probability": 0.7815,
             "question": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
             "sourceUrl": "https://polymarket.com/event/iran-leader-end-of-2026",
             "title": "Iran leader end of 2026?",
-            "updatedAt": "2026-07-24T14:48:07.322Z",
+            "updatedAt": "2026-07-25T14:33:12.362Z",
             "venue": "polymarket",
-            "volumeUsd": 4937831.0552709745
+            "volumeUsd": 5040167.811870983
         },
         {
             "closeAt": "2026-10-10T00:00:00Z",
             "id": "polymarket_637002",
-            "liquidityUsd": 436175.8714,
-            "probability": 0.0415,
+            "liquidityUsd": 463915.66366,
+            "probability": 0.0405,
             "question": "Will Donald Trump win the Nobel Peace Prize in 2026?",
             "sourceUrl": "https://polymarket.com/event/nobel-peace-prize-winner-2026-139",
             "title": "Nobel Peace Prize Winner 2026",
-            "updatedAt": "2026-07-24T14:48:07.322Z",
+            "updatedAt": "2026-07-25T14:33:12.362Z",
             "venue": "polymarket",
-            "volumeUsd": 4138972.0227409583
+            "volumeUsd": 4141136.7439829553
         },
         {
             "closeAt": "2026-12-31T00:00:00Z",
             "id": "polymarket_1469743",
-            "liquidityUsd": 45574.61106,
+            "liquidityUsd": 55258.59106,
             "probability": 0.0015,
             "question": "Will Seyed Hossein Mousavian be head of state in Iran end of 2026?",
             "sourceUrl": "https://polymarket.com/event/iran-leader-end-of-2026",
             "title": "Iran leader end of 2026?",
-            "updatedAt": "2026-07-24T14:48:07.322Z",
+            "updatedAt": "2026-07-25T14:33:12.362Z",
             "venue": "polymarket",
-            "volumeUsd": 3665661.3082150016
+            "volumeUsd": 3667848.5832150015
         }
     ],
     "premium": {
         "mcp": "https://straits.live/api/mcp",
-        "note": "Machine-payable premium endpoints (x402, USDC on Base): full vessel manifest with sanctions cross-reference, single-vessel dossiers, a shadow-fleet risk screen of the whole vessel population, year-deep hourly history, bulk export, one-call snapshot, structured daily brief, real-time streaming, threshold-alert webhooks, and a Hormuz flag rollup. $0.01-$0.50 per request, no key or account. MCP connector at the mcp URL.",
+        "note": "Machine-payable premium endpoints (x402, USDC on Base): full vessel manifest with sanctions cross-reference, single-vessel dossiers, a shadow-fleet risk screen of the whole vessel population, hourly history capped at one year with actual depth growing daily, bulk export, one-call snapshot, structured daily brief, real-time streaming, threshold-alert webhooks, and a Hormuz flag rollup. $0.01-$0.50 per request, no key or account. MCP connector at the mcp URL.",
         "url": "https://straits.live/api#premium"
     },
-    "shipsTransiting": 114,
+    "shipsTransiting": 110,
     "spr": {
         "asOfDate": "2026-07-17",
         "change4wMbbl": -19.74,
@@ -724,7 +734,7 @@
         "updatedAt": "2026-07-24T15:00:18.959Z"
     },
     "status": "restricted",
-    "stranded": 365,
+    "stranded": 426,
     "throughputPercent": 17,
     "tradeImpact": {
         "alternativeRouteExtraDays": 14,
@@ -743,7 +753,7 @@
         "worldOilAtRiskPct": 25
     },
     "transits": {
-        "asOfAgeDays": 5,
+        "asOfAgeDays": 6,
         "asOfDate": "2026-07-19",
         "baseline": 88,
         "baselineSource": "portwatch-precrisis",
@@ -758,12 +768,12 @@
         "throughputPct": 17
     },
     "transitsBaseline": {
-        "mean": 84.53,
-        "median": 89,
+        "mean": 84.99,
+        "median": 91,
         "p10": 35,
-        "p90": 116,
-        "sampleHours": 88,
-        "updatedAt": "2026-07-24T14:35:07.249Z",
+        "p90": 118,
+        "sampleHours": 112,
+        "updatedAt": "2026-07-25T14:35:14.068Z",
         "windowHours": 720
     },
     "verdict": {
@@ -773,11 +783,11 @@
         "status": "closed"
     },
     "vesselRisk": {
-        "high": 71,
-        "low": 980,
-        "moderate": 129,
-        "total": 1180,
-        "updatedAt": "2026-07-24T14:43:08.351Z"
+        "high": 77,
+        "low": 1046,
+        "moderate": 137,
+        "total": 1260,
+        "updatedAt": "2026-07-25T14:43:08.311Z"
     },
-    "wti": 89.77
+    "wti": 89.31
 }
