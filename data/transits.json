@@ -1,7 +1,49 @@
 {
-    "asOf": "2026-08-25T14:44:20.042Z",
-    "asOfAgeDays": 9,
+    "asOf": "2026-08-26T14:44:33.238Z",
+    "asOfAgeDays": 3,
     "history": [
+        {
+            "date": "2026-08-23",
+            "nCargo": 2,
+            "nTanker": 1,
+            "nTotal": 3
+        },
+        {
+            "date": "2026-08-22",
+            "nCargo": 6,
+            "nTanker": 1,
+            "nTotal": 7
+        },
+        {
+            "date": "2026-08-21",
+            "nCargo": 2,
+            "nTanker": 2,
+            "nTotal": 4
+        },
+        {
+            "date": "2026-08-20",
+            "nCargo": 3,
+            "nTanker": 2,
+            "nTotal": 5
+        },
+        {
+            "date": "2026-08-19",
+            "nCargo": 2,
+            "nTanker": 4,
+            "nTotal": 6
+        },
+        {
+            "date": "2026-08-18",
+            "nCargo": 2,
+            "nTanker": 4,
+            "nTotal": 6
+        },
+        {
+            "date": "2026-08-17",
+            "nCargo": 1,
+            "nTanker": 3,
+            "nTotal": 4
+        },
         {
             "date": "2026-08-16",
             "nCargo": 0,
@@ -17,26 +59,26 @@
         {
             "date": "2026-08-14",
             "nCargo": 5,
-            "nTanker": 1,
-            "nTotal": 6
+            "nTanker": 2,
+            "nTotal": 7
         },
         {
             "date": "2026-08-13",
-            "nCargo": 3,
-            "nTanker": 1,
-            "nTotal": 4
+            "nCargo": 4,
+            "nTanker": 2,
+            "nTotal": 6
         },
         {
             "date": "2026-08-12",
-            "nCargo": 1,
-            "nTanker": 0,
-            "nTotal": 1
+            "nCargo": 2,
+            "nTanker": 1,
+            "nTotal": 3
         },
         {
             "date": "2026-08-11",
-            "nCargo": 6,
+            "nCargo": 7,
             "nTanker": 2,
-            "nTotal": 8
+            "nTotal": 9
         },
         {
             "date": "2026-08-10",
@@ -46,21 +88,21 @@
         },
         {
             "date": "2026-08-09",
-            "nCargo": 1,
+            "nCargo": 3,
             "nTanker": 0,
-            "nTotal": 1
+            "nTotal": 3
         },
         {
             "date": "2026-08-08",
-            "nCargo": 7,
-            "nTanker": 1,
-            "nTotal": 8
+            "nCargo": 8,
+            "nTanker": 2,
+            "nTotal": 10
         },
         {
             "date": "2026-08-07",
             "nCargo": 2,
-            "nTanker": 2,
-            "nTotal": 4
+            "nTanker": 4,
+            "nTotal": 6
         },
         {
             "date": "2026-08-06",
@@ -70,15 +112,15 @@
         },
         {
             "date": "2026-08-05",
-            "nCargo": 4,
+            "nCargo": 5,
             "nTanker": 0,
-            "nTotal": 4
+            "nTotal": 5
         },
         {
             "date": "2026-08-04",
-            "nCargo": 2,
+            "nCargo": 3,
             "nTanker": 4,
-            "nTotal": 6
+            "nTotal": 7
         },
         {
             "date": "2026-08-03",
@@ -88,45 +130,45 @@
         },
         {
             "date": "2026-08-02",
-            "nCargo": 2,
+            "nCargo": 3,
             "nTanker": 0,
-            "nTotal": 2
-        },
-        {
-            "date": "2026-08-01",
-            "nCargo": 1,
-            "nTanker": 2,
             "nTotal": 3
         },
         {
+            "date": "2026-08-01",
+            "nCargo": 2,
+            "nTanker": 3,
+            "nTotal": 5
+        },
+        {
             "date": "2026-07-31",
-            "nCargo": 5,
-            "nTanker": 1,
-            "nTotal": 6
+            "nCargo": 6,
+            "nTanker": 2,
+            "nTotal": 8
         },
         {
             "date": "2026-07-30",
-            "nCargo": 1,
-            "nTanker": 1,
-            "nTotal": 2
-        },
-        {
-            "date": "2026-07-29",
-            "nCargo": 4,
-            "nTanker": 2,
-            "nTotal": 6
-        },
-        {
-            "date": "2026-07-28",
             "nCargo": 3,
             "nTanker": 1,
             "nTotal": 4
         },
         {
-            "date": "2026-07-27",
+            "date": "2026-07-29",
             "nCargo": 4,
+            "nTanker": 3,
+            "nTotal": 7
+        },
+        {
+            "date": "2026-07-28",
+            "nCargo": 4,
+            "nTanker": 1,
+            "nTotal": 5
+        },
+        {
+            "date": "2026-07-27",
+            "nCargo": 5,
             "nTanker": 0,
-            "nTotal": 4
+            "nTotal": 5
         },
         {
             "date": "2026-07-26",
@@ -136,9 +178,9 @@
         },
         {
             "date": "2026-07-25",
-            "nCargo": 1,
+            "nCargo": 2,
             "nTanker": 0,
-            "nTotal": 1
+            "nTotal": 2
         },
         {
             "date": "2026-07-24",
@@ -154,21 +196,21 @@
         },
         {
             "date": "2026-07-22",
-            "nCargo": 2,
+            "nCargo": 5,
             "nTanker": 1,
-            "nTotal": 3
+            "nTotal": 6
         },
         {
             "date": "2026-07-21",
-            "nCargo": 3,
+            "nCargo": 5,
             "nTanker": 1,
-            "nTotal": 4
+            "nTotal": 6
         },
         {
             "date": "2026-07-20",
-            "nCargo": 2,
-            "nTanker": 1,
-            "nTotal": 3
+            "nCargo": 3,
+            "nTanker": 2,
+            "nTotal": 5
         },
         {
             "date": "2026-07-19",
@@ -178,9 +220,9 @@
         },
         {
             "date": "2026-07-18",
-            "nCargo": 3,
+            "nCargo": 4,
             "nTanker": 2,
-            "nTotal": 5
+            "nTotal": 6
         },
         {
             "date": "2026-07-17",
@@ -190,33 +232,33 @@
         },
         {
             "date": "2026-07-16",
-            "nCargo": 3,
+            "nCargo": 5,
             "nTanker": 1,
-            "nTotal": 4
+            "nTotal": 6
         },
         {
             "date": "2026-07-15",
-            "nCargo": 5,
+            "nCargo": 6,
             "nTanker": 3,
-            "nTotal": 8
+            "nTotal": 9
         },
         {
             "date": "2026-07-14",
-            "nCargo": 2,
-            "nTanker": 3,
-            "nTotal": 5
+            "nCargo": 3,
+            "nTanker": 5,
+            "nTotal": 8
         },
         {
             "date": "2026-07-13",
-            "nCargo": 5,
+            "nCargo": 8,
             "nTanker": 2,
-            "nTotal": 7
+            "nTotal": 10
         },
         {
             "date": "2026-07-12",
-            "nCargo": 2,
+            "nCargo": 3,
             "nTanker": 1,
-            "nTotal": 3
+            "nTotal": 4
         },
         {
             "date": "2026-07-11",
@@ -226,117 +268,117 @@
         },
         {
             "date": "2026-07-10",
-            "nCargo": 1,
-            "nTanker": 3,
-            "nTotal": 4
-        },
-        {
-            "date": "2026-07-09",
-            "nCargo": 5,
-            "nTanker": 2,
+            "nCargo": 3,
+            "nTanker": 4,
             "nTotal": 7
         },
         {
-            "date": "2026-07-08",
+            "date": "2026-07-09",
             "nCargo": 7,
-            "nTanker": 4,
-            "nTotal": 11
+            "nTanker": 3,
+            "nTotal": 10
+        },
+        {
+            "date": "2026-07-08",
+            "nCargo": 12,
+            "nTanker": 8,
+            "nTotal": 20
         },
         {
             "date": "2026-07-07",
-            "nCargo": 14,
+            "nCargo": 16,
             "nTanker": 10,
-            "nTotal": 24
+            "nTotal": 26
         },
         {
             "date": "2026-07-06",
             "nCargo": 9,
-            "nTanker": 14,
-            "nTotal": 23
+            "nTanker": 16,
+            "nTotal": 25
         },
         {
             "date": "2026-07-05",
-            "nCargo": 5,
-            "nTanker": 15,
-            "nTotal": 20
+            "nCargo": 6,
+            "nTanker": 16,
+            "nTotal": 22
         },
         {
             "date": "2026-07-04",
             "nCargo": 9,
-            "nTanker": 6,
-            "nTotal": 15
+            "nTanker": 8,
+            "nTotal": 17
         },
         {
             "date": "2026-07-03",
-            "nCargo": 6,
+            "nCargo": 7,
             "nTanker": 17,
-            "nTotal": 23
+            "nTotal": 24
         },
         {
             "date": "2026-07-02",
-            "nCargo": 11,
-            "nTanker": 14,
-            "nTotal": 25
+            "nCargo": 13,
+            "nTanker": 15,
+            "nTotal": 28
         },
         {
             "date": "2026-07-01",
-            "nCargo": 10,
-            "nTanker": 17,
-            "nTotal": 27
+            "nCargo": 11,
+            "nTanker": 18,
+            "nTotal": 29
         },
         {
             "date": "2026-06-30",
-            "nCargo": 9,
-            "nTanker": 5,
-            "nTotal": 14
+            "nCargo": 10,
+            "nTanker": 6,
+            "nTotal": 16
         },
         {
             "date": "2026-06-29",
-            "nCargo": 12,
-            "nTanker": 12,
-            "nTotal": 24
+            "nCargo": 13,
+            "nTanker": 13,
+            "nTotal": 26
         },
         {
             "date": "2026-06-28",
-            "nCargo": 5,
-            "nTanker": 6,
-            "nTotal": 11
+            "nCargo": 9,
+            "nTanker": 7,
+            "nTotal": 16
         },
         {
             "date": "2026-06-27",
-            "nCargo": 15,
+            "nCargo": 16,
             "nTanker": 9,
-            "nTotal": 24
+            "nTotal": 25
         },
         {
             "date": "2026-06-26",
-            "nCargo": 10,
+            "nCargo": 13,
             "nTanker": 17,
-            "nTotal": 27
+            "nTotal": 30
         },
         {
             "date": "2026-06-25",
-            "nCargo": 22,
+            "nCargo": 25,
             "nTanker": 21,
-            "nTotal": 43
+            "nTotal": 46
         },
         {
             "date": "2026-06-24",
-            "nCargo": 26,
-            "nTanker": 18,
-            "nTotal": 44
+            "nCargo": 31,
+            "nTanker": 20,
+            "nTotal": 51
         },
         {
             "date": "2026-06-23",
-            "nCargo": 7,
-            "nTanker": 4,
-            "nTotal": 11
+            "nCargo": 17,
+            "nTanker": 12,
+            "nTotal": 29
         },
         {
             "date": "2026-06-22",
-            "nCargo": 2,
-            "nTanker": 8,
-            "nTotal": 10
+            "nCargo": 4,
+            "nTanker": 12,
+            "nTotal": 16
         },
         {
             "date": "2026-06-21",
@@ -346,9 +388,9 @@
         },
         {
             "date": "2026-06-20",
-            "nCargo": 11,
+            "nCargo": 13,
             "nTanker": 12,
-            "nTotal": 23
+            "nTotal": 25
         },
         {
             "date": "2026-06-19",
@@ -358,9 +400,9 @@
         },
         {
             "date": "2026-06-18",
-            "nCargo": 9,
+            "nCargo": 10,
             "nTanker": 10,
-            "nTotal": 19
+            "nTotal": 20
         },
         {
             "date": "2026-06-17",
@@ -370,15 +412,15 @@
         },
         {
             "date": "2026-06-16",
-            "nCargo": 3,
-            "nTanker": 2,
-            "nTotal": 5
+            "nCargo": 7,
+            "nTanker": 3,
+            "nTotal": 10
         },
         {
             "date": "2026-06-15",
             "nCargo": 5,
-            "nTanker": 1,
-            "nTotal": 6
+            "nTanker": 2,
+            "nTotal": 7
         },
         {
             "date": "2026-06-14",
@@ -424,9 +466,9 @@
         },
         {
             "date": "2026-06-07",
-            "nCargo": 0,
+            "nCargo": 2,
             "nTanker": 0,
-            "nTotal": 0
+            "nTotal": 2
         },
         {
             "date": "2026-06-06",
@@ -436,9 +478,9 @@
         },
         {
             "date": "2026-06-05",
-            "nCargo": 0,
+            "nCargo": 2,
             "nTanker": 0,
-            "nTotal": 0
+            "nTotal": 2
         },
         {
             "date": "2026-06-04",
@@ -448,15 +490,15 @@
         },
         {
             "date": "2026-06-03",
-            "nCargo": 5,
+            "nCargo": 6,
             "nTanker": 3,
-            "nTotal": 8
+            "nTotal": 9
         },
         {
             "date": "2026-06-02",
-            "nCargo": 2,
+            "nCargo": 8,
             "nTanker": 3,
-            "nTotal": 5
+            "nTotal": 11
         },
         {
             "date": "2026-06-01",
@@ -466,15 +508,15 @@
         },
         {
             "date": "2026-05-31",
-            "nCargo": 2,
+            "nCargo": 5,
             "nTanker": 0,
-            "nTotal": 2
+            "nTotal": 5
         },
         {
             "date": "2026-05-30",
-            "nCargo": 3,
+            "nCargo": 4,
             "nTanker": 0,
-            "nTotal": 3
+            "nTotal": 4
         },
         {
             "date": "2026-05-29",
@@ -496,9 +538,9 @@
         },
         {
             "date": "2026-05-26",
-            "nCargo": 1,
+            "nCargo": 2,
             "nTanker": 2,
-            "nTotal": 3
+            "nTotal": 4
         },
         {
             "date": "2026-05-25",
@@ -514,9 +556,9 @@
         },
         {
             "date": "2026-05-23",
-            "nCargo": 2,
+            "nCargo": 5,
             "nTanker": 1,
-            "nTotal": 3
+            "nTotal": 6
         },
         {
             "date": "2026-05-22",
@@ -526,15 +568,15 @@
         },
         {
             "date": "2026-05-21",
-            "nCargo": 2,
+            "nCargo": 3,
             "nTanker": 2,
-            "nTotal": 4
+            "nTotal": 5
         },
         {
             "date": "2026-05-20",
             "nCargo": 4,
-            "nTanker": 3,
-            "nTotal": 7
+            "nTanker": 4,
+            "nTotal": 8
         },
         {
             "date": "2026-05-19",
@@ -550,33 +592,33 @@
         },
         {
             "date": "2026-05-17",
-            "nCargo": 1,
+            "nCargo": 2,
             "nTanker": 1,
-            "nTotal": 2
+            "nTotal": 3
         },
         {
             "date": "2026-05-16",
-            "nCargo": 5,
+            "nCargo": 6,
             "nTanker": 1,
-            "nTotal": 6
+            "nTotal": 7
         },
         {
             "date": "2026-05-15",
-            "nCargo": 0,
+            "nCargo": 2,
             "nTanker": 2,
-            "nTotal": 2
+            "nTotal": 4
         },
         {
             "date": "2026-05-14",
-            "nCargo": 3,
+            "nCargo": 7,
             "nTanker": 3,
-            "nTotal": 6
+            "nTotal": 10
         },
         {
             "date": "2026-05-13",
-            "nCargo": 1,
+            "nCargo": 2,
             "nTanker": 2,
-            "nTotal": 3
+            "nTotal": 4
         },
         {
             "date": "2026-05-12",
@@ -586,15 +628,15 @@
         },
         {
             "date": "2026-05-11",
-            "nCargo": 2,
+            "nCargo": 3,
             "nTanker": 4,
-            "nTotal": 6
+            "nTotal": 7
         },
         {
             "date": "2026-05-10",
-            "nCargo": 3,
+            "nCargo": 5,
             "nTanker": 2,
-            "nTotal": 5
+            "nTotal": 7
         },
         {
             "date": "2026-05-09",
@@ -646,57 +688,57 @@
         },
         {
             "date": "2026-05-01",
-            "nCargo": 3,
+            "nCargo": 5,
             "nTanker": 2,
-            "nTotal": 5
+            "nTotal": 7
         },
         {
             "date": "2026-04-30",
-            "nCargo": 2,
+            "nCargo": 7,
             "nTanker": 4,
-            "nTotal": 6
+            "nTotal": 11
         },
         {
             "date": "2026-04-29",
-            "nCargo": 2,
-            "nTanker": 3,
-            "nTotal": 5
+            "nCargo": 16,
+            "nTanker": 23,
+            "nTotal": 39
         },
         {
             "date": "2026-04-28",
-            "nCargo": 3,
-            "nTanker": 2,
-            "nTotal": 5
+            "nCargo": 7,
+            "nTanker": 3,
+            "nTotal": 10
         },
         {
             "date": "2026-04-27",
-            "nCargo": 0,
-            "nTanker": 0,
-            "nTotal": 0
+            "nCargo": 5,
+            "nTanker": 2,
+            "nTotal": 7
         },
         {
             "date": "2026-04-26",
-            "nCargo": 1,
-            "nTanker": 1,
-            "nTotal": 2
-        },
-        {
-            "date": "2026-04-25",
             "nCargo": 2,
             "nTanker": 1,
             "nTotal": 3
         },
         {
-            "date": "2026-04-24",
-            "nCargo": 3,
+            "date": "2026-04-25",
+            "nCargo": 2,
             "nTanker": 2,
-            "nTotal": 5
+            "nTotal": 4
+        },
+        {
+            "date": "2026-04-24",
+            "nCargo": 4,
+            "nTanker": 2,
+            "nTotal": 6
         },
         {
             "date": "2026-04-23",
-            "nCargo": 1,
+            "nCargo": 3,
             "nTanker": 0,
-            "nTotal": 1
+            "nTotal": 3
         },
         {
             "date": "2026-04-22",
@@ -706,9 +748,9 @@
         },
         {
             "date": "2026-04-21",
-            "nCargo": 0,
-            "nTanker": 2,
-            "nTotal": 2
+            "nCargo": 1,
+            "nTanker": 3,
+            "nTotal": 4
         },
         {
             "date": "2026-04-20",
@@ -749,14 +791,14 @@
         {
             "date": "2026-04-14",
             "nCargo": 2,
-            "nTanker": 2,
-            "nTotal": 4
+            "nTanker": 3,
+            "nTotal": 5
         },
         {
             "date": "2026-04-13",
-            "nCargo": 2,
-            "nTanker": 3,
-            "nTotal": 5
+            "nCargo": 3,
+            "nTanker": 4,
+            "nTotal": 7
         },
         {
             "date": "2026-04-12",
@@ -766,9 +808,9 @@
         },
         {
             "date": "2026-04-11",
-            "nCargo": 3,
+            "nCargo": 4,
             "nTanker": 3,
-            "nTotal": 6
+            "nTotal": 7
         },
         {
             "date": "2026-04-10",
@@ -778,9 +820,9 @@
         },
         {
             "date": "2026-04-09",
-            "nCargo": 2,
+            "nCargo": 3,
             "nTanker": 5,
-            "nTotal": 7
+            "nTotal": 8
         },
         {
             "date": "2026-04-08",
@@ -808,9 +850,9 @@
         },
         {
             "date": "2026-04-04",
-            "nCargo": 7,
+            "nCargo": 8,
             "nTanker": 3,
-            "nTotal": 10
+            "nTotal": 11
         },
         {
             "date": "2026-04-03",
@@ -826,9 +868,9 @@
         },
         {
             "date": "2026-04-01",
-            "nCargo": 5,
+            "nCargo": 6,
             "nTanker": 1,
-            "nTotal": 6
+            "nTotal": 7
         },
         {
             "date": "2026-03-31",
@@ -851,8 +893,8 @@
         {
             "date": "2026-03-28",
             "nCargo": 5,
-            "nTanker": 0,
-            "nTotal": 5
+            "nTanker": 1,
+            "nTotal": 6
         },
         {
             "date": "2026-03-27",
@@ -869,8 +911,8 @@
         {
             "date": "2026-03-25",
             "nCargo": 0,
-            "nTanker": 1,
-            "nTotal": 1
+            "nTanker": 2,
+            "nTotal": 2
         },
         {
             "date": "2026-03-24",
@@ -922,9 +964,9 @@
         },
         {
             "date": "2026-03-16",
-            "nCargo": 2,
+            "nCargo": 4,
             "nTanker": 0,
-            "nTotal": 2
+            "nTotal": 4
         },
         {
             "date": "2026-03-15",
@@ -934,9 +976,9 @@
         },
         {
             "date": "2026-03-14",
-            "nCargo": 0,
+            "nCargo": 1,
             "nTanker": 0,
-            "nTotal": 0
+            "nTotal": 1
         },
         {
             "date": "2026-03-13",
@@ -952,9 +994,9 @@
         },
         {
             "date": "2026-03-11",
-            "nCargo": 1,
+            "nCargo": 2,
             "nTanker": 0,
-            "nTotal": 1
+            "nTotal": 2
         },
         {
             "date": "2026-03-10",
@@ -965,26 +1007,26 @@
         {
             "date": "2026-03-09",
             "nCargo": 1,
-            "nTanker": 0,
-            "nTotal": 1
+            "nTanker": 1,
+            "nTotal": 2
         },
         {
             "date": "2026-03-08",
-            "nCargo": 1,
-            "nTanker": 0,
-            "nTotal": 1
-        },
-        {
-            "date": "2026-03-07",
             "nCargo": 2,
             "nTanker": 0,
             "nTotal": 2
         },
         {
+            "date": "2026-03-07",
+            "nCargo": 2,
+            "nTanker": 1,
+            "nTotal": 3
+        },
+        {
             "date": "2026-03-06",
-            "nCargo": 0,
+            "nCargo": 2,
             "nTanker": 0,
-            "nTotal": 0
+            "nTotal": 2
         },
         {
             "date": "2026-03-05",
@@ -1012,93 +1054,93 @@
         },
         {
             "date": "2026-03-01",
-            "nCargo": 13,
+            "nCargo": 15,
             "nTanker": 5,
-            "nTotal": 18
+            "nTotal": 20
         },
         {
             "date": "2026-02-28",
-            "nCargo": 18,
-            "nTanker": 33,
-            "nTotal": 51
+            "nCargo": 21,
+            "nTanker": 36,
+            "nTotal": 57
         },
         {
             "date": "2026-02-27",
-            "nCargo": 23,
-            "nTanker": 30,
-            "nTotal": 53
+            "nCargo": 27,
+            "nTanker": 37,
+            "nTotal": 64
         },
         {
             "date": "2026-02-26",
-            "nCargo": 42,
-            "nTanker": 44,
-            "nTotal": 86
+            "nCargo": 44,
+            "nTanker": 45,
+            "nTotal": 89
         },
         {
             "date": "2026-02-25",
-            "nCargo": 55,
-            "nTanker": 57,
-            "nTotal": 112
+            "nCargo": 57,
+            "nTanker": 59,
+            "nTotal": 116
         },
         {
             "date": "2026-02-24",
-            "nCargo": 22,
-            "nTanker": 20,
-            "nTotal": 42
+            "nCargo": 44,
+            "nTanker": 49,
+            "nTotal": 93
         },
         {
             "date": "2026-02-23",
-            "nCargo": 30,
-            "nTanker": 58,
-            "nTotal": 88
+            "nCargo": 39,
+            "nTanker": 65,
+            "nTotal": 104
         },
         {
             "date": "2026-02-22",
-            "nCargo": 57,
-            "nTanker": 68,
-            "nTotal": 125
+            "nCargo": 58,
+            "nTanker": 69,
+            "nTotal": 127
         },
         {
             "date": "2026-02-21",
-            "nCargo": 29,
-            "nTanker": 50,
-            "nTotal": 79
+            "nCargo": 33,
+            "nTanker": 53,
+            "nTotal": 86
         },
         {
             "date": "2026-02-20",
-            "nCargo": 35,
-            "nTanker": 53,
-            "nTotal": 88
+            "nCargo": 39,
+            "nTanker": 55,
+            "nTotal": 94
         },
         {
             "date": "2026-02-19",
-            "nCargo": 40,
-            "nTanker": 48,
-            "nTotal": 88
+            "nCargo": 52,
+            "nTanker": 63,
+            "nTotal": 115
         },
         {
             "date": "2026-02-18",
-            "nCargo": 36,
-            "nTanker": 36,
-            "nTotal": 72
+            "nCargo": 55,
+            "nTanker": 54,
+            "nTotal": 109
         },
         {
             "date": "2026-02-17",
-            "nCargo": 33,
-            "nTanker": 37,
-            "nTotal": 70
+            "nCargo": 35,
+            "nTanker": 40,
+            "nTotal": 75
         },
         {
             "date": "2026-02-16",
-            "nCargo": 14,
-            "nTanker": 27,
-            "nTotal": 41
+            "nCargo": 19,
+            "nTanker": 35,
+            "nTotal": 54
         },
         {
             "date": "2026-02-15",
             "nCargo": 32,
-            "nTanker": 40,
-            "nTotal": 72
+            "nTanker": 42,
+            "nTotal": 74
         },
         {
             "date": "2026-02-14",
@@ -1108,69 +1150,69 @@
         },
         {
             "date": "2026-02-13",
-            "nCargo": 46,
-            "nTanker": 51,
-            "nTotal": 97
+            "nCargo": 49,
+            "nTanker": 54,
+            "nTotal": 103
         },
         {
             "date": "2026-02-12",
-            "nCargo": 30,
-            "nTanker": 31,
-            "nTotal": 61
+            "nCargo": 36,
+            "nTanker": 32,
+            "nTotal": 68
         },
         {
             "date": "2026-02-11",
-            "nCargo": 29,
-            "nTanker": 47,
-            "nTotal": 76
+            "nCargo": 32,
+            "nTanker": 49,
+            "nTotal": 81
         },
         {
             "date": "2026-02-10",
-            "nCargo": 22,
-            "nTanker": 38,
-            "nTotal": 60
+            "nCargo": 26,
+            "nTanker": 39,
+            "nTotal": 65
         },
         {
             "date": "2026-02-09",
-            "nCargo": 19,
+            "nCargo": 20,
             "nTanker": 33,
-            "nTotal": 52
+            "nTotal": 53
         },
         {
             "date": "2026-02-08",
             "nCargo": 26,
-            "nTanker": 31,
-            "nTotal": 57
+            "nTanker": 32,
+            "nTotal": 58
         },
         {
             "date": "2026-02-07",
             "nCargo": 20,
-            "nTanker": 38,
-            "nTotal": 58
+            "nTanker": 40,
+            "nTotal": 60
         },
         {
             "date": "2026-02-06",
-            "nCargo": 24,
-            "nTanker": 33,
-            "nTotal": 57
+            "nCargo": 26,
+            "nTanker": 34,
+            "nTotal": 60
         },
         {
             "date": "2026-02-05",
-            "nCargo": 30,
+            "nCargo": 35,
             "nTanker": 36,
-            "nTotal": 66
+            "nTotal": 71
         },
         {
             "date": "2026-02-04",
-            "nCargo": 22,
-            "nTanker": 19,
-            "nTotal": 41
+            "nCargo": 23,
+            "nTanker": 20,
+            "nTotal": 43
         },
         {
             "date": "2026-02-03",
-            "nCargo": 28,
-            "nTanker": 32,
-            "nTotal": 60
+            "nCargo": 33,
+            "nTanker": 33,
+            "nTotal": 66
         },
         {
             "date": "2026-02-02",
@@ -1180,9 +1222,9 @@
         },
         {
             "date": "2026-02-01",
-            "nCargo": 29,
+            "nCargo": 30,
             "nTanker": 19,
-            "nTotal": 48
+            "nTotal": 49
         },
         {
             "date": "2026-01-31",
@@ -1192,69 +1234,69 @@
         },
         {
             "date": "2026-01-30",
-            "nCargo": 31,
-            "nTanker": 37,
-            "nTotal": 68
+            "nCargo": 32,
+            "nTanker": 39,
+            "nTotal": 71
         },
         {
             "date": "2026-01-29",
-            "nCargo": 30,
-            "nTanker": 39,
-            "nTotal": 69
+            "nCargo": 31,
+            "nTanker": 41,
+            "nTotal": 72
         },
         {
             "date": "2026-01-28",
-            "nCargo": 23,
+            "nCargo": 26,
             "nTanker": 28,
-            "nTotal": 51
+            "nTotal": 54
         },
         {
             "date": "2026-01-27",
-            "nCargo": 30,
-            "nTanker": 28,
-            "nTotal": 58
+            "nCargo": 31,
+            "nTanker": 30,
+            "nTotal": 61
         },
         {
             "date": "2026-01-26",
-            "nCargo": 22,
+            "nCargo": 24,
             "nTanker": 19,
-            "nTotal": 41
+            "nTotal": 43
         },
         {
             "date": "2026-01-25",
-            "nCargo": 21,
+            "nCargo": 23,
             "nTanker": 41,
-            "nTotal": 62
+            "nTotal": 64
         },
         {
             "date": "2026-01-24",
-            "nCargo": 23,
+            "nCargo": 25,
             "nTanker": 21,
-            "nTotal": 44
+            "nTotal": 46
         },
         {
             "date": "2026-01-23",
-            "nCargo": 23,
+            "nCargo": 24,
             "nTanker": 24,
-            "nTotal": 47
+            "nTotal": 48
         },
         {
             "date": "2026-01-22",
             "nCargo": 26,
-            "nTanker": 36,
-            "nTotal": 62
+            "nTanker": 38,
+            "nTotal": 64
         },
         {
             "date": "2026-01-21",
-            "nCargo": 26,
-            "nTanker": 27,
-            "nTotal": 53
+            "nCargo": 27,
+            "nTanker": 29,
+            "nTotal": 56
         },
         {
             "date": "2026-01-20",
-            "nCargo": 24,
-            "nTanker": 31,
-            "nTotal": 55
+            "nCargo": 25,
+            "nTanker": 33,
+            "nTotal": 58
         },
         {
             "date": "2026-01-19",
@@ -1264,9 +1306,9 @@
         },
         {
             "date": "2026-01-18",
-            "nCargo": 33,
+            "nCargo": 34,
             "nTanker": 20,
-            "nTotal": 53
+            "nTotal": 54
         },
         {
             "date": "2026-01-17",
@@ -1276,9 +1318,9 @@
         },
         {
             "date": "2026-01-16",
-            "nCargo": 22,
-            "nTanker": 28,
-            "nTotal": 50
+            "nCargo": 24,
+            "nTanker": 29,
+            "nTotal": 53
         },
         {
             "date": "2026-01-15",
@@ -1288,57 +1330,57 @@
         },
         {
             "date": "2026-01-14",
-            "nCargo": 26,
+            "nCargo": 27,
             "nTanker": 34,
-            "nTotal": 60
+            "nTotal": 61
         },
         {
             "date": "2026-01-13",
             "nCargo": 27,
-            "nTanker": 24,
-            "nTotal": 51
+            "nTanker": 26,
+            "nTotal": 53
         },
         {
             "date": "2026-01-12",
             "nCargo": 18,
-            "nTanker": 33,
-            "nTotal": 51
+            "nTanker": 34,
+            "nTotal": 52
         },
         {
             "date": "2026-01-11",
-            "nCargo": 31,
+            "nCargo": 33,
             "nTanker": 31,
-            "nTotal": 62
+            "nTotal": 64
         },
         {
             "date": "2026-01-10",
             "nCargo": 29,
-            "nTanker": 33,
-            "nTotal": 62
-        },
-        {
-            "date": "2026-01-09",
-            "nCargo": 33,
-            "nTanker": 40,
-            "nTotal": 73
-        },
-        {
-            "date": "2026-01-08",
-            "nCargo": 24,
-            "nTanker": 37,
-            "nTotal": 61
-        },
-        {
-            "date": "2026-01-07",
-            "nCargo": 26,
-            "nTanker": 37,
+            "nTanker": 34,
             "nTotal": 63
         },
         {
-            "date": "2026-01-06",
+            "date": "2026-01-09",
+            "nCargo": 34,
+            "nTanker": 40,
+            "nTotal": 74
+        },
+        {
+            "date": "2026-01-08",
+            "nCargo": 25,
+            "nTanker": 37,
+            "nTotal": 62
+        },
+        {
+            "date": "2026-01-07",
             "nCargo": 29,
-            "nTanker": 30,
-            "nTotal": 59
+            "nTanker": 37,
+            "nTotal": 66
+        },
+        {
+            "date": "2026-01-06",
+            "nCargo": 30,
+            "nTanker": 31,
+            "nTotal": 61
         },
         {
             "date": "2026-01-05",
@@ -1349,20 +1391,20 @@
         {
             "date": "2026-01-04",
             "nCargo": 23,
-            "nTanker": 23,
-            "nTotal": 46
+            "nTanker": 26,
+            "nTotal": 49
         },
         {
             "date": "2026-01-03",
-            "nCargo": 20,
-            "nTanker": 25,
-            "nTotal": 45
+            "nCargo": 25,
+            "nTanker": 34,
+            "nTotal": 59
         },
         {
             "date": "2026-01-02",
-            "nCargo": 27,
-            "nTanker": 20,
-            "nTotal": 47
+            "nCargo": 28,
+            "nTanker": 23,
+            "nTotal": 51
         },
         {
             "date": "2026-01-01",
@@ -1372,81 +1414,81 @@
         },
         {
             "date": "2025-12-31",
-            "nCargo": 23,
-            "nTanker": 44,
-            "nTotal": 67
+            "nCargo": 25,
+            "nTanker": 46,
+            "nTotal": 71
         },
         {
             "date": "2025-12-30",
-            "nCargo": 30,
-            "nTanker": 34,
-            "nTotal": 64
+            "nCargo": 31,
+            "nTanker": 35,
+            "nTotal": 66
         },
         {
             "date": "2025-12-29",
             "nCargo": 24,
-            "nTanker": 25,
-            "nTotal": 49
+            "nTanker": 26,
+            "nTotal": 50
         },
         {
             "date": "2025-12-28",
-            "nCargo": 20,
-            "nTanker": 18,
-            "nTotal": 38
+            "nCargo": 31,
+            "nTanker": 24,
+            "nTotal": 55
         },
         {
             "date": "2025-12-27",
-            "nCargo": 25,
+            "nCargo": 27,
             "nTanker": 39,
-            "nTotal": 64
+            "nTotal": 66
         },
         {
             "date": "2025-12-26",
-            "nCargo": 24,
-            "nTanker": 32,
-            "nTotal": 56
+            "nCargo": 26,
+            "nTanker": 36,
+            "nTotal": 62
         },
         {
             "date": "2025-12-25",
-            "nCargo": 30,
-            "nTanker": 23,
-            "nTotal": 53
+            "nCargo": 36,
+            "nTanker": 32,
+            "nTotal": 68
         },
         {
             "date": "2025-12-24",
-            "nCargo": 34,
+            "nCargo": 36,
             "nTanker": 29,
-            "nTotal": 63
+            "nTotal": 65
         },
         {
             "date": "2025-12-23",
-            "nCargo": 13,
-            "nTanker": 9,
-            "nTotal": 22
+            "nCargo": 32,
+            "nTanker": 26,
+            "nTotal": 58
         },
         {
             "date": "2025-12-22",
-            "nCargo": 18,
+            "nCargo": 20,
             "nTanker": 26,
-            "nTotal": 44
+            "nTotal": 46
         },
         {
             "date": "2025-12-21",
             "nCargo": 25,
-            "nTanker": 28,
-            "nTotal": 53
+            "nTanker": 29,
+            "nTotal": 54
         },
         {
             "date": "2025-12-20",
             "nCargo": 28,
-            "nTanker": 19,
-            "nTotal": 47
+            "nTanker": 20,
+            "nTotal": 48
         },
         {
             "date": "2025-12-19",
-            "nCargo": 13,
+            "nCargo": 14,
             "nTanker": 17,
-            "nTotal": 30
+            "nTotal": 31
         },
         {
             "date": "2025-12-18",
@@ -1456,39 +1498,39 @@
         },
         {
             "date": "2025-12-17",
-            "nCargo": 9,
-            "nTanker": 26,
-            "nTotal": 35
+            "nCargo": 18,
+            "nTanker": 32,
+            "nTotal": 50
         },
         {
             "date": "2025-12-16",
-            "nCargo": 22,
+            "nCargo": 24,
             "nTanker": 31,
-            "nTotal": 53
+            "nTotal": 55
         },
         {
             "date": "2025-12-15",
-            "nCargo": 28,
+            "nCargo": 29,
             "nTanker": 18,
-            "nTotal": 46
+            "nTotal": 47
         },
         {
             "date": "2025-12-14",
-            "nCargo": 12,
+            "nCargo": 13,
             "nTanker": 36,
-            "nTotal": 48
+            "nTotal": 49
         },
         {
             "date": "2025-12-13",
-            "nCargo": 19,
+            "nCargo": 20,
             "nTanker": 26,
-            "nTotal": 45
+            "nTotal": 46
         },
         {
             "date": "2025-12-12",
-            "nCargo": 18,
+            "nCargo": 19,
             "nTanker": 22,
-            "nTotal": 40
+            "nTotal": 41
         },
         {
             "date": "2025-12-11",
@@ -1498,9 +1540,9 @@
         },
         {
             "date": "2025-12-10",
-            "nCargo": 20,
-            "nTanker": 30,
-            "nTotal": 50
+            "nCargo": 21,
+            "nTanker": 31,
+            "nTotal": 52
         },
         {
             "date": "2025-12-09",
@@ -1510,63 +1552,63 @@
         },
         {
             "date": "2025-12-08",
-            "nCargo": 31,
-            "nTanker": 25,
-            "nTotal": 56
+            "nCargo": 32,
+            "nTanker": 27,
+            "nTotal": 59
         },
         {
             "date": "2025-12-07",
-            "nCargo": 16,
-            "nTanker": 28,
-            "nTotal": 44
-        },
-        {
-            "date": "2025-12-06",
-            "nCargo": 28,
-            "nTanker": 38,
-            "nTotal": 66
-        },
-        {
-            "date": "2025-12-05",
-            "nCargo": 17,
-            "nTanker": 26,
-            "nTotal": 43
-        },
-        {
-            "date": "2025-12-04",
-            "nCargo": 13,
-            "nTanker": 30,
-            "nTotal": 43
-        },
-        {
-            "date": "2025-12-03",
             "nCargo": 24,
-            "nTanker": 25,
-            "nTotal": 49
-        },
-        {
-            "date": "2025-12-02",
-            "nCargo": 28,
-            "nTanker": 28,
-            "nTotal": 56
-        },
-        {
-            "date": "2025-12-01",
-            "nCargo": 29,
-            "nTanker": 35,
+            "nTanker": 40,
             "nTotal": 64
         },
         {
+            "date": "2025-12-06",
+            "nCargo": 29,
+            "nTanker": 39,
+            "nTotal": 68
+        },
+        {
+            "date": "2025-12-05",
+            "nCargo": 18,
+            "nTanker": 26,
+            "nTotal": 44
+        },
+        {
+            "date": "2025-12-04",
+            "nCargo": 15,
+            "nTanker": 30,
+            "nTotal": 45
+        },
+        {
+            "date": "2025-12-03",
+            "nCargo": 25,
+            "nTanker": 26,
+            "nTotal": 51
+        },
+        {
+            "date": "2025-12-02",
+            "nCargo": 29,
+            "nTanker": 30,
+            "nTotal": 59
+        },
+        {
+            "date": "2025-12-01",
+            "nCargo": 30,
+            "nTanker": 35,
+            "nTotal": 65
+        },
+        {
             "date": "2025-11-30",
-            "nCargo": 21,
-            "nTanker": 32,
-            "nTotal": 53
+            "nCargo": 22,
+            "nTanker": 35,
+            "nTotal": 57
         },
         {
             "date": "2025-11-29",
-            "nCargo": 19,
-            "nTanker": 21,
-            "nTotal": 40
+            "nCargo": 28,
+            "nTanker": 29,
+            "nTotal": 57
         },
         {
             "date": "2025-11-28",
@@ -1576,51 +1618,51 @@
         },
         {
             "date": "2025-11-27",
-            "nCargo": 19,
+            "nCargo": 20,
             "nTanker": 29,
-            "nTotal": 48
+            "nTotal": 49
         },
         {
             "date": "2025-11-26",
-            "nCargo": 18,
-            "nTanker": 30,
-            "nTotal": 48
+            "nCargo": 19,
+            "nTanker": 32,
+            "nTotal": 51
         },
         {
             "date": "2025-11-25",
-            "nCargo": 29,
-            "nTanker": 35,
-            "nTotal": 64
+            "nCargo": 31,
+            "nTanker": 36,
+            "nTotal": 67
         },
         {
             "date": "2025-11-24",
             "nCargo": 23,
-            "nTanker": 22,
-            "nTotal": 45
+            "nTanker": 23,
+            "nTotal": 46
         },
         {
             "date": "2025-11-23",
-            "nCargo": 31,
+            "nCargo": 34,
             "nTanker": 27,
-            "nTotal": 58
+            "nTotal": 61
         },
         {
             "date": "2025-11-22",
             "nCargo": 21,
-            "nTanker": 29,
-            "nTotal": 50
+            "nTanker": 30,
+            "nTotal": 51
         },
         {
             "date": "2025-11-21",
-            "nCargo": 15,
-            "nTanker": 31,
-            "nTotal": 46
+            "nCargo": 17,
+            "nTanker": 32,
+            "nTotal": 49
         },
         {
             "date": "2025-11-20",
-            "nCargo": 23,
-            "nTanker": 42,
-            "nTotal": 65
+            "nCargo": 24,
+            "nTanker": 43,
+            "nTotal": 67
         },
         {
             "date": "2025-11-19",
@@ -1630,99 +1672,99 @@
         },
         {
             "date": "2025-11-18",
-            "nCargo": 15,
-            "nTanker": 28,
-            "nTotal": 43
+            "nCargo": 31,
+            "nTanker": 41,
+            "nTotal": 72
         },
         {
             "date": "2025-11-17",
-            "nCargo": 19,
-            "nTanker": 26,
-            "nTotal": 45
+            "nCargo": 27,
+            "nTanker": 33,
+            "nTotal": 60
         },
         {
             "date": "2025-11-16",
-            "nCargo": 25,
-            "nTanker": 22,
-            "nTotal": 47
+            "nCargo": 37,
+            "nTanker": 33,
+            "nTotal": 70
         },
         {
             "date": "2025-11-15",
-            "nCargo": 29,
+            "nCargo": 31,
             "nTanker": 38,
-            "nTotal": 67
+            "nTotal": 69
         },
         {
             "date": "2025-11-14",
-            "nCargo": 28,
-            "nTanker": 38,
-            "nTotal": 66
+            "nCargo": 36,
+            "nTanker": 47,
+            "nTotal": 83
         },
         {
             "date": "2025-11-13",
-            "nCargo": 32,
-            "nTanker": 33,
-            "nTotal": 65
+            "nCargo": 49,
+            "nTanker": 51,
+            "nTotal": 100
         },
         {
             "date": "2025-11-12",
-            "nCargo": 25,
-            "nTanker": 29,
-            "nTotal": 54
+            "nCargo": 29,
+            "nTanker": 41,
+            "nTotal": 70
         },
         {
             "date": "2025-11-11",
-            "nCargo": 32,
-            "nTanker": 52,
-            "nTotal": 84
+            "nCargo": 40,
+            "nTanker": 60,
+            "nTotal": 100
         },
         {
             "date": "2025-11-10",
-            "nCargo": 24,
+            "nCargo": 26,
             "nTanker": 41,
-            "nTotal": 65
+            "nTotal": 67
         },
         {
             "date": "2025-11-09",
-            "nCargo": 25,
-            "nTanker": 43,
-            "nTotal": 68
+            "nCargo": 26,
+            "nTanker": 45,
+            "nTotal": 71
         },
         {
             "date": "2025-11-08",
             "nCargo": 44,
-            "nTanker": 62,
-            "nTotal": 106
+            "nTanker": 63,
+            "nTotal": 107
         },
         {
             "date": "2025-11-07",
-            "nCargo": 40,
-            "nTanker": 35,
-            "nTotal": 75
+            "nCargo": 41,
+            "nTanker": 36,
+            "nTotal": 77
         },
         {
             "date": "2025-11-06",
-            "nCargo": 29,
-            "nTanker": 37,
-            "nTotal": 66
+            "nCargo": 30,
+            "nTanker": 39,
+            "nTotal": 69
         },
         {
             "date": "2025-11-05",
-            "nCargo": 18,
-            "nTanker": 31,
-            "nTotal": 49
+            "nCargo": 31,
+            "nTanker": 47,
+            "nTotal": 78
         },
         {
             "date": "2025-11-04",
-            "nCargo": 18,
-            "nTanker": 33,
-            "nTotal": 51
+            "nCargo": 24,
+            "nTanker": 50,
+            "nTotal": 74
         },
         {
             "date": "2025-11-03",
-            "nCargo": 13,
-            "nTanker": 12,
-            "nTotal": 25
+            "nCargo": 26,
+            "nTanker": 25,
+            "nTotal": 51
         },
         {
             "date": "2025-11-02",
@@ -1732,93 +1774,93 @@
         },
         {
             "date": "2025-11-01",
-            "nCargo": 25,
+            "nCargo": 27,
             "nTanker": 47,
-            "nTotal": 72
-        },
-        {
-            "date": "2025-10-31",
-            "nCargo": 36,
-            "nTanker": 42,
-            "nTotal": 78
-        },
-        {
-            "date": "2025-10-30",
-            "nCargo": 39,
-            "nTanker": 39,
-            "nTotal": 78
-        },
-        {
-            "date": "2025-10-29",
-            "nCargo": 37,
-            "nTanker": 51,
-            "nTotal": 88
-        },
-        {
-            "date": "2025-10-28",
-            "nCargo": 49,
-            "nTanker": 50,
-            "nTotal": 99
-        },
-        {
-            "date": "2025-10-27",
-            "nCargo": 31,
-            "nTanker": 43,
             "nTotal": 74
         },
         {
+            "date": "2025-10-31",
+            "nCargo": 38,
+            "nTanker": 42,
+            "nTotal": 80
+        },
+        {
+            "date": "2025-10-30",
+            "nCargo": 47,
+            "nTanker": 48,
+            "nTotal": 95
+        },
+        {
+            "date": "2025-10-29",
+            "nCargo": 44,
+            "nTanker": 70,
+            "nTotal": 114
+        },
+        {
+            "date": "2025-10-28",
+            "nCargo": 51,
+            "nTanker": 52,
+            "nTotal": 103
+        },
+        {
+            "date": "2025-10-27",
+            "nCargo": 49,
+            "nTanker": 57,
+            "nTotal": 106
+        },
+        {
             "date": "2025-10-26",
-            "nCargo": 34,
-            "nTanker": 39,
-            "nTotal": 73
+            "nCargo": 40,
+            "nTanker": 59,
+            "nTotal": 99
         },
         {
             "date": "2025-10-25",
-            "nCargo": 38,
-            "nTanker": 60,
-            "nTotal": 98
+            "nCargo": 40,
+            "nTanker": 61,
+            "nTotal": 101
         },
         {
             "date": "2025-10-24",
-            "nCargo": 40,
-            "nTanker": 62,
-            "nTotal": 102
+            "nCargo": 41,
+            "nTanker": 63,
+            "nTotal": 104
         },
         {
             "date": "2025-10-23",
-            "nCargo": 33,
-            "nTanker": 45,
-            "nTotal": 78
+            "nCargo": 51,
+            "nTanker": 58,
+            "nTotal": 109
         },
         {
             "date": "2025-10-22",
-            "nCargo": 29,
-            "nTanker": 47,
-            "nTotal": 76
+            "nCargo": 51,
+            "nTanker": 65,
+            "nTotal": 116
         },
         {
             "date": "2025-10-21",
-            "nCargo": 30,
-            "nTanker": 39,
-            "nTotal": 69
+            "nCargo": 50,
+            "nTanker": 53,
+            "nTotal": 103
         },
         {
             "date": "2025-10-20",
-            "nCargo": 27,
-            "nTanker": 33,
-            "nTotal": 60
+            "nCargo": 34,
+            "nTanker": 48,
+            "nTotal": 82
         },
         {
             "date": "2025-10-19",
-            "nCargo": 27,
-            "nTanker": 34,
-            "nTotal": 61
+            "nCargo": 35,
+            "nTanker": 47,
+            "nTotal": 82
         },
         {
             "date": "2025-10-18",
-            "nCargo": 28,
-            "nTanker": 41,
-            "nTotal": 69
+            "nCargo": 29,
+            "nTanker": 43,
+            "nTotal": 72
         },
         {
             "date": "2025-10-17",
@@ -1828,27 +1870,27 @@
         },
         {
             "date": "2025-10-16",
-            "nCargo": 19,
-            "nTanker": 20,
-            "nTotal": 39
+            "nCargo": 23,
+            "nTanker": 28,
+            "nTotal": 51
         },
         {
             "date": "2025-10-15",
-            "nCargo": 14,
-            "nTanker": 29,
-            "nTotal": 43
+            "nCargo": 24,
+            "nTanker": 38,
+            "nTotal": 62
         },
         {
             "date": "2025-10-14",
-            "nCargo": 54,
+            "nCargo": 57,
             "nTanker": 63,
-            "nTotal": 117
+            "nTotal": 120
         },
         {
             "date": "2025-10-13",
             "nCargo": 33,
-            "nTanker": 37,
-            "nTotal": 70
+            "nTanker": 38,
+            "nTotal": 71
         },
         {
             "date": "2025-10-12",
@@ -1858,57 +1900,57 @@
         },
         {
             "date": "2025-10-11",
-            "nCargo": 18,
-            "nTanker": 24,
-            "nTotal": 42
+            "nCargo": 30,
+            "nTanker": 39,
+            "nTotal": 69
         },
         {
             "date": "2025-10-10",
-            "nCargo": 33,
-            "nTanker": 26,
-            "nTotal": 59
+            "nCargo": 38,
+            "nTanker": 31,
+            "nTotal": 69
         },
         {
             "date": "2025-10-09",
-            "nCargo": 19,
-            "nTanker": 27,
-            "nTotal": 46
+            "nCargo": 26,
+            "nTanker": 30,
+            "nTotal": 56
         },
         {
             "date": "2025-10-08",
-            "nCargo": 28,
-            "nTanker": 25,
-            "nTotal": 53
+            "nCargo": 29,
+            "nTanker": 26,
+            "nTotal": 55
         },
         {
             "date": "2025-10-07",
-            "nCargo": 14,
-            "nTanker": 11,
-            "nTotal": 25
+            "nCargo": 45,
+            "nTanker": 56,
+            "nTotal": 101
         },
         {
             "date": "2025-10-06",
-            "nCargo": 35,
-            "nTanker": 29,
-            "nTotal": 64
+            "nCargo": 45,
+            "nTanker": 44,
+            "nTotal": 89
         },
         {
             "date": "2025-10-05",
-            "nCargo": 47,
+            "nCargo": 49,
             "nTanker": 72,
-            "nTotal": 119
+            "nTotal": 121
         },
         {
             "date": "2025-10-04",
             "nCargo": 45,
-            "nTanker": 71,
-            "nTotal": 116
+            "nTanker": 73,
+            "nTotal": 118
         },
         {
             "date": "2025-10-03",
             "nCargo": 46,
-            "nTanker": 54,
-            "nTotal": 100
+            "nTanker": 55,
+            "nTotal": 101
         },
         {
             "date": "2025-10-02",
@@ -1918,39 +1960,39 @@
         },
         {
             "date": "2025-10-01",
-            "nCargo": 35,
-            "nTanker": 50,
-            "nTotal": 85
+            "nCargo": 44,
+            "nTanker": 72,
+            "nTotal": 116
         },
         {
             "date": "2025-09-30",
-            "nCargo": 43,
+            "nCargo": 44,
             "nTanker": 56,
-            "nTotal": 99
+            "nTotal": 100
         },
         {
             "date": "2025-09-29",
-            "nCargo": 34,
-            "nTanker": 43,
-            "nTotal": 77
+            "nCargo": 59,
+            "nTanker": 70,
+            "nTotal": 129
         },
         {
             "date": "2025-09-28",
-            "nCargo": 32,
-            "nTanker": 54,
-            "nTotal": 86
+            "nCargo": 48,
+            "nTanker": 76,
+            "nTotal": 124
         },
         {
             "date": "2025-09-27",
-            "nCargo": 26,
-            "nTanker": 42,
-            "nTotal": 68
+            "nCargo": 42,
+            "nTanker": 60,
+            "nTotal": 102
         },
         {
             "date": "2025-09-26",
-            "nCargo": 25,
-            "nTanker": 24,
-            "nTotal": 49
+            "nCargo": 38,
+            "nTanker": 38,
+            "nTotal": 76
         },
         {
             "date": "2025-09-25",
@@ -1967,14 +2009,14 @@
         {
             "date": "2025-09-23",
             "nCargo": 35,
-            "nTanker": 52,
-            "nTotal": 87
+            "nTanker": 53,
+            "nTotal": 88
         },
         {
             "date": "2025-09-22",
-            "nCargo": 22,
-            "nTanker": 22,
-            "nTotal": 44
+            "nCargo": 26,
+            "nTanker": 37,
+            "nTotal": 63
         },
         {
             "date": "2025-09-21",
@@ -1984,57 +2026,57 @@
         },
         {
             "date": "2025-09-20",
-            "nCargo": 17,
+            "nCargo": 18,
             "nTanker": 46,
-            "nTotal": 63
+            "nTotal": 64
         },
         {
             "date": "2025-09-19",
-            "nCargo": 26,
-            "nTanker": 26,
-            "nTotal": 52
+            "nCargo": 40,
+            "nTanker": 37,
+            "nTotal": 77
         },
         {
             "date": "2025-09-18",
-            "nCargo": 33,
-            "nTanker": 43,
-            "nTotal": 76
+            "nCargo": 49,
+            "nTanker": 66,
+            "nTotal": 115
         },
         {
             "date": "2025-09-17",
-            "nCargo": 50,
+            "nCargo": 52,
             "nTanker": 55,
-            "nTotal": 105
+            "nTotal": 107
         },
         {
             "date": "2025-09-16",
-            "nCargo": 22,
-            "nTanker": 37,
-            "nTotal": 59
+            "nCargo": 37,
+            "nTanker": 62,
+            "nTotal": 99
         },
         {
             "date": "2025-09-15",
-            "nCargo": 32,
-            "nTanker": 29,
-            "nTotal": 61
+            "nCargo": 42,
+            "nTanker": 34,
+            "nTotal": 76
         },
         {
             "date": "2025-09-14",
-            "nCargo": 17,
-            "nTanker": 24,
-            "nTotal": 41
+            "nCargo": 25,
+            "nTanker": 39,
+            "nTotal": 64
         },
         {
             "date": "2025-09-13",
-            "nCargo": 27,
-            "nTanker": 31,
-            "nTotal": 58
+            "nCargo": 29,
+            "nTanker": 32,
+            "nTotal": 61
         },
         {
             "date": "2025-09-12",
-            "nCargo": 19,
-            "nTanker": 40,
-            "nTotal": 59
+            "nCargo": 20,
+            "nTanker": 41,
+            "nTotal": 61
         },
         {
             "date": "2025-09-11",
@@ -2044,45 +2086,45 @@
         },
         {
             "date": "2025-09-10",
-            "nCargo": 41,
+            "nCargo": 42,
             "nTanker": 44,
-            "nTotal": 85
+            "nTotal": 86
         },
         {
             "date": "2025-09-09",
-            "nCargo": 41,
-            "nTanker": 42,
-            "nTotal": 83
+            "nCargo": 42,
+            "nTanker": 43,
+            "nTotal": 85
         },
         {
             "date": "2025-09-08",
-            "nCargo": 40,
+            "nCargo": 41,
             "nTanker": 58,
-            "nTotal": 98
-        },
-        {
-            "date": "2025-09-07",
-            "nCargo": 45,
-            "nTanker": 54,
             "nTotal": 99
         },
         {
+            "date": "2025-09-07",
+            "nCargo": 46,
+            "nTanker": 55,
+            "nTotal": 101
+        },
+        {
             "date": "2025-09-06",
-            "nCargo": 29,
-            "nTanker": 43,
-            "nTotal": 72
+            "nCargo": 40,
+            "nTanker": 64,
+            "nTotal": 104
         },
         {
             "date": "2025-09-05",
-            "nCargo": 45,
+            "nCargo": 46,
             "nTanker": 75,
-            "nTotal": 120
+            "nTotal": 121
         },
         {
             "date": "2025-09-04",
-            "nCargo": 15,
-            "nTanker": 26,
-            "nTotal": 41
+            "nCargo": 22,
+            "nTanker": 39,
+            "nTotal": 61
         },
         {
             "date": "2025-09-03",
@@ -2092,126 +2134,84 @@
         },
         {
             "date": "2025-09-02",
-            "nCargo": 35,
-            "nTanker": 45,
-            "nTotal": 80
-        },
-        {
-            "date": "2025-09-01",
             "nCargo": 36,
-            "nTanker": 57,
-            "nTotal": 93
-        },
-        {
-            "date": "2025-08-31",
-            "nCargo": 41,
-            "nTanker": 52,
-            "nTotal": 93
-        },
-        {
-            "date": "2025-08-30",
-            "nCargo": 31,
-            "nTanker": 52,
-            "nTotal": 83
-        },
-        {
-            "date": "2025-08-29",
-            "nCargo": 48,
-            "nTanker": 50,
-            "nTotal": 98
-        },
-        {
-            "date": "2025-08-28",
-            "nCargo": 35,
-            "nTanker": 55,
-            "nTotal": 90
-        },
-        {
-            "date": "2025-08-27",
-            "nCargo": 39,
-            "nTanker": 42,
+            "nTanker": 45,
             "nTotal": 81
         },
         {
+            "date": "2025-09-01",
+            "nCargo": 45,
+            "nTanker": 69,
+            "nTotal": 114
+        },
+        {
+            "date": "2025-08-31",
+            "nCargo": 49,
+            "nTanker": 60,
+            "nTotal": 109
+        },
+        {
+            "date": "2025-08-30",
+            "nCargo": 47,
+            "nTanker": 74,
+            "nTotal": 121
+        },
+        {
+            "date": "2025-08-29",
+            "nCargo": 50,
+            "nTanker": 51,
+            "nTotal": 101
+        },
+        {
+            "date": "2025-08-28",
+            "nCargo": 44,
+            "nTanker": 64,
+            "nTotal": 108
+        },
+        {
+            "date": "2025-08-27",
+            "nCargo": 45,
+            "nTanker": 45,
+            "nTotal": 90
+        },
+        {
             "date": "2025-08-26",
-            "nCargo": 28,
-            "nTanker": 32,
-            "nTotal": 60
+            "nCargo": 43,
+            "nTanker": 39,
+            "nTotal": 82
         },
         {
             "date": "2025-08-25",
-            "nCargo": 30,
-            "nTanker": 32,
-            "nTotal": 62
+            "nCargo": 41,
+            "nTanker": 49,
+            "nTotal": 90
         },
         {
             "date": "2025-08-24",
             "nCargo": 48,
-            "nTanker": 55,
-            "nTotal": 103
-        },
-        {
-            "date": "2025-08-23",
-            "nCargo": 35,
-            "nTanker": 52,
-            "nTotal": 87
-        },
-        {
-            "date": "2025-08-22",
-            "nCargo": 40,
-            "nTanker": 73,
-            "nTotal": 113
-        },
-        {
-            "date": "2025-08-21",
-            "nCargo": 31,
-            "nTanker": 44,
-            "nTotal": 75
-        },
-        {
-            "date": "2025-08-20",
-            "nCargo": 25,
-            "nTanker": 44,
-            "nTotal": 69
-        },
-        {
-            "date": "2025-08-19",
-            "nCargo": 52,
-            "nTanker": 53,
-            "nTotal": 105
-        },
-        {
-            "date": "2025-08-18",
-            "nCargo": 43,
-            "nTanker": 47,
-            "nTotal": 90
-        },
-        {
-            "date": "2025-08-17",
-            "nCargo": 29,
-            "nTanker": 42,
-            "nTotal": 71
+            "nTanker": 56,
+            "nTotal": 104
         }
     ],
     "latest": {
-        "baselineMedian": 4,
-        "capacity": 0,
-        "capacityCargo": 0,
+        "baselineMedian": 5,
+        "capacity": 32472,
+        "capacityCargo": 32472,
         "capacityTanker": 0,
-        "date": "2026-08-16",
-        "nCargo": 0,
+        "date": "2026-08-23",
+        "nCargo": 2,
         "nContainer": 0,
-        "nDryBulk": 0,
+        "nDryBulk": 2,
         "nGeneralCargo": 0,
         "nRoro": 0,
         "nTanker": 1,
-        "nTotal": 1,
-        "preCrisisBaselineMedian": 73,
-        "previousDate": "2026-08-15",
-        "previousNTotal": 1,
+        "nTotal": 3,
+        "preCrisisBaselineMedian": 85,
+        "previousDate": "2026-08-22",
+        "previousNTotal": 7,
         "sourceName": "IMF PortWatch",
         "sourceUrl": "https://portwatch.imf.org/pages/chokepoint6",
-        "updatedAt": "2026-08-24T21:00:42.758Z"
+        "updatedAt": "2026-08-26T12:00:56.762Z"
     },
     "methodology": "IMF PortWatch daily vessel transit count for chokepoint6 (Strait of Hormuz), derived from global AIS via Oxford / UN Global Pulse. preCrisisBaselineMedian is the median nTotal across the final 365 pre-crisis days (2025-02-28 through 2026-02-27), a fixed date-bounded window so the sample cannot shrink over time; the stable peacetime anchor for throughput-% computation. baselineMedian is the rolling 30-day median (average of the two middle values on an even-length window); it drifts downward as a sustained closure becomes the new normal. This value is kept aligned with the same chokepoint's entry in /api/v1/chokepoints. The per-type fields nest: nTotal is nTanker plus nCargo, and nCargo is nContainer plus nDryBulk plus nGeneralCargo plus nRoro, so summing all seven fields double-counts.",
     "premium": {
