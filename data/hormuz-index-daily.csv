@@ -89,3 +89,4 @@ date,crisis_open,crisis_close,crisis_min,crisis_max,crisis_mean,crisis_band,fore
 2026-08-29,91,91,91,91,91,extreme,49,49,49,49,49,elevated
 2026-08-30,91,90,90,91,90.8,extreme,49,49,48,49,48.6,elevated
 2026-08-31,90,91,90,92,90.9,extreme,49,49,49,50,49.6,elevated
+2026-09-01,91,92,91,92,91.3,extreme,49,52,49,52,49.8,elevated
