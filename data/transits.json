@@ -1,7 +1,49 @@
 {
-    "asOf": "2026-09-22T14:36:30.997Z",
-    "asOfAgeDays": 9,
+    "asOf": "2026-09-23T14:35:58.529Z",
+    "asOfAgeDays": 3,
     "history": [
+        {
+            "date": "2026-09-20",
+            "nCargo": 1,
+            "nTanker": 0,
+            "nTotal": 1
+        },
+        {
+            "date": "2026-09-19",
+            "nCargo": 5,
+            "nTanker": 1,
+            "nTotal": 6
+        },
+        {
+            "date": "2026-09-18",
+            "nCargo": 5,
+            "nTanker": 2,
+            "nTotal": 7
+        },
+        {
+            "date": "2026-09-17",
+            "nCargo": 3,
+            "nTanker": 0,
+            "nTotal": 3
+        },
+        {
+            "date": "2026-09-16",
+            "nCargo": 1,
+            "nTanker": 0,
+            "nTotal": 1
+        },
+        {
+            "date": "2026-09-15",
+            "nCargo": 1,
+            "nTanker": 1,
+            "nTotal": 2
+        },
+        {
+            "date": "2026-09-14",
+            "nCargo": 2,
+            "nTanker": 0,
+            "nTotal": 2
+        },
         {
             "date": "2026-09-13",
             "nCargo": 7,
@@ -2149,69 +2191,27 @@
             "nCargo": 22,
             "nTanker": 51,
             "nTotal": 73
-        },
-        {
-            "date": "2025-09-20",
-            "nCargo": 18,
-            "nTanker": 46,
-            "nTotal": 64
-        },
-        {
-            "date": "2025-09-19",
-            "nCargo": 40,
-            "nTanker": 37,
-            "nTotal": 77
-        },
-        {
-            "date": "2025-09-18",
-            "nCargo": 49,
-            "nTanker": 66,
-            "nTotal": 115
-        },
-        {
-            "date": "2025-09-17",
-            "nCargo": 52,
-            "nTanker": 55,
-            "nTotal": 107
-        },
-        {
-            "date": "2025-09-16",
-            "nCargo": 37,
-            "nTanker": 62,
-            "nTotal": 99
-        },
-        {
-            "date": "2025-09-15",
-            "nCargo": 42,
-            "nTanker": 34,
-            "nTotal": 76
-        },
-        {
-            "date": "2025-09-14",
-            "nCargo": 25,
-            "nTanker": 39,
-            "nTotal": 64
         }
     ],
     "latest": {
-        "baselineMedian": 4,
-        "capacity": 71701,
-        "capacityCargo": 71701,
+        "baselineMedian": 3,
+        "capacity": 48165,
+        "capacityCargo": 48165,
         "capacityTanker": 0,
-        "date": "2026-09-13",
-        "nCargo": 7,
-        "nContainer": 2,
-        "nDryBulk": 2,
-        "nGeneralCargo": 3,
+        "date": "2026-09-20",
+        "nCargo": 1,
+        "nContainer": 0,
+        "nDryBulk": 1,
+        "nGeneralCargo": 0,
         "nRoro": 0,
-        "nTanker": 1,
-        "nTotal": 8,
+        "nTanker": 0,
+        "nTotal": 1,
         "preCrisisBaselineMedian": 85,
-        "previousDate": "2026-09-12",
-        "previousNTotal": 2,
+        "previousDate": "2026-09-19",
+        "previousNTotal": 6,
         "sourceName": "IMF PortWatch",
         "sourceUrl": "https://portwatch.imf.org/pages/chokepoint6",
-        "updatedAt": "2026-09-21T21:00:20.458Z"
+        "updatedAt": "2026-09-23T12:01:43.353Z"
     },
     "methodology": "IMF PortWatch daily vessel transit count for chokepoint6 (Strait of Hormuz), derived from global AIS via Oxford / UN Global Pulse. preCrisisBaselineMedian is the median nTotal across the final 365 pre-crisis days (2025-02-28 through 2026-02-27), a fixed date-bounded window so the sample cannot shrink over time; the stable peacetime anchor for throughput-% computation. baselineMedian is the rolling 30-day median (average of the two middle values on an even-length window); it drifts downward as a sustained closure becomes the new normal. This value is kept aligned with the same chokepoint's entry in /api/v1/chokepoints. The per-type fields nest: nTotal is nTanker plus nCargo, and nCargo is nContainer plus nDryBulk plus nGeneralCargo plus nRoro, so summing all seven fields double-counts.",
     "premium": {
