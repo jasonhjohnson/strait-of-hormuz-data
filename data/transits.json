@@ -1,7 +1,7 @@
 {
     "asOf": "2026-10-04",
-    "asOfAgeDays": 2,
-    "generatedAt": "2026-10-06T14:36:35.819Z",
+    "asOfAgeDays": 3,
+    "generatedAt": "2026-10-07T14:37:28.590Z",
     "history": [
         {
             "date": "2026-10-04",
@@ -2200,6 +2200,7 @@
         "capacityCargo": 81884,
         "capacityTanker": 0,
         "date": "2026-10-04",
+        "ma7": 2.71,
         "nCargo": 4,
         "nContainer": 1,
         "nDryBulk": 2,
@@ -2210,14 +2211,15 @@
         "preCrisisBaselineMedian": 85,
         "previousDate": "2026-10-03",
         "previousNTotal": 2,
+        "provisional": true,
         "sourceName": "IMF PortWatch",
         "sourceUrl": "https://portwatch.imf.org/pages/chokepoint6",
-        "updatedAt": "2026-10-06T14:00:40.379Z"
+        "updatedAt": "2026-10-07T14:00:48.239Z"
     },
     "methodology": "IMF PortWatch daily vessel transit count for chokepoint6 (Strait of Hormuz), derived from global AIS via Oxford / UN Global Pulse. preCrisisBaselineMedian is the median nTotal across the final 365 pre-crisis days (2025-02-28 through 2026-02-27), a fixed date-bounded window so the sample cannot shrink over time; the stable peacetime anchor for throughput-% computation. baselineMedian is the rolling 30-day median (average of the two middle values on an even-length window); it drifts downward as a sustained closure becomes the new normal. This value is kept aligned with the same chokepoint's entry in /api/v1/chokepoints. The per-type fields nest: nTotal is nTanker plus nCargo, and nCargo is nContainer plus nDryBulk plus nGeneralCargo plus nRoro, so summing all seven fields double-counts.",
     "premium": {
         "mcp": "https://straits.live/api/mcp",
-        "note": "Machine-payable premium tier (x402, USDC on Base): full vessel manifest with sanctions cross-reference, hourly history capped at one year with actual depth growing daily, one-call snapshot, structured daily brief, single-vessel dossiers, bulk export, real-time streaming, threshold-alert webhooks, a Hormuz flag rollup, a shadow-fleet risk screen of the vessels active on AIS in the Persian Gulf window, bunker and marine-fuel prices, and a modeled war-risk premium nowcast. $0.01-$0.50 per request, no key or account.",
+        "note": "Machine-payable premium tier (x402, USDC on Base): full vessel manifest with sanctions cross-reference, hourly-bucket history (with gaps) capped at one year with actual depth growing daily, one-call snapshot, structured daily brief, single-vessel dossiers, bulk export, real-time streaming, threshold-alert webhooks, a Hormuz flag rollup, a shadow-fleet risk screen of the vessels active on AIS in the Persian Gulf window, bunker and marine-fuel prices, and a modeled war-risk premium nowcast. $0.01-$0.50 per request, no key or account.",
         "url": "https://straits.live/api#premium"
     },
     "schema": "https://straits.live/api/v1/transits",
