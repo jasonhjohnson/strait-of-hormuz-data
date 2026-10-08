@@ -1,7 +1,7 @@
 {
   "name": "strait-of-hormuz-crisis-data",
   "title": "Strait of Hormuz Crisis Data",
-  "description": "Open, daily-refreshed time series behind straits.live, the real-time Strait of Hormuz crisis monitor: IMF PortWatch daily transit counts, the composite Hormuz Index (Crisis Pressure and Escalation Forecast), Brent and WTI spot prices, an indexed event log, and the live status snapshot.",
+  "description": "Open, daily-refreshed time series behind straits.live, the real-time Strait of Hormuz crisis monitor: IMF PortWatch daily transit counts, the composite Hormuz Index (Crisis Pressure and Escalation Forecast), Brent and WTI futures prices, an indexed event log, and the live status snapshot.",
   "homepage": "https://straits.live/data",
   "created": "2026-06-12",
   "keywords": [
@@ -63,7 +63,8 @@
           { "name": "crisis_pressure", "type": "number", "title": "Crisis Pressure Index, 0 to 100" },
           { "name": "crisis_band", "type": "string", "title": "Band label for Crisis Pressure" },
           { "name": "escalation_forecast", "type": "number", "title": "Escalation Forecast Index, 0 to 100" },
-          { "name": "forecast_band", "type": "string", "title": "Band label for Escalation Forecast" }
+          { "name": "forecast_band", "type": "string", "title": "Band label for Escalation Forecast" },
+          { "name": "methodology_version", "type": "string", "title": "Methodology version the reading was computed under (see https://straits.live/methodology/changelog)" }
         ]
       }
     },
@@ -88,15 +89,16 @@
           { "name": "forecast_min", "type": "number", "title": "Escalation Forecast daily minimum" },
           { "name": "forecast_max", "type": "number", "title": "Escalation Forecast daily maximum" },
           { "name": "forecast_mean", "type": "number", "title": "Escalation Forecast daily mean" },
-          { "name": "forecast_band", "type": "string", "title": "Closing band label for Escalation Forecast" }
+          { "name": "forecast_band", "type": "string", "title": "Closing band label for Escalation Forecast" },
+          { "name": "methodology_version", "type": "string", "title": "Methodology version the day ran under; a day that straddled a methodology change lists both versions, oldest first, e.g. 0.7.1>0.7.2" }
         ]
       }
     },
     {
       "name": "oil",
       "path": "data/oil.csv",
-      "title": "Brent and WTI spot prices",
-      "description": "Timestamped Brent and WTI crude spot prices, sampled every five minutes over a rolling seven-day window.",
+      "title": "Brent and WTI futures prices",
+      "description": "Timestamped Brent and WTI front-month futures prices, sampled best-effort hourly since 2026-05-05, with gaps over weekends and whenever the collector is offline. Each row names its delivery-month contract in brent_symbol and wti_symbol.",
       "format": "csv",
       "mediatype": "text/csv",
       "licenses": [
@@ -109,8 +111,10 @@
       "schema": {
         "fields": [
           { "name": "timestamp_iso", "type": "datetime", "title": "ISO 8601 timestamp of the sample" },
-          { "name": "brent_usd", "type": "number", "title": "Brent crude spot price, USD per barrel" },
-          { "name": "wti_usd", "type": "number", "title": "WTI crude spot price, USD per barrel" }
+          { "name": "brent_usd", "type": "number", "title": "Brent crude front-month futures price, USD per barrel" },
+          { "name": "wti_usd", "type": "number", "title": "WTI crude front-month futures price, USD per barrel" },
+          { "name": "brent_symbol", "type": "string", "title": "Delivery-month contract the Brent price came from, e.g. BZU26.NYM; blank on rows older than the field. Compare consecutive rows to tell a contract roll from a market move" },
+          { "name": "wti_symbol", "type": "string", "title": "Delivery-month contract the WTI price came from, e.g. CLU26.NYM; blank on rows older than the field" }
         ]
       }
     },
@@ -146,7 +150,7 @@
       "name": "status",
       "path": "data/status.csv",
       "title": "Live status snapshot",
-      "description": "One-row snapshot of the current dashboard state. Re-poll on a schedule to build your own history. Column order is a stable contract; new columns are appended.",
+      "description": "One-row snapshot of the current dashboard state. Re-poll on a schedule to build your own history. Column order is a stable contract; new columns are appended. Brent and WTI here are front-month futures, except when the futures feed is down; brent_basis says which.",
       "format": "csv",
       "mediatype": "text/csv",
       "schema": {
@@ -156,9 +160,10 @@
           { "name": "verdict_status", "type": "string" },
           { "name": "verdict_short", "type": "string" },
           { "name": "ais_status", "type": "string" },
-          { "name": "brent_usd", "type": "number" },
-          { "name": "wti_usd", "type": "number" },
+          { "name": "brent_usd", "type": "number", "title": "Brent front-month futures price, USD per barrel. While the futures feed has been stale for over 2 hours it carries the EIA daily spot close instead; brent_basis says which" },
+          { "name": "wti_usd", "type": "number", "title": "WTI front-month futures price, USD per barrel. Carries the EIA daily spot close in the same cases as brent_usd" },
           { "name": "brent_change_24h_pct", "type": "number" },
+          { "name": "brent_change_source", "type": "string", "title": "How brent_change_24h_pct was measured: 'trailing-24h', 'prev-close' or 'frozen-weekend'. Only 'trailing-24h' is a literal 24 hours" },
           { "name": "insurance_multiple", "type": "number" },
           { "name": "transits_count", "type": "integer" },
           { "name": "transits_baseline", "type": "integer" },
@@ -166,10 +171,13 @@
           { "name": "transits_basis", "type": "string" },
           { "name": "transits_cadence", "type": "string" },
           { "name": "transits_source", "type": "string" },
+          { "name": "transits_asof_date", "type": "date", "title": "Date of the newest IMF PortWatch row behind transits_count (UTC)" },
+          { "name": "transits_asof_age_days", "type": "integer", "title": "Age of transits_asof_date in days, relative to today" },
+          { "name": "transits_stale", "type": "boolean", "title": "True when transits_count comes from PortWatch and that data is older than the site's staleness limit" },
           { "name": "ships_transiting", "type": "integer" },
           { "name": "ships_anchored", "type": "integer" },
           { "name": "ships_stopped", "type": "integer" },
-          { "name": "ships_stranded", "type": "integer" },
+          { "name": "ships_stranded", "type": "integer", "title": "All-waters rollup of vessels held in the region: every vessel seen holding position in the strait window, including ships at berth at regional ports" },
           { "name": "ais_dark_tankers", "type": "integer" },
           { "name": "ais_dark_baseline_7d", "type": "number" },
           { "name": "ais_dark_vessels_tracked", "type": "integer" },
@@ -185,7 +193,15 @@
           { "name": "events_recent_count", "type": "integer" },
           { "name": "data_oil_source", "type": "string" },
           { "name": "data_ships_source", "type": "string" },
-          { "name": "data_events_source", "type": "string" }
+          { "name": "data_events_source", "type": "string" },
+          { "name": "ships_basis", "type": "string", "title": "Counting basis for the ships_* columns, e.g. 'tiled12-active30m-fix60': a vessel counts only if sighted in the last 30 minutes and its position fix is not stale. The basis changed on 2026-07-20, 2026-07-30 and 2026-09-26, so the ships_* series has breaks at those dates" },
+          { "name": "carriers_hormuz_stopped", "type": "integer", "title": "Count of carriers whose Hormuz posture is 'stopped', whatever the age of the advisory. carriers_suspended is always 0, so use this column instead" },
+          { "name": "carriers_hormuz_stopped_current", "type": "integer", "title": "Of carriers_hormuz_stopped, the carriers whose own advisory is 60 days old or less; the count the site's open/closed verdict uses" },
+          { "name": "tehran_rate_basis", "type": "string", "title": "How tehran_toman_per_usd was obtained: 'direct' is a quoted dollar rate, 'cross-aed' is implied from the UAE dirham rate at the 3.6725 peg because the source is not quoting the dollar" },
+          { "name": "transits_provisional", "type": "boolean", "title": "True while the newest PortWatch row is within 3 days of today and can still be revised on the next publish" },
+          { "name": "transits_ma7", "type": "number", "title": "7-day mean of daily transits ending on transits_asof_date; empty when those 7 days are not contiguous" },
+          { "name": "ships_stranded_offshore", "type": "integer", "title": "Subset of ships_stranded waiting offshore: leaves out vessels within 25 km of a working port. The figure the site's own text uses" },
+          { "name": "brent_basis", "type": "string", "title": "What brent_usd and wti_usd are: 'futures' (front-month futures) or 'eia-spot' (EIA daily spot close, used as a backstop when the futures feed is down; a different instrument that can sit $20 or more above futures). Empty when there is no Brent value" }
         ]
       }
     }

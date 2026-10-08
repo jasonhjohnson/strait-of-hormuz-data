@@ -54,7 +54,7 @@ at **<https://straits.live/data>** and **<https://straits.live/methodology>**.
 | `transits` | Daily vessel-transit counts through the strait. The series the major prediction-market reopening contracts (Kalshi `KXHORMUZNORM`, Polymarket) resolve on. | IMF PortWatch |
 | `hormuz_index` | The composite Hormuz Index (Crisis Pressure + Escalation Forecast), 0-100, at 5-minute resolution. | straits.live (computed) |
 | `hormuz_index_daily` | Daily open/high/low/close/mean rollup of both index composites. | straits.live (computed) |
-| `oil` | Brent and WTI crude spot prices, timestamped. | straits.live |
+| `oil` | Brent and WTI front-month futures prices, timestamped. | straits.live |
 | `events` | Indexed strikes, ship incidents, closures, and diplomatic developments, each with a cited source URL. | straits.live |
 
 ```python
@@ -67,9 +67,9 @@ index = load_dataset("REPLACE_WITH_HF_USERNAME/strait-of-hormuz-crisis-data", "h
 ## Column contracts
 
 **transits**: `date`, `n_total`, `n_tanker`, `n_cargo`.
-**hormuz_index**: `timestamp_iso`, `crisis_pressure` (0-100), `crisis_band`, `escalation_forecast` (0-100), `forecast_band`.
-**hormuz_index_daily**: `date`, then `crisis_*` and `forecast_*` open/close/min/max/mean plus closing band labels.
-**oil**: `timestamp_iso`, `brent_usd`, `wti_usd`.
+**hormuz_index**: `timestamp_iso`, `crisis_pressure` (0-100), `crisis_band`, `escalation_forecast` (0-100), `forecast_band`, `methodology_version`.
+**hormuz_index_daily**: `date`, then `crisis_*` and `forecast_*` open/close/min/max/mean plus closing band labels, then `methodology_version`.
+**oil**: `timestamp_iso`, `brent_usd`, `wti_usd`, `brent_symbol`, `wti_symbol`.
 **events**: `occurred_at_iso`, `type`, `severity`, `title`, `description`, `lat`, `lng`, `source_name`, `source_url`.
 
 ## Licensing

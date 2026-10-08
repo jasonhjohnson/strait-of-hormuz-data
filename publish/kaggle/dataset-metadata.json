@@ -20,15 +20,15 @@
     },
     {
       "path": "hormuz-index.csv",
-      "description": "Composite Hormuz Index at 5-minute resolution, last 7 days. Columns: timestamp_iso, crisis_pressure (0-100), crisis_band, escalation_forecast (0-100), forecast_band. CC0."
+      "description": "Composite Hormuz Index at 5-minute resolution, last 7 days. Columns: timestamp_iso, crisis_pressure (0-100), crisis_band, escalation_forecast (0-100), forecast_band, methodology_version. CC0."
     },
     {
       "path": "hormuz-index-daily.csv",
-      "description": "Daily open/high/low/close/mean rollup of both index composites. CC0."
+      "description": "Daily open/high/low/close/mean rollup of both index composites, with methodology_version. CC0."
     },
     {
       "path": "oil.csv",
-      "description": "Brent and WTI crude spot prices, timestamped. Columns: timestamp_iso, brent_usd, wti_usd. Free to use, attribution requested."
+      "description": "Brent and WTI front-month futures prices, timestamped. Columns: timestamp_iso, brent_usd, wti_usd, brent_symbol, wti_symbol. Free to use, attribution requested."
     },
     {
       "path": "events.csv",
@@ -36,7 +36,7 @@
     },
     {
       "path": "status.csv",
-      "description": "One-row snapshot of the current dashboard state (verdict, throughput, Brent, insurance multiple, Hormuz Index summary). CC0."
+      "description": "One-row snapshot of the current dashboard state (verdict, throughput, Brent, insurance multiple, Hormuz Index summary). 47 columns; see datapackage.json for each. CC0."
     }
   ]
 }
