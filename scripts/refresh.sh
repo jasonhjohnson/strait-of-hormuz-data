@@ -30,7 +30,11 @@ fetch() {
   local url="$1" dest="$2" mode="${3:-raw}" tmp
   total=$((total + 1))
   tmp="$(mktemp)"
-  if curl -fsSL --retry 3 --retry-delay 5 -A "$UA" "$url" -o "$tmp"; then
+  # --max-time and --retry-max-time bound each fetch. straits.live caps free
+  # API calls at 1,000 a day per IP, and a daily 429 carries a Retry-After of
+  # hours, which curl --retry would otherwise sit out. A capped fetch fails
+  # fast and the previous file is kept.
+  if curl -fsSL --max-time 60 --retry 3 --retry-delay 5 --retry-max-time 120 -A "$UA" "$url" -o "$tmp"; then
     if [ "$mode" = json ] && command -v python3 >/dev/null 2>&1; then
       python3 -m json.tool --sort-keys "$tmp" >"$dest" 2>/dev/null || cp "$tmp" "$dest"
     else
