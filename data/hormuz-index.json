@@ -1,5 +1,5 @@
 {
-    "asOf": "2026-10-25T14:29:03.198Z",
+    "asOf": "2026-10-26T15:14:07.738Z",
     "disclaimer": "Informational only. Not investment, financial, legal, or tax advice. Not a benchmark for any financial instrument.",
     "indices": {
         "crisisPressure": {
@@ -14,20 +14,19 @@
                     "weight": 0.39999999999999997
                 },
                 "brentOptionsDread": {
-                    "asOf": "2026-10-23T20:15:00.000Z",
-                    "carriedForward": true,
-                    "contribution": 21.33866666666667,
+                    "asOf": "2026-10-26T15:00:01.332Z",
+                    "contribution": 21.269333333333332,
                     "health": "fresh",
-                    "raw": 60.02,
-                    "score": 80.02000000000001,
+                    "raw": 59.76,
+                    "score": 79.75999999999999,
                     "weight": 0.26666666666666666
                 },
                 "gdeltEventPressure": {
-                    "asOf": "2026-10-25T12:05:16.000Z",
-                    "contribution": 13.962383976680552,
+                    "asOf": "2026-10-26T11:58:49.000Z",
+                    "contribution": 8.633110949656512,
                     "health": "fresh",
-                    "raw": 6.754860772016665,
-                    "score": 41.88715193004166,
+                    "raw": 2.2398220930585437,
+                    "score": 25.89933284896954,
                     "weight": 0.3333333333333333
                 },
                 "insuranceMultiple": {
@@ -39,19 +38,22 @@
                     "weight": 0
                 }
             },
-            "confidence": 10,
+            "confidence": 12,
             "confidenceNote": "Dispersion band, not a certainty score: the weighted standard deviation of the component scores, scaled by 0.4 and clamped 2-15. Higher means the inputs disagree with each other more, not that the reading is more certain; lower means they agree. Method: https://straits.live/methodology#confidence",
             "degraded": {
                 "components": [
                     {
+                        "authoredAt": "2026-10-07T00:00:00.000Z",
                         "health": "stale",
                         "key": "insuranceMultiple",
-                        "nominalWeight": 0.25
+                        "maxAgeDays": 14,
+                        "nominalWeight": 0.25,
+                        "reason": "figure_age"
                     }
                 ],
-                "note": "insuranceMultiple (nominal 25%, stale) stood down this tick, either unavailable or below its liquidity floor. Nominal weight redistributed across the remaining fresh components: the published component weights are renormalized, not the methodology defaults."
+                "note": "insuranceMultiple (nominal 25%, stale) stood down because the figure is older than 14 days (report dated 2026-10-07). Nominal weight redistributed across the remaining fresh components: the published component weights are renormalized, not the methodology defaults."
             },
-            "delta24h": 0,
+            "delta24h": null,
             "delta7d": null,
             "indexHealth": "fresh",
             "inputsAsOf": "2026-10-18T00:00:00.000Z",
@@ -68,7 +70,7 @@
                 "note": "Components sum to rawComposite (\u03a3 score \u00d7 weight). An override then applied: one component scored 75 or more, so the composite became max(component) \u00d7 0.9 = preDecayValue (87.64), which is what the smoothing below acts on. While an override is active the other components do not move the published value. The published value applies anti-whipsaw smoothing: asymmetric decay (36h halflife) then per-24h rails (max +25 / -10). smoothedValue rounds to value (88). Method: https://straits.live/methodology#index-smoothing",
                 "overrideApplied": true,
                 "preDecayValue": 87.64,
-                "rawComposite": 74.25,
+                "rawComposite": 68.85,
                 "smoothedValue": 87.64
             },
             "value": 88
@@ -77,43 +79,43 @@
             "band": "high",
             "components": {
                 "brentTermStructureSlope": {
-                    "asOf": "2026-10-23T20:59:44.000Z",
-                    "contribution": 24.405333333333328,
+                    "asOf": "2026-10-26T14:40:24.000Z",
+                    "contribution": 24.629333333333328,
                     "health": "fresh",
-                    "raw": 10.76,
-                    "score": 91.52,
+                    "raw": 11.18,
+                    "score": 92.36,
                     "totalVolumeUsd": null,
                     "weight": 0.2666666666666666
                 },
                 "kalshiForwardContracts": {
-                    "asOf": "2026-10-25T14:18:12.055Z",
-                    "contribution": 17.46585459382999,
+                    "asOf": "2026-10-26T15:03:31.292Z",
+                    "contribution": 17.305135814049567,
                     "health": "fresh",
-                    "raw": 0.8732927296914996,
-                    "score": 87.32927296914997,
-                    "totalVolumeUsd": 9070282.525565384,
+                    "raw": 0.8652567907024786,
+                    "score": 86.52567907024786,
+                    "totalVolumeUsd": 8992320.659236627,
                     "volumeNote": "Kalshi reports volume as a count of contracts traded, not dollars, so totalVolumeUsd on this component is a contract count despite its name.",
                     "volumeUnit": "contracts",
                     "weight": 0.19999999999999996
                 },
                 "manifoldForwardContracts": {
-                    "asOf": "2026-10-25T14:18:12.055Z",
+                    "asOf": "2026-10-26T15:03:31.292Z",
                     "contribution": 0,
                     "health": "stale",
-                    "raw": 0.26397450269876366,
+                    "raw": 0.2568988072591589,
                     "reason": "below_liquidity_floor",
-                    "score": 26.397450269876366,
-                    "totalVolumeUsd": 2796.9402319279884,
+                    "score": 25.68988072591589,
+                    "totalVolumeUsd": 2795.3306781272495,
                     "volumeUnit": "usd",
                     "weight": 0
                 },
                 "polymarketAggregate": {
-                    "asOf": "2026-10-25T14:18:12.055Z",
-                    "contribution": 19.019385650745498,
+                    "asOf": "2026-10-26T15:03:31.292Z",
+                    "contribution": 18.643958134533484,
                     "health": "fresh",
-                    "raw": 0.35661348095147816,
-                    "score": 35.661348095147815,
-                    "totalVolumeUsd": 103205001.19209737,
+                    "raw": 0.3495742150225029,
+                    "score": 34.95742150225029,
+                    "totalVolumeUsd": 103430906.61721583,
                     "volumeUnit": "usd",
                     "weight": 0.5333333333333332
                 }
@@ -125,128 +127,129 @@
                     {
                         "health": "stale",
                         "key": "manifoldForwardContracts",
-                        "nominalWeight": 0.25
+                        "nominalWeight": 0.25,
+                        "reason": "below_liquidity_floor"
                     }
                 ],
-                "note": "manifoldForwardContracts (nominal 25%, stale) stood down this tick, either unavailable or below its liquidity floor. Nominal weight redistributed across the remaining fresh components: the published component weights are renormalized, not the methodology defaults."
+                "note": "manifoldForwardContracts (nominal 25%, stale) stood down because its market is below the liquidity floor. Nominal weight redistributed across the remaining fresh components: the published component weights are renormalized, not the methodology defaults."
             },
-            "delta24h": 0,
+            "delta24h": null,
             "delta7d": null,
             "indexHealth": "fresh",
-            "inputsAsOf": "2026-10-23T20:59:44.000Z",
+            "inputsAsOf": "2026-10-26T14:40:24.000Z",
             "nearExpiryContracts": {
                 "contracts": [
                     {
-                        "hoursLeft": 157,
+                        "hoursLeft": 133,
                         "id": "polymarket_3128888",
                         "question": "US announces end of Iranian blockade by October 31, 2026?",
                         "resolvesAt": "2026-11-01T03:59:00.000Z",
                         "venue": "polymarket",
                         "volumeUnit": "usd",
-                        "volumeUsd": 5971095.099657,
-                        "weightRemaining": 0.4685
+                        "volumeUsd": 6090468.502848,
+                        "weightRemaining": 0.3952
                     },
                     {
-                        "hoursLeft": 157,
+                        "hoursLeft": 133,
                         "id": "polymarket_3501950",
                         "question": "Strait of Hormuz traffic returns to normal by October 31?",
                         "resolvesAt": "2026-11-01T03:59:00.000Z",
                         "venue": "polymarket",
                         "volumeUnit": "usd",
-                        "volumeUsd": 3290961.814089001,
-                        "weightRemaining": 0.4685
+                        "volumeUsd": 3394746.547793001,
+                        "weightRemaining": 0.3952
                     },
                     {
-                        "hoursLeft": 153,
+                        "hoursLeft": 129,
                         "id": "kalshi_KXHORMUZNORM-26MAR17-B261101",
                         "question": "Will the 7-day moving average of transit calls through the Strait of Hormuz as reported by the IMF PortWatch be above 60 before November 1, 2026? (Before Nov 1, 2026)",
                         "resolvesAt": "2026-11-01T00:00:00.000Z",
                         "venue": "kalshi",
                         "volumeUnit": "contracts",
-                        "volumeUsd": 2844955.94,
-                        "weightRemaining": 0.4567
+                        "volumeUsd": 2897226.12,
+                        "weightRemaining": 0.3833
                     },
                     {
-                        "hoursLeft": 157,
+                        "hoursLeft": 133,
                         "id": "polymarket_2757806",
                         "question": "Iran charges Hormuz fees by October 31?",
                         "resolvesAt": "2026-11-01T03:59:00.000Z",
                         "venue": "polymarket",
                         "volumeUnit": "usd",
-                        "volumeUsd": 686346.1134590001,
-                        "weightRemaining": 0.4685
+                        "volumeUsd": 699930.3644290001,
+                        "weightRemaining": 0.3952
                     },
                     {
-                        "hoursLeft": 157,
+                        "hoursLeft": 133,
                         "id": "polymarket_4620250",
                         "question": "Iran full airspace closure by October 31, 2026?",
                         "resolvesAt": "2026-11-01T03:59:00.000Z",
                         "venue": "polymarket",
                         "volumeUnit": "usd",
-                        "volumeUsd": 360624.42929400003,
-                        "weightRemaining": 0.4685
+                        "volumeUsd": 367612.466102,
+                        "weightRemaining": 0.3952
                     },
                     {
-                        "hoursLeft": 46,
+                        "hoursLeft": 22,
                         "id": "kalshi_KXHORMUZWEEKLY-26OCT25-T15",
                         "question": "Will there be more than 15 transit calls through the Strait of Hormuz from Oct 19, 2026 to Oct 25, 2026? (Above 15)",
                         "resolvesAt": "2026-10-27T13:00:00.000Z",
                         "venue": "kalshi",
                         "volumeUnit": "contracts",
-                        "volumeUsd": 56689.21,
-                        "weightRemaining": 0.1382
+                        "volumeUsd": 58008.11,
+                        "weightRemaining": 0.0649
                     },
                     {
-                        "hoursLeft": 46,
+                        "hoursLeft": 22,
                         "id": "kalshi_KXHORMUZWEEKLY-26OCT25-T20",
                         "question": "Will there be more than 20 transit calls through the Strait of Hormuz from Oct 19, 2026 to Oct 25, 2026? (Above 20)",
                         "resolvesAt": "2026-10-27T13:00:00.000Z",
                         "venue": "kalshi",
                         "volumeUnit": "contracts",
-                        "volumeUsd": 48393.73,
-                        "weightRemaining": 0.1382
+                        "volumeUsd": 55444.65,
+                        "weightRemaining": 0.0649
                     },
                     {
-                        "hoursLeft": 46,
+                        "hoursLeft": 22,
                         "id": "kalshi_KXHORMUZWEEKLY-26OCT25-T50",
                         "question": "Will there be more than 50 transit calls through the Strait of Hormuz from Oct 19, 2026 to Oct 25, 2026? (Above 50)",
                         "resolvesAt": "2026-10-27T13:00:00.000Z",
                         "venue": "kalshi",
                         "volumeUnit": "contracts",
                         "volumeUsd": 41228.4,
-                        "weightRemaining": 0.1382
+                        "weightRemaining": 0.0649
                     },
                     {
-                        "hoursLeft": 153,
+                        "hoursLeft": 129,
                         "id": "manifold_nU8zNAEhqZ",
                         "question": "Strait of Hormuz traffic returns to normal by end of October? [Polymarket]",
                         "resolvesAt": "2026-10-31T23:59:00.000Z",
                         "venue": "manifold",
                         "volumeUnit": "usd",
                         "volumeUsd": 215.19445849606925,
-                        "weightRemaining": 0.4566
+                        "weightRemaining": 0.3833
                     }
                 ],
-                "note": "9 contracts feeding this forecast close within 14 days: polymarket \"US announces end of Iranian blockade by October 31, 2026?\" closes in 157h, $5.97M lifetime volume, carrying 47% of its volume as weight when its venue is active; polymarket \"Strait of Hormuz traffic returns to normal by October 31?\" closes in 157h, $3.29M lifetime volume, carrying 47% of its volume as weight when its venue is active; kalshi \"Will the 7-day moving average of transit calls through the Strait of Hormuz as reported by the IMF PortWatch be above 60 before November 1, 2026? (Before Nov 1, 2026)\" closes in 153h, 2,844,956 contracts lifetime volume, carrying 46% of its volume as weight when its venue is active; polymarket \"Iran charges Hormuz fees by October 31?\" closes in 157h, $0.69M lifetime volume, carrying 47% of its volume as weight when its venue is active; polymarket \"Iran full airspace closure by October 31, 2026?\" closes in 157h, $0.36M lifetime volume, carrying 47% of its volume as weight when its venue is active; kalshi \"Will there be more than 15 transit calls through the Strait of Hormuz from Oct 19, 2026 to Oct 25, 2026? (Above 15)\" closes in 46h, 56,689 contracts lifetime volume, carrying 14% of its volume as weight when its venue is active; kalshi \"Will there be more than 20 transit calls through the Strait of Hormuz from Oct 19, 2026 to Oct 25, 2026? (Above 20)\" closes in 46h, 48,394 contracts lifetime volume, carrying 14% of its volume as weight when its venue is active; kalshi \"Will there be more than 50 transit calls through the Strait of Hormuz from Oct 19, 2026 to Oct 25, 2026? (Above 50)\" closes in 46h, 41,228 contracts lifetime volume, carrying 14% of its volume as weight when its venue is active; manifold \"Strait of Hormuz traffic returns to normal by end of October? [Polymarket]\" closes in 153h, $0.00M lifetime volume, carrying 46% of its volume as weight when its venue is active, its venue is stood down this tick so it currently carries no weight. Listed here only if it actually matches its venue's Escalation Forecast pattern set (see /methodology); a contract closing soon on a tracked venue that does not feed a component (e.g. it hits no escalation pattern, or Polymarket's dated-agreement exclusion) is left off. Since methodology v0.6.0 a matched contract's weight tapers linearly to zero over its final 14 days, because a dated contract prices the calendar rather than the strait as its deadline arrives, and de-escalation-framed contracts get orientation-inverted so that reads as near-certain escalation. The taper also means these contracts leave the pool carrying almost no weight, so their departure is not a step in the published value. Full contract list: https://straits.live/api/v1/markets",
+                "note": "9 contracts feeding this forecast close within 14 days: polymarket \"US announces end of Iranian blockade by October 31, 2026?\" closes in 133h, $6.09M lifetime volume, carrying 40% of its volume as weight when its venue is active; polymarket \"Strait of Hormuz traffic returns to normal by October 31?\" closes in 133h, $3.39M lifetime volume, carrying 40% of its volume as weight when its venue is active; kalshi \"Will the 7-day moving average of transit calls through the Strait of Hormuz as reported by the IMF PortWatch be above 60 before November 1, 2026? (Before Nov 1, 2026)\" closes in 129h, 2,897,226 contracts lifetime volume, carrying 38% of its volume as weight when its venue is active; polymarket \"Iran charges Hormuz fees by October 31?\" closes in 133h, $0.70M lifetime volume, carrying 40% of its volume as weight when its venue is active; polymarket \"Iran full airspace closure by October 31, 2026?\" closes in 133h, $0.37M lifetime volume, carrying 40% of its volume as weight when its venue is active; kalshi \"Will there be more than 15 transit calls through the Strait of Hormuz from Oct 19, 2026 to Oct 25, 2026? (Above 15)\" closes in 22h, 58,008 contracts lifetime volume, carrying 6% of its volume as weight when its venue is active; kalshi \"Will there be more than 20 transit calls through the Strait of Hormuz from Oct 19, 2026 to Oct 25, 2026? (Above 20)\" closes in 22h, 55,445 contracts lifetime volume, carrying 6% of its volume as weight when its venue is active; kalshi \"Will there be more than 50 transit calls through the Strait of Hormuz from Oct 19, 2026 to Oct 25, 2026? (Above 50)\" closes in 22h, 41,228 contracts lifetime volume, carrying 6% of its volume as weight when its venue is active; manifold \"Strait of Hormuz traffic returns to normal by end of October? [Polymarket]\" closes in 129h, $0.00M lifetime volume, carrying 38% of its volume as weight when its venue is active, its venue is stood down this tick so it currently carries no weight. Listed here only if it actually matches its venue's Escalation Forecast pattern set (see /methodology); a contract closing soon on a tracked venue that does not feed a component (e.g. it hits no escalation pattern, or Polymarket's dated-agreement exclusion) is left off. Since methodology v0.6.0 a matched contract's weight tapers linearly to zero over its final 14 days, because a dated contract prices the calendar rather than the strait as its deadline arrives, and de-escalation-framed contracts get orientation-inverted so that reads as near-certain escalation. The taper also means these contracts leave the pool carrying almost no weight, so their departure is not a step in the published value. Full contract list: https://straits.live/api/v1/markets",
                 "taperStartDays": 14
             },
             "reconciliation": {
                 "anchor24h": 61,
                 "anchor24hMethodologyVersion": "0.7.18",
                 "anchor7dMethodologyVersion": "0.7.15",
-                "decayed": 61.46,
+                "decayed": 60.75,
                 "hoursSincePrevious": 0.08,
                 "note": "Components sum to rawComposite (\u03a3 score \u00d7 weight). No override applied this tick, so preDecayValue equals rawComposite. The published value applies anti-whipsaw smoothing: asymmetric decay (36h halflife) then per-24h rails (max +25 / -10). smoothedValue rounds to value (61). Method: https://straits.live/methodology#index-smoothing",
                 "overrideApplied": false,
-                "preDecayValue": 60.89,
-                "rawComposite": 60.89,
-                "smoothedValue": 61.46
+                "preDecayValue": 60.58,
+                "rawComposite": 60.58,
+                "smoothedValue": 60.75
             },
             "value": 61
         }
     },
     "methodologyUrl": "https://straits.live/methodology#hormuz-index",
-    "methodologyVersion": "0.7.18",
+    "methodologyVersion": "0.7.19",
     "schema": "hormuz-index-v0.2",
     "updateFrequency": "PT5M"
 }
