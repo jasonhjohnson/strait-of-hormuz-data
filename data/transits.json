@@ -1,8 +1,50 @@
 {
-    "asOf": "2026-11-01",
-    "asOfAgeDays": 8,
-    "generatedAt": "2026-11-09T14:31:22.650Z",
+    "asOf": "2026-11-08",
+    "asOfAgeDays": 2,
+    "generatedAt": "2026-11-10T14:31:26.950Z",
     "history": [
+        {
+            "date": "2026-11-08",
+            "nCargo": 2,
+            "nTanker": 1,
+            "nTotal": 3
+        },
+        {
+            "date": "2026-11-07",
+            "nCargo": 1,
+            "nTanker": 1,
+            "nTotal": 2
+        },
+        {
+            "date": "2026-11-06",
+            "nCargo": 5,
+            "nTanker": 1,
+            "nTotal": 6
+        },
+        {
+            "date": "2026-11-05",
+            "nCargo": 4,
+            "nTanker": 1,
+            "nTotal": 5
+        },
+        {
+            "date": "2026-11-04",
+            "nCargo": 5,
+            "nTanker": 0,
+            "nTotal": 5
+        },
+        {
+            "date": "2026-11-03",
+            "nCargo": 2,
+            "nTanker": 2,
+            "nTotal": 4
+        },
+        {
+            "date": "2026-11-02",
+            "nCargo": 1,
+            "nTanker": 1,
+            "nTotal": 2
+        },
         {
             "date": "2026-11-01",
             "nCargo": 0,
@@ -2150,72 +2192,30 @@
             "nCargo": 26,
             "nTanker": 45,
             "nTotal": 71
-        },
-        {
-            "date": "2025-11-08",
-            "nCargo": 44,
-            "nTanker": 63,
-            "nTotal": 107
-        },
-        {
-            "date": "2025-11-07",
-            "nCargo": 41,
-            "nTanker": 36,
-            "nTotal": 77
-        },
-        {
-            "date": "2025-11-06",
-            "nCargo": 30,
-            "nTanker": 39,
-            "nTotal": 69
-        },
-        {
-            "date": "2025-11-05",
-            "nCargo": 31,
-            "nTanker": 47,
-            "nTotal": 78
-        },
-        {
-            "date": "2025-11-04",
-            "nCargo": 24,
-            "nTanker": 50,
-            "nTotal": 74
-        },
-        {
-            "date": "2025-11-03",
-            "nCargo": 26,
-            "nTanker": 25,
-            "nTotal": 51
-        },
-        {
-            "date": "2025-11-02",
-            "nCargo": 25,
-            "nTanker": 35,
-            "nTotal": 60
         }
     ],
     "historyNote": "history holds the newest daily rows only (limit max 365). The full series from 2025-02-28, including the pre-crisis baseline window, is at https://straits.live/data/transits.csv.",
     "latest": {
         "baselineMedian": 3.5,
-        "capacity": 0,
-        "capacityCargo": 0,
+        "capacity": 792,
+        "capacityCargo": 792,
         "capacityTanker": 0,
-        "date": "2026-11-01",
-        "ma7": 4.43,
-        "nCargo": 0,
+        "date": "2026-11-08",
+        "ma7": 3.86,
+        "nCargo": 2,
         "nContainer": 0,
-        "nDryBulk": 0,
-        "nGeneralCargo": 0,
+        "nDryBulk": 1,
+        "nGeneralCargo": 1,
         "nRoro": 0,
         "nTanker": 1,
-        "nTotal": 1,
+        "nTotal": 3,
         "preCrisisBaselineMedian": 85,
-        "previousDate": "2026-10-31",
-        "previousNTotal": 8,
-        "provisional": false,
+        "previousDate": "2026-11-07",
+        "previousNTotal": 2,
+        "provisional": true,
         "sourceName": "IMF PortWatch",
         "sourceUrl": "https://portwatch.imf.org/pages/chokepoint6",
-        "updatedAt": "2026-11-09T14:07:32.776Z"
+        "updatedAt": "2026-11-10T14:07:47.711Z"
     },
     "methodology": "IMF PortWatch daily vessel transit count for chokepoint6 (Strait of Hormuz), derived from global AIS via Oxford / UN Global Pulse. preCrisisBaselineMedian is the median nTotal across the final 365 pre-crisis days (2025-02-28 through 2026-02-27), a fixed date-bounded window so the sample cannot shrink over time; the stable peacetime anchor for throughput-% computation. baselineMedian is the rolling 30-day median (average of the two middle values on an even-length window); it drifts downward as a sustained closure becomes the new normal. This value is kept aligned with the same chokepoint's entry in /api/v1/chokepoints. The per-type fields nest: nTotal is nTanker plus nCargo, and nCargo is nContainer plus nDryBulk plus nGeneralCargo plus nRoro, so summing all seven fields double-counts.",
     "premium": {
