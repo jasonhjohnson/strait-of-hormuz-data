@@ -13,31 +13,32 @@
     "aisBaselineNote": "transitsBaseline is withheld (null) until 72 hourly samples exist on the current tiled12-active30m-fix60 basis. The basis last reset on 2026-09-26, when vessels whose last AIS fix is an hour or more old stopped counting as holding position or moving; before that it reset on 2026-07-30 (tiling, counts up roughly 3.4x) and 2026-07-20 (30-minute window). After each reset the median is withheld for about 3 days while samples on the new basis build up. Samples on an earlier basis are not mixed in. It is an AIS concurrent-presence median, a different population from transits.baseline (IMF PortWatch daily crossings); do not divide one by the other.",
     "aisBasis": "tiled12-active30m-fix60",
     "aisBasisChangedAt": "2026-09-26",
-    "aisConcurrentInZone": 132,
-    "aisFirstFixInZone": 0,
+    "aisConcurrentInZone": 165,
+    "aisConcurrentInZoneNote": null,
+    "aisFirstFixInZone": 1,
     "aisFirstFixNote": "aisConcurrentInZone counts only vessels whose movement was measured against an earlier position. aisFirstFixInZone counts vessels seen in the same window for the first time, which have nothing to compare against yet; they are in neither aisConcurrentInZone nor stranded.",
     "aisGapCarryoverInZone": 2,
     "aisGapCarryoverNote": "aisGapCarryoverInZone counts vessels the feed listed again after we had not seen them for more than two hours. Their status dates from before that absence, so we have not seen them hold or move since. Single vessels drop off and return on most runs, so a count above zero does not mean our collection stopped. They are in none of aisConcurrentInZone, stranded, strandedOffshore or aisStaleFixInZone. A vessel on a first sighting can also be anchored, so the groups are a split by how status was observed, not terms that add up exactly.",
     "aisGaps": {
-        "ambientDarkRate": 0.255,
-        "ambientEligible": 855,
-        "baseline7d": 37.8,
+        "ambientDarkRate": 0.241,
+        "ambientEligible": 822,
+        "baseline7d": 30.8,
         "baselineSampleHours": 168,
-        "count": 29,
-        "countScope": "count is a floor on hulls we stopped receiving, not a count of evasions. Read it against eligibleTankers, the screened tanker population, and against ambientDarkRate, the share of eligible non-tankers that went dark on the identical test. The tanker rate (34.5%) is running 1.4x the whole-box ambient rate (25.5%), but within the same waters, compared cell by cell, 29 tankers went dark against about 32 expected at the ambient rate there, so the excess is not distinguishable from ambient dropout.",
-        "eligibleTankers": 84,
-        "expectedDarkTankers": 32.4,
+        "count": 23,
+        "countScope": "count is a floor on hulls we stopped receiving, not a count of evasions. Read it against eligibleTankers, the screened tanker population, and against ambientDarkRate, the share of eligible non-tankers that went dark on the identical test. The tanker rate (30.3%) is running 1.3x the whole-box ambient rate (24.1%), but within the same waters, compared cell by cell, 23 tankers went dark against about 27 expected at the ambient rate there, so the excess is not distinguishable from ambient dropout.",
+        "eligibleTankers": 76,
+        "expectedDarkTankers": 27.2,
         "significant": false,
-        "stratifiedZ": -0.57,
-        "updatedAt": "2026-11-16T14:30:23.221Z",
-        "vesselsTracked": 9507,
+        "stratifiedZ": -0.76,
+        "updatedAt": "2026-11-17T14:01:20.136Z",
+        "vesselsTracked": 9515,
         "vesselsTrackedScope": "vesselsTracked is a cumulative, all-time, all-type total (every vessel ever recorded anywhere in the wider AIS bbox). It is not the screened population behind count: that population is tankers only, with 50 or more sightings, last seen inside the core area.",
-        "windowCoveragePct": 99.7
+        "windowCoveragePct": 98.9
     },
-    "aisStaleFixInZone": 354,
+    "aisStaleFixInZone": 352,
     "aisStaleFixNote": "aisStaleFixInZone counts vessels still listed in the window whose last AIS fix was 60 minutes or more old when we read it. Their position is where they were, not where they are, so they are in none of aisConcurrentInZone, stranded or strandedOffshore. Of the stale vessels that reported again over three runs on 2026-09-26, 79 had not moved, 36 had moved and 15 had dropped off the feed, so the count left out is part held and part gone. Treat stranded and strandedOffshore as counts of vessels seen holding position within the last hour.",
-    "asOf": "2026-11-16T14:44:13.682Z",
-    "brent": 93.6,
+    "asOf": "2026-11-17T14:28:17.372Z",
+    "brent": 93.87,
     "capeSnapshot": {
         "arrivals24hTotal": 64,
         "asOf": "2026-08-28T08:11:00.812Z",
@@ -214,110 +215,110 @@
             "vesselsTrapped": null
         }
     ],
-    "change24h": -2.34,
-    "change24hUsd": -2.24,
-    "changeSource": "prev-close",
+    "change24h": -0.13,
+    "change24hUsd": -0.12,
+    "changeSource": "trailing-24h",
     "chokepoints": [
         {
-            "baselineMedian": 3.5,
+            "baselineMedian": 3,
             "baselineWindowEnd": "2026-02-27",
             "baselineWindowStart": "2025-02-28",
-            "date": "2026-11-08",
+            "date": "2026-11-15",
             "deltaDay": 1,
             "key": "hormuz",
             "label": "Strait of Hormuz",
-            "nTotal": 3,
+            "nTotal": 2,
             "preCrisisBaselineMedian": 85
         },
         {
-            "baselineMedian": 222,
+            "baselineMedian": 228,
             "baselineWindowEnd": "2026-02-27",
             "baselineWindowStart": "2025-02-28",
-            "date": "2026-11-08",
-            "deltaDay": -12,
+            "date": "2026-11-15",
+            "deltaDay": 30,
             "key": "malacca",
             "label": "Strait of Malacca",
-            "nTotal": 231,
+            "nTotal": 258,
             "preCrisisBaselineMedian": 237
         },
         {
-            "baselineMedian": 88,
+            "baselineMedian": 81,
             "baselineWindowEnd": "2026-02-27",
             "baselineWindowStart": "2025-02-28",
-            "date": "2026-11-08",
-            "deltaDay": -2,
+            "date": "2026-11-15",
+            "deltaDay": 19,
             "key": "cape",
             "label": "Cape of Good Hope",
-            "nTotal": 77,
+            "nTotal": 87,
             "preCrisisBaselineMedian": 88
         },
         {
             "baselineMedian": 43,
             "baselineWindowEnd": "2026-02-27",
             "baselineWindowStart": "2025-02-28",
-            "date": "2026-11-08",
-            "deltaDay": -9,
+            "date": "2026-11-15",
+            "deltaDay": 8,
             "key": "suez",
             "label": "Suez Canal",
-            "nTotal": 43,
+            "nTotal": 44,
             "preCrisisBaselineMedian": 39
         },
         {
-            "baselineMedian": 26.5,
+            "baselineMedian": 27,
             "baselineWindowEnd": "2026-02-27",
             "baselineWindowStart": "2025-02-28",
-            "date": "2026-11-08",
-            "deltaDay": 5,
+            "date": "2026-11-15",
+            "deltaDay": 14,
             "key": "bab-el-mandeb",
             "label": "Bab el-Mandeb",
-            "nTotal": 24,
+            "nTotal": 34,
             "preCrisisBaselineMedian": 34
         }
     ],
     "chokepointsNote": "preCrisisBaselineMedian on every row is computed over one fixed window (baselineWindowStart to baselineWindowEnd) anchored to the Hormuz crisis. For hormuz that window is a genuine pre-crisis baseline. For bab-el-mandeb, suez and cape it is not: those routes were already carrying diverted Red Sea traffic within that window, so preCrisisBaselineMedian for those rows reads as wartime volume, not a peacetime figure. baselineMedian is a different figure: the median of the latest 30 daily counts (trailing 30 days), not the fixed window.",
     "dailyBrief": {
-        "brent": 95.13,
+        "brent": 92.84,
         "brentClosedMarket": false,
-        "brentDeltaPct": -0.74,
+        "brentDeltaPct": -2.38,
         "brentFeedDark": null,
         "bullets": [
-            "Iran's navy claims another tanker came under attack in the Strait of Hormuz and caught fire, per AzerNews and six other outlets carrying that part of the claim.",
-            "UKMTO reports a vessel was struck by an unknown projectile transiting the Strait of Hormuz, with The National and Middle East Eye carrying the report.",
-            "Brent stood at $95.13, down 0.74% since the prior settle, as of 11:42 UTC; IMF PortWatch recorded 3 transits on November 8, against a pre-crisis baseline of 85 per day."
+            "Al Jazeera and Free Press Kashmir report tankers have been hit in the Strait of Hormuz as a drone raises alarm at an Iraq gas field.",
+            "Iran's Revolutionary Guard claims six tankers in total have struck mines in the strait; Brent stood at $92.84, down 2.38%, as of 11:49 UTC.",
+            "UKMTO has logged a vessel struck and confirmed hit, a tanker attacked near Oman reported from November 16, and a separate attack that disabled a vessel, per Anadolu Ajans\u0131's headline 'Attack disables tanker in Strait of Hormuz: UK maritime agency'."
         ],
-        "date": "2026-11-16",
+        "date": "2026-11-17",
         "escalationHealth": "fresh",
-        "eventCount": 86,
-        "generatedAt": "2026-11-16T12:01:01.148Z",
+        "eventCount": 82,
+        "generatedAt": "2026-11-17T12:01:08.835Z",
         "source": "ai-assisted",
-        "summary": "Commercial traffic through the Strait of Hormuz remains far below pre-crisis levels, with IMF PortWatch recording 3 transits on November 8 against a baseline of 85 per day. The lead development is a claim by Iran's navy that another tanker came under attack in the strait and caught fire; AzerNews, Qods International News Agency, Marine Insight, Tasnim, and IRNA each carry the part of that claim stating a vessel caught fire, and 7 outlets in this feed carry it in total. Iran's navy is the named source: the claim has not been independently established. Separately, UKMTO reported a vessel struck by an unknown projectile while transiting the strait; The National carries the headline 'Middle East latest: Tanker struck by unknown projectile in Strait of Hormuz, UKMTO says', and Middle East Eye reports 'Vessel struck by unknown projectile in Hormuz Strait'; UKMTO has not named the attacker. On the cumulative toll, Iranian claims in this window state varying tanker counts, with Trend News Agency's headline 'Strait of Hormuz disrupted as IRGC reports six tankers hit by mines', first carried November 16, representing the highest figure; Iranian state claims often present running totals, and the smaller figures of three and two tankers cited in earlier headlines may be subsets of that count rather than additional vessels. Iran's navy also claims, per IRNA, to have forced a US MQM-170 drone to land intact in an electronic warfare operation, a claim TRT World and UA.NEWS relay but have not independently established. Brent stood at $95.13, down 0.74% since the prior settle, as of 11:42 UTC. As of 12:00 UTC, 42 AIS-visible vessels were holding position away from berth in the Strait of Hormuz and Gulf watch box, a count that leaves out ships within 25km of a working port. On the Hormuz Index, Crisis Pressure, the state composite, sits in the extreme band, flat over 24 hours, with its value set by physical transit deviation alone; the Escalation Forecast sits in the elevated band, flat over 24 hours, with the Brent-WTI forward spread as its top contributor.",
-        "transitsAgeDays": 8,
+        "summary": "The Strait of Hormuz remains under severe pressure, with Al Jazeera and Free Press Kashmir reporting tankers hit in the strait as a drone raises alarm at an Iraq gas field. UKMTO has separately logged three incidents: a vessel struck and confirmed hit per houseofsaud.com; a tanker attacked near Oman, with The National reporting on November 17 that UKMTO attributed the incident to an attack off Oman; and a third incident in which Anadolu Ajans\u0131 reports an attack disabled a vessel, per UKMTO. Oman and Iran are discussing safeguarding maritime corridors as attacks increase, per Reuters. IMF PortWatch recorded 3 transits on November 8, against a pre-crisis baseline of 85 per day. Brent stood at $92.84, down 2.38% over 24 hours, as of 11:49 UTC; BBN Times notes oil prices are falling despite the mine claims, without attributing a cause. On November 17, Middle East Eye reported \"Indian minister confirms no casualties onboard tanker hit by missile in Hormuz Strait\". As of 11:30 UTC, 45 AIS-visible vessels were holding position away from berth in the Strait of Hormuz and Gulf watch box, a count that leaves out ships within 25km of a working port. On the Hormuz Index, Crisis Pressure, the state composite, sits in the extreme band, flat over 24 hours, with its value set by physical transit deviation alone; the Escalation Forecast sits in the elevated band, flat over 24 hours, with the Brent-WTI forward spread as its top contributor.",
+        "transitsAgeDays": 9,
         "transitsAsOfDate": "2026-11-08",
         "transitsToday": 3
     },
     "dailyTransits": {
-        "baselineMedian": 3.5,
-        "capacity": 792,
-        "capacityCargo": 792,
+        "baselineMedian": 3,
+        "capacity": 4297,
+        "capacityCargo": 4297,
         "capacityTanker": 0,
-        "date": "2026-11-08",
-        "ma7": 3.86,
+        "date": "2026-11-15",
+        "ma7": 2.29,
         "nCargo": 2,
-        "nContainer": 0,
-        "nDryBulk": 1,
+        "nContainer": 1,
+        "nDryBulk": 0,
         "nGeneralCargo": 1,
         "nRoro": 0,
-        "nTanker": 1,
-        "nTotal": 3,
+        "nTanker": 0,
+        "nTotal": 2,
         "preCrisisBaselineMedian": 85,
-        "previousDate": "2026-11-07",
-        "previousNTotal": 2,
-        "updatedAt": "2026-11-16T11:07:31.086Z"
+        "previousDate": "2026-11-14",
+        "previousNTotal": 1,
+        "updatedAt": "2026-11-17T13:07:52.603Z"
     },
     "dataHealth": {
         "aisGaps": {
             "source": "live",
-            "verifiedAt": "2026-11-16T14:30:23.221Z"
+            "verifiedAt": "2026-11-17T14:01:20.136Z"
         },
         "cape": {
             "source": "stale",
@@ -334,23 +335,23 @@
         },
         "chokepoints": {
             "source": "live",
-            "verifiedAt": "2026-11-16T14:25:14.824Z"
+            "verifiedAt": "2026-11-17T14:25:23.318Z"
         },
         "dailyBrief": {
             "source": "live",
-            "verifiedAt": "2026-11-16T12:01:01.148Z"
+            "verifiedAt": "2026-11-17T12:01:08.835Z"
         },
         "dailyTransits": {
             "source": "live",
-            "verifiedAt": "2026-11-08T00:00:00Z"
+            "verifiedAt": "2026-11-15T00:00:00Z"
         },
         "events": {
             "source": "live",
-            "verifiedAt": "2026-11-16T14:20:01.000Z"
+            "verifiedAt": "2026-11-17T13:52:00.000Z"
         },
         "gas": {
             "source": "live",
-            "verifiedAt": "2026-11-16T14:00:13.609Z"
+            "verifiedAt": "2026-11-17T14:00:46.412Z"
         },
         "insurance": {
             "authoredAt": "2026-10-07T00:00:00.000Z",
@@ -360,11 +361,11 @@
         },
         "markets": {
             "source": "live",
-            "verifiedAt": "2026-11-16T14:30:22.289Z"
+            "verifiedAt": "2026-11-17T14:15:13.384Z"
         },
         "oil": {
             "source": "live",
-            "verifiedAt": "2026-11-16T14:42:34.545Z"
+            "verifiedAt": "2026-11-17T14:18:05.341Z"
         },
         "pipelines": {
             "authoredAt": "2026-10-12T00:00:00.000Z",
@@ -373,23 +374,23 @@
         },
         "ports": {
             "source": "live",
-            "verifiedAt": "2026-11-16T14:30:23.913Z"
+            "verifiedAt": "2026-11-17T14:00:45.782Z"
         },
         "sanctioned": {
             "source": "live",
-            "verifiedAt": "2026-11-16T14:30:19.499Z"
+            "verifiedAt": "2026-11-17T14:15:11.049Z"
         },
         "ships": {
             "source": "live",
-            "verifiedAt": "2026-11-16T14:32:11.146Z"
+            "verifiedAt": "2026-11-17T14:23:39.832Z"
         },
         "spr": {
             "source": "live",
-            "verifiedAt": "2026-11-15T20:01:08.074Z"
+            "verifiedAt": "2026-11-16T20:00:42.695Z"
         },
         "stranded": {
             "source": "live",
-            "verifiedAt": "2026-11-16T14:30:23.913Z"
+            "verifiedAt": "2026-11-17T14:00:45.782Z"
         },
         "tradeImpact": {
             "authoredAt": "2026-05-05T00:00:00.000Z",
@@ -399,150 +400,150 @@
         },
         "vesselRisk": {
             "source": "live",
-            "verifiedAt": "2026-11-16T14:30:23.591Z"
+            "verifiedAt": "2026-11-17T14:01:20.441Z"
         }
     },
     "dataHealthNote": "dataHealth.events reflects producer health, not event recency, UNLESS no event has arrived for 12 hours, after which it falls back to the plain event-age gate, so a very quiet stretch beyond 12 hours can still read stale even with a healthy pipeline. Use dataHealth.events.verifiedAt for the newest event time.",
     "events": [
         {
-            "description": "Tehran, IRNA \u2013 The Iranian Navy has announced that another oil tanker violating maritime regulations exploded after striking naval mines in a prohibited area east of the Strait of Hormuz.",
-            "id": "rss_1sfz1ek",
+            "description": "",
+            "id": "rss_1gr4fp4",
             "lat": null,
             "lng": null,
-            "occurredAt": "2026-11-16T14:20:01.000Z",
+            "occurredAt": "2026-11-17T13:52:00.000Z",
             "severity": "low",
             "source": "live",
-            "title": "Third violating oil tanker explodes in Hormuz in 24 hours: Iran\u2019s Navy",
-            "type": "ship_incident",
+            "title": "Iran says US LUCAS drone intercepted over Strait of Hormuz",
+            "type": "strike",
             "vessel": null
         },
         {
             "description": "",
-            "id": "rss_1icd79b",
+            "id": "rss_13ouyk4",
             "lat": null,
             "lng": null,
-            "occurredAt": "2026-11-16T13:55:28.000Z",
+            "occurredAt": "2026-11-17T13:51:39.000Z",
             "severity": "high",
             "source": "live",
-            "title": "Three tankers hit naval mines in Strait of Hormuz, Iran state TV says",
+            "title": "LPG tanker hit twice near Oman as search continues for missing seafarer",
             "type": "ship_incident",
             "vessel": null
         },
         {
             "description": "",
-            "id": "rss_1kdsb4a",
+            "id": "rss_tmv6rm",
             "lat": null,
             "lng": null,
-            "occurredAt": "2026-11-16T13:26:27.000Z",
-            "severity": "low",
-            "source": "live",
-            "title": "Iran claims capture of US MQM-170 drone near Strait of Hormuz",
-            "type": "strike",
-            "vessel": null
-        },
-        {
-            "description": "",
-            "id": "rss_1q00614",
-            "lat": null,
-            "lng": null,
-            "occurredAt": "2026-11-16T12:46:05.000Z",
-            "severity": "low",
-            "source": "live",
-            "title": "Shafaq News..Third tanker hits mine near Strait of Hormuz",
-            "type": "ship_incident",
-            "vessel": null
-        },
-        {
-            "description": "",
-            "id": "rss_1g26d49",
-            "lat": null,
-            "lng": null,
-            "occurredAt": "2026-11-16T12:14:01.000Z",
-            "severity": "low",
-            "source": "live",
-            "title": "Oil Tanker Traffic Through Strait of Hormuz Falls by Half",
-            "type": "ship_incident",
-            "vessel": null
-        },
-        {
-            "description": "",
-            "id": "rss_dl84uo",
-            "lat": null,
-            "lng": null,
-            "occurredAt": "2026-11-16T12:04:58.000Z",
-            "severity": "low",
-            "source": "live",
-            "title": "Supertanker With 2 Million Barrels Of Oil Sinks After Hitting Mine In Strait Of Hormuz, Iran Says",
-            "type": "ship_incident",
-            "vessel": null
-        },
-        {
-            "description": "",
-            "id": "rss_x7b0jb",
-            "lat": null,
-            "lng": null,
-            "occurredAt": "2026-11-16T11:58:51.000Z",
-            "severity": "low",
-            "source": "live",
-            "title": "Iran Claims Seizure of US Drone Amid Reports of Tanker Fires in Strait of Hormuz",
-            "type": "strike",
-            "vessel": null
-        },
-        {
-            "description": "",
-            "id": "rss_156fu3",
-            "lat": null,
-            "lng": null,
-            "occurredAt": "2026-11-16T11:51:45.000Z",
-            "severity": "low",
-            "source": "live",
-            "title": "Iranian Army: Third Oil Tanker Catches Fire in Eastern Strait of Hormuz",
-            "type": "ship_incident",
-            "vessel": null
-        },
-        {
-            "description": "",
-            "id": "rss_4mcrvv",
-            "lat": null,
-            "lng": null,
-            "occurredAt": "2026-11-16T11:41:45.000Z",
+            "occurredAt": "2026-11-17T13:22:23.000Z",
             "severity": "medium",
             "source": "live",
-            "title": "Oil Tanker On Fire After Being Hit By \"Unknown Projectile\" In Hormuz Strait",
+            "title": "Iranian air defences shoot down US-made LUCAS drone over Strait of Hormuz",
+            "type": "strike",
+            "vessel": null
+        },
+        {
+            "description": "",
+            "id": "rss_ob34ai",
+            "lat": null,
+            "lng": null,
+            "occurredAt": "2026-11-17T13:04:55.000Z",
+            "severity": "low",
+            "source": "live",
+            "title": "Iran Says It Downed U.S. Drone Over Strait of Hormuz",
+            "type": "strike",
+            "vessel": null
+        },
+        {
+            "description": "",
+            "id": "rss_dgi1hy",
+            "lat": null,
+            "lng": null,
+            "occurredAt": "2026-11-17T13:02:03.000Z",
+            "severity": "medium",
+            "source": "live",
+            "title": "Fate of Tanker Crew Unknown After Second Attack in Strait of Hormuz",
+            "type": "strike",
+            "vessel": null
+        },
+        {
+            "description": "",
+            "id": "rss_19wh18j",
+            "lat": null,
+            "lng": null,
+            "occurredAt": "2026-11-17T12:34:54.000Z",
+            "severity": "low",
+            "source": "live",
+            "title": "Second Violating Oil Tanker Catches Fire East of Strait of Hormuz",
+            "type": "ship_incident",
+            "vessel": null
+        },
+        {
+            "description": "Tehran, IRNA \u2013 The Islamic Revolution Guards Corps (IRGC) Navy has announced that a supertanker and a liquefied petroleum gas (LPG) carrier caught fire after striking naval mines in the Strait of Hormuz.",
+            "id": "rss_1rbzqeo",
+            "lat": null,
+            "lng": null,
+            "occurredAt": "2026-11-17T12:18:48.000Z",
+            "severity": "low",
+            "source": "live",
+            "title": "Supertanker, LPG carrier hit naval mines, catch fire in Strait of Hormuz: IRGC Navy",
             "type": "ship_incident",
             "vessel": null
         },
         {
             "description": "",
-            "id": "rss_hgq0rb",
+            "id": "rss_1ry1h7p",
             "lat": null,
             "lng": null,
-            "occurredAt": "2026-11-16T11:26:39.000Z",
+            "occurredAt": "2026-11-17T11:51:47.000Z",
             "severity": "low",
             "source": "live",
-            "title": "IRGC Reports Explosions Aboard Two Oil Tankers in the Strait of Hormuz",
+            "title": "Tanker Catches Fire After Hitting Sea Mine in Strait of Hormuz",
             "type": "ship_incident",
+            "vessel": null
+        },
+        {
+            "description": "",
+            "id": "rss_13bbdga",
+            "lat": null,
+            "lng": null,
+            "occurredAt": "2026-11-17T11:42:25.000Z",
+            "severity": "low",
+            "source": "live",
+            "title": "Iran: Mines caused explosions on two tankers in Strait of Hormuz",
+            "type": "ship_incident",
+            "vessel": null
+        },
+        {
+            "description": "",
+            "id": "rss_c9dzc7",
+            "lat": null,
+            "lng": null,
+            "occurredAt": "2026-11-17T11:41:11.000Z",
+            "severity": "high",
+            "source": "live",
+            "title": "Tara Gas LPG tanker hit by missile in Strait of Hormuz, all 25 crew safe, India says",
+            "type": "strike",
             "vessel": null
         }
     ],
     "eventsNote": "events lists the newest 10 headlines, one row per outlet report, so one incident can fill several rows. /api/v1/events carries a stories count that groups headlines by incident.",
     "gas": {
-        "nationalAvgCents": 386,
-        "nationalAvgUsd": 3.86,
-        "newestUpdatedAt": "2026-11-16T14:00:13.609Z",
+        "nationalAvgCents": 384,
+        "nationalAvgUsd": 3.84,
+        "newestUpdatedAt": "2026-11-17T14:00:46.412Z",
         "stateCount": 51
     },
     "gasNote": "gas.nationalAvgUsd and gas.nationalAvgCents are straits.live's own unweighted mean of the per-state regular-grade averages (50 states + DC), not AAA's published national average, which is volume-weighted and reads differently.",
     "hormuzIndex": {
-        "asOf": "2026-11-16T14:40:19.190Z",
+        "asOf": "2026-11-17T14:30:23.957Z",
         "crisisPressure": {
             "band": "extreme",
             "confidence": 10,
             "confidenceNote": "Dispersion band, not a certainty score: the weighted standard deviation of the component scores, scaled by 0.4 and clamped 2-15. Higher means the inputs disagree with each other more, not that the reading is more certain; lower means they agree. Method: https://straits.live/methodology#confidence",
-            "delta24h": 0,
+            "delta24h": 1,
             "indexHealth": "fresh",
-            "inputsAsOf": "2026-11-08T00:00:00.000Z",
-            "value": 88
+            "inputsAsOf": "2026-11-15T00:00:00.000Z",
+            "value": 89
         },
         "escalationProbability": {
             "band": "elevated",
@@ -550,7 +551,7 @@
             "confidenceNote": "Dispersion band, not a certainty score: the weighted standard deviation of the component scores, scaled by 0.4 and clamped 2-15. Higher means the inputs disagree with each other more, not that the reading is more certain; lower means they agree. Method: https://straits.live/methodology#confidence",
             "delta24h": 0,
             "indexHealth": "fresh",
-            "inputsAsOf": "2026-11-16T14:10:56.000Z",
+            "inputsAsOf": "2026-11-17T13:45:50.000Z",
             "value": 55
         },
         "methodologyUrl": "https://straits.live/methodology#hormuz-index",
@@ -589,30 +590,30 @@
     },
     "insuranceMultiple": null,
     "iranRate": {
-        "ageHours": 0.6,
+        "ageHours": 0.4,
         "basis": "direct",
-        "buyRial": 2669500,
-        "buyToman": 266950,
-        "delta7dPct": 1.7926586360618417,
-        "deltaDayPct": 1.1784670500612804,
-        "midRial": 2683000,
+        "buyRial": 2658000,
+        "buyToman": 265800,
+        "delta7dPct": 2.631578947368421,
+        "deltaDayPct": -0.4286246738725307,
+        "midRial": 2671500,
         "pair": "IRR_USD",
-        "sellRial": 2696500,
-        "sellToman": 269650,
+        "sellRial": 2685000,
+        "sellToman": 268500,
         "stale": false,
-        "updatedAt": "2026-11-16T14:09:12.299Z"
+        "updatedAt": "2026-11-17T14:09:11.108Z"
     },
     "iranRateNote": null,
     "jwc": {
         "arabianGulfMentioned": true,
-        "checkedAt": "2026-11-16T12:00:35.845Z",
+        "checkedAt": "2026-11-17T12:00:38.440Z",
         "circularDate": "2026-09-16",
         "circularLabel": "JWLA-035",
         "circularUrl": "https://lmalloyds.com/wp-content/uploads/2026/09/JWLA-035-Black-Sea.pdf",
         "contentHash": "b23b91c1b74092a6",
         "lastChangedAt": "2026-10-07T01:06:15.245Z",
         "regionScore": 29,
-        "updatedAt": "2026-11-16T12:00:35.136Z"
+        "updatedAt": "2026-11-17T12:00:37.324Z"
     },
     "links": {
         "aisGaps": "https://straits.live/api/v1/ais-gaps",
@@ -648,14 +649,14 @@
         "vessels": "https://straits.live/api/v1/vessels"
     },
     "marketClosed": false,
-    "marketTime": "2026-11-16T14:31:53.000Z",
-    "measuredPopulation": 917,
+    "marketTime": "2026-11-17T14:07:32.000Z",
+    "measuredPopulation": 871,
     "narrative": {
-        "arcUpdated": "2026-11-13",
-        "arcUpdatedAt": "2026-11-13T16:58:09Z",
-        "summary": "The Strait of Hormuz has been effectively closed to commercial traffic since February 28, 2026. Iran re-declared it closed after the July ceasefire collapsed, and the war has spread to a second chokepoint, where control of the Yemeni side of the Bab el-Mandeb is contested: the Houthis took it in September, Yemen's Saudi-backed government said on October 5 that it had retaken the coast up to Mocha, the Houthis deny it, and Reuters couldn't verify the claim. US forces have destroyed Iranian tankers and Iran has fired missiles at US warships and bases, while merchant ships are being hit at more than one a day: a projectile hit the Kuwaiti supertanker Al Funtas in the strait on the evening of September 28, three more ships were hit on September 29, the Kuwaiti supertanker Kazimah III was set on fire on October 1, two more tankers were reported hit on October 2, on October 4 the product tanker Lipsi was hit in the engine room and left drifting, two more tankers were struck on the evening of October 4, a tanker was hit on October 5 and reported an engine-room fire, the LNG carrier Maran Gas Mystras was hit leaving the strait around October 4, on October 6 a projectile hit the Panama-flagged On Peace off Oman, injuring 12 of her crew, 11 of them Indian, per India's foreign ministry, and on the evening of October 7 UKMTO said a tanker about 51 nautical miles north of Madinat ash Shamal, off Qatar, was hit by multiple projectiles with casualties; maritime security sources later named her as the chemical tanker Acers, with minor crew injuries, per Reuters. Reuters, citing three maritime security sources, reported on October 7 that at least 12 attacks hit tankers around the strait in the week of September 28 to October 5, the most in any week since the war began. The UK Maritime Trade Operations centre hasn't said who fired. The Guard-linked Fars news agency said on October 3 that the Revolutionary Guard's navy had targeted seven \"violating\" tankers in five days, and Iranian state media say three Emirati tankers among those hit were on Iran's non-compliance list. On October 5 Guard forces warned a tanker north of Khasab, Oman, that it would be targeted unless it turned back, and it complied, per UKMTO. On September 23 a seafarer was killed when projectiles hit the bulk carrier Cape Dao off Oman. Drones launched from Iraq shut Saudi Arabia's East-West pipeline, the largest route around the strait, on September 11; it restarted at a low rate on September 22 and loadings at Yanbu resumed within the week, with Kpler putting flow near 2.65 million barrels a day on September 28, about half the pre-attack rate, per Reuters as carried by Baird Maritime. On October 6 Saudi Arabia's energy minister, Prince Abdulaziz bin Salman, said the line was back up to 5.8 million barrels a day, per Al Jazeera; no third party has confirmed that figure. How much is moving is contested, and the answer depends on what is counted. Reuters, on provisional Kpler data, reported on October 5 that Middle East crude exports topped their pre-war average of about 18 million barrels a day on four days in late September. That total leans on routes around the strait and on ship-to-ship transfers in the Gulf of Oman: DW, citing Kpler, says about 40% of the crude left the Gulf without crossing the strait in September. The National, citing Kpler, puts flows through the strait itself at 6.02 million barrels a day in September, less than a third of February's. Vessel counts, ours included, stay far below pre-war levels, though they can't see tankers that cross with AIS off. On the talks, foreign minister Abbas Araghchi set out a seven-day plan on September 25: the United States would release frozen assets, lift oil sanctions and end its blockade, fighting would stop, and Iran would reopen the strait within the week. President Trump rejected it in public on September 26, and on September 30 Iran said it had received a US response, whose terms haven't been published. On October 4 parliament speaker Mohammad Bagher Ghalibaf said the strait won't open until Iran's seven conditions, which he said rest on the June Islamabad Memorandum, are met; CNBC says they include an end to the US blockade and the release of Iranian assets. On October 1 the United States added sanctions on Iran's rail system and a shadow banking network. On October 6 President Trump said the strait \"belongs to the United States of America\" and that US forces sink Iranian ships that run the blockade with no oil aboard. Iran's oil minister, Mohsen Paknejad, resigned on October 4 with crude exports stalled under the blockade, and Hamid Bovard of the National Iranian Oil Company is acting minister, per Bloomberg. On October 7 Revolutionary Guard adviser Mohammad Reza Naqdi said, per the Guard-linked Fars agency, that the strait stays closed until Iran's demands are met and that routes Iran calls illegal will soon be blocked. Secretary of State Marco Rubio said the strait is open and Iran has lost control of it, and US Central Command called the closure claim false. Vice President JD Vance told Reuters that Iran must make a meaningful cut to its enrichment capacity, and a senior Iranian official told Reuters that Washington must first meet Tehran's conditions before nuclear talks can start. On October 8 President Trump said the US won't attack Iran before the November 3 midterm elections and that the blockade stays in force, and Iran said it would answer Washington's reply to its seven-day plan within a few days. On October 9 Iranian media reported that tankers on routes Iran hasn't approved may have hit mines, which no maritime authority has confirmed and US Central Command disputes, saying it has cleared the primary lanes. The same day the Revolutionary Guard claimed a strike on an LPG tanker it named as the NV Sunshine, which no maritime authority has confirmed, and said ships using routes Iran hasn't approved will be pursued across the region, not only in the strait. Separately, UKMTO logged a projectile strike and fire on a vessel about 13 nautical miles west of Al Jazeera, UAE, without naming the ship or who fired. US Central Command says it had redirected 133 commercial vessels under the blockade by October 9, and Brent settled at $104.72 that day, per our own feed. On October 10 and 11 UKMTO reported more outbound tankers hit on the port side by projectiles, with the crews reported safe, per gCaptain, and gCaptain counted six vessels reported struck in and around the strait on October 11. The Guard said supertankers had hit mines on October 10 and 11, then a third on October 12, none confirmed by a maritime authority, per Mehr and Anadolu, and its navy chief said ships that switch off their tracking will be treated as hostile, per Mehr. On October 10 US Central Command said a US fighter jet disabled the propulsion of the Panama-flagged cargo ship Ocean Molica in the Gulf of Oman, with her crew unharmed, per Reuters. On the evening of October 12 UKMTO reported a products tanker and then three vessels struck by unknown projectiles, and none of the reports says who fired. On the talks, Mohsen Rezaei, whom Reuters calls Iran's security chief, called Washington's reply to Iran's seven conditions \"insufficient\" on October 11, and on October 12 foreign ministry spokesman Esmaeil Baghaei said Iran is still reviewing the reply and will answer through intermediaries, per MarineLink. Fitch said it expects a durable deal to reopen the strait in early 2027, per Anadolu. On the second front, a Houthi missile struck Riyadh's main airport on October 10, killing 12 people, per Saudi Arabia's civil aviation authority; an injured man later died, bringing the toll to 13, and a second strike on October 11 killed one more, per Al Jazeera. On October 13 the Saudi-led coalition struck Houthi oil sites in Yemen, per AFP, while President Trump said the US may join Saudi strikes on the Houthis. On October 13 UKMTO reported two more ships hit by projectiles with minor damage, the International Monetary Fund cut its 2026 growth forecasts for Gulf economies because of the prolonged closure, per The National, and Brent settled at $105.69, per Al Jazeera. On October 14 a container ship sank near the strait: the Guard said a ship carrying more than 2,500 containers hit a mine, per AP, while maritime security sources told Reuters the Singapore-flagged GFS Pride sank after a projectile hit her. Singapore's port authority said all 21 of her crew were evacuated and that her sister ship GFS Giselle, hit on October 14, reached anchorage with her crew safe. The bulk carrier Cape Dao, hit on September 23, has also sunk, and per IMO casualty data GFS Pride and Cape Dao are the second and third ships sunk since February 28, per Reuters. UKMTO counted 15 attacks on ships from October 6 to October 14, 11 of them in the last four days, per Al Jazeera, and on October 16 BBC Verify said 12 vessels were struck in a week, a record. On October 15 US Central Command said the US and its partners control the strait, citing more than 40 commercial ships through it in 24 hours, and that a Guard projectile, not a mine, hit GFS Pride, per gCaptain; PortWatch counted about four crossings a day in the week to October 18. Iran's army chief said the strait stays closed until Iran's rights are respected, per IRNA, and on October 16 its army spokesman said it would reopen if the United States leaves the region, per CBS News. On October 18 foreign minister Abbas Araghchi said Iran's seven-day plan is still on the table and urged Washington to accept it: the strait would reopen on the sixth day if the US meets Iran's conditions, with talks on a final deal on the seventh, per Reuters; Iran also threatened enormous damage if it is attacked. Iran's navy says more \"violating\" tankers have caught fire east of the strait, which no maritime authority has confirmed, and Reuters reported on October 16 that Iran has shipped some LPG and jet fuel since July despite the blockade. On October 17 the Guard said two supertankers hit mines and caught fire, per Reuters, and from the evening of October 18 Iranian media claimed another, per Mehr; no maritime authority has confirmed any of them. US Central Command said the vast majority of Iran's attempted attacks fail, and the US military said 97% of ships cross the strait safely. The IMO's chief urged ships to avoid the strait, per Xinhua, and the IMO put the number of trapped seafarers at about 6,000, per Fox News, and on October 19 a tanker was hit off Saudi Arabia's Gulf coast and her crew evacuated, per Naharnet. On October 20 the Guard said two more \"violating\" tankers hit mines in the strait and caught fire, and that it shot down a US MQ-9 drone, its 54th claimed; no maritime authority or US Central Command has confirmed either. UKMTO logged a report of a tanker incident involving military forces about 121 nautical miles east of Duqm, Oman, and Iran's strait authority says its non-compliance list now holds about 120 vessels, up from 82 at the start of October. On October 21 UKMTO said a projectile hit a tanker about 11 nautical miles west of Bukha, Oman, with her crew safe, and a Revolutionary Guard official said Iran could target the undersea internet cables in the strait if Iran is attacked. On October 22 the Guard claimed seven more tankers hit, four by its navy and three by mines, none of them confirmed, and threatened American bases if US escorts continue, while President Trump said Iran was inventing the strikes to lift oil prices. On October 23 Iranian state television said ships Iran calls non-compliant can no longer cross, oil from a tanker closed beaches in Umm Al Quwain, UAE, and the US ambassador to the UN said the war could last another year. That evening the Guard claimed two more supertankers hit mines, which no maritime authority has confirmed, and President Trump said the US may restart large-scale strikes. On October 24 Saudi defences shot down a Houthi missile fired toward Riyadh and Iran's armed forces chief warned US warships away from the Gulf. On October 25 US Central Command's commander said the strait's main routes are clear of Iranian mines, which the Guard's unconfirmed mine claims contradict, Iran said it shot down a US drone over Bandar Abbas, and its foreign minister said the strait won't be managed as it was before the war. Iranian media denied an Al Arabiya report that Iran offered to reopen the strait if the blockade is lifted, though Iran's envoy in Islamabad said Iran had told Pakistan as much. On October 26 Saudi, Turkish and Pakistani security chiefs went to Tehran for talks, CNN reported that US forces could begin major strikes within 96 hours of an order from President Trump, and INTERTANKO put crossings on the US-backed route above 30 a day, against the 4 PortWatch counted on October 18 and about three a day in the week to October 25, and Iran's state broadcaster said the strait could reopen within four to five days if its conditions, among them an end to the US blockade, are met. On October 27 Iran's strait authority said it will take legal action against every ship of the South Korean tanker owner Sinokor from November 1, and the Houthis claimed a missile strike on Saudi Arabia's Ras Tanura refinery, which Riyadh hasn't confirmed. Later that day Iran's army said a tanker had hit mines east of the strait and caught fire, which no maritime authority has confirmed, and a Pakistani official told Reuters that Pakistan, Turkey, Saudi Arabia and Qatar could guarantee a US-approved proposal if Iran accepted it. On October 29 the Guard claimed three tankers hit mines on a route it calls unauthorized, which no maritime authority has confirmed, and UKMTO reported a vessel on fire north of Khasab, Oman. Late that day UKMTO said assailants in a small craft attached explosives to a tanker off Khasab, named by Splash247 as the Louise 1, and on October 30 Iran raised its unconfirmed mine count to four tankers. Later on October 30 AFP reported Oman had evacuated 25 crew from the burning tanker RITI, UKMTO reported a vessel hit and on fire south of Iran's Lavan Island, and the Qatari LNG carrier Al Mayeda was hit by unidentified objects in the Gulf. On October 31 Iran's navy claimed another tanker hit mines, which no maritime authority has confirmed, and foreign minister Abbas Araghchi said Iran and Qatari mediators had a proposal to reopen the strait in two days if the US meets Iran's conditions, against seven in Iran's own plan and the four to five its state broadcaster gave on October 26. Tehran says it's waiting for a US reply, and President Trump said he's \"not in that much of a hurry\". On November 1 UKMTO relayed a Mayday reporting a vessel hit by an unknown projectile in the strait at 15:09 GMT, which The Maritime Executive identified as the UAE tug Selat Storm. Late on November 1 projectiles hit the product tanker Largo Atom in the northern Gulf, far from the strait, per UKMTO and Vanguard Tech, and on November 2 one of the 14 Indian crew of the MSV Al Jusufi was killed when she was struck near Limah, Oman, per India's foreign ministry. On the evening of November 3 two projectiles hit a tanker's engine room off Limah, and late on November 4 two more hit a tanker about 50 nautical miles north of Qatar, per UKMTO. From November 1 to 8 the Guard and Iran's army navy claimed more tankers hit mines, which no maritime authority has confirmed. UKMTO counted 35 vessels hit in October, the most of any month of the war, per Reuters. Late on November 2, the eve of the US midterms, US forces struck Iran's Qeshm Island in what US officials called limited, defensive strikes, per NBC News and CBS News. On November 6 Tasnim claimed two missiles hit Qeshm and President Trump spoke of \"minor strikes\" without confirming Qeshm, per CNBC, and on November 7 US Central Command said it disabled the blockade runner Huda in the Gulf of Oman, while UKMTO logged a tanker fire off Khasab and a projectile hit on an outbound tanker. Qatar is mediating toward an interim deal, while Mohsen Rezaei, secretary of Iran's Supreme National Security Council, called Washington's latest response \"not convincing\". On November 8 President Trump told CNN renewed strikes are \"highly unlikely\" to be necessary and depend on Iran signing \"a very strong agreement\", and Iraq's foreign minister told Al Jazeera that Baghdad has understandings with Washington to export through the strait along a lane near Oman, per Reuters, with no terms published. On November 9 a Guard navy official said navigation aids in the southern strait were destroyed and no unauthorized vessel crossed overnight, a claim no maritime authority has confirmed, and Iran's foreign ministry said its two-day reopening plan stays on the table. After meeting Qatar's prime minister in Washington later that day, Trump said \"Iran militarily is effectively over\" and the US is \"just keeping it the status quo\", per Al Jazeera, while Rezaei called Trump's claims about talks \"fake news\". On November 10 the Guard claimed two more tankers exploded on a route it calls unauthorized, which no maritime authority has confirmed, Trump said the war should end \"fairly soon\", and Brent fell below $90 for the first time since August. On November 10 a projectile hit the supertanker Fujairah Energy in the Persian Gulf and injured four crew, per India's shipping minister, and on November 11 he raised the Saudi-flagged tanker NCC Fajr incident, which UKMTO later classed as an attack by an unknown projectile north of Khasab with her crew safe, while the Guard claimed two more mine strikes that no maritime authority has confirmed and Rezaei said no enriched uranium will leave Iran. On November 11 the Liberia-flagged tanker Dominica Prosperity was hit off Ras al-Khaimah, UAE, and her 22 crew were taken off, per Ambrey and gCaptain, and on November 12 the Guard claimed two supertankers carrying more than 4 million barrels were disabled, which no maritime authority has confirmed. Iranian state media reported an 'enemy' strike on Sirik County late on November 12, which the Guard called an air strike on a telecoms tower, and Iran's army said four tankers were hit after ignoring warnings, which no maritime authority has confirmed. On November 13 the Guard claimed a strike on a US radar in Bahrain and a mine blast on a gas carrier, neither confirmed, and Trump said he may use force 'right now' if US allies or ships are threatened. Trump wrote on November 12 that the US doesn't need a deal with Iran, while Ghalibaf said the strait will never return to its pre-war status. Democrats won both chambers of Congress in the November 3 midterms, a loss Vice President JD Vance blamed on the war, and Brent fell below $100 on November 4 for the first time since October 7, per NBC News. Brent touched $110 on October 16, per CNBC, settled at $109.86 that day, was near $108 on October 19 and near $111 on October 20, per our own feed. It settled at $113.17 on October 22, per Bloomberg, and settled at $116.72 on October 23 before trading near $115 from October 26 to 28. It settled at $98.32 on November 6, fell about 5% to about $92 late on November 9 and traded near $89.50 on the afternoon of November 10 and near $92.77 on November 11, up about 3.5% over 24 hours, per our own feed, and near $96.74 on November 13, up about 3.4% in a day. On October 15 missiles hit the presidential palace in Aden, killing five, per Al Jazeera, and Yemen's government blamed the Houthis."
+        "arcUpdated": "2026-11-16",
+        "arcUpdatedAt": "2026-11-16T15:10:26Z",
+        "summary": "The Strait of Hormuz has been effectively closed to commercial traffic since February 28, 2026. Iran re-declared it closed after the July ceasefire collapsed, and the war has spread to a second chokepoint, where control of the Yemeni side of the Bab el-Mandeb is contested: the Houthis took it in September, Yemen's Saudi-backed government said on October 5 that it had retaken the coast up to Mocha, the Houthis deny it, and Reuters couldn't verify the claim. US forces have destroyed Iranian tankers and Iran has fired missiles at US warships and bases, while merchant ships are being hit at more than one a day: a projectile hit the Kuwaiti supertanker Al Funtas in the strait on the evening of September 28, three more ships were hit on September 29, the Kuwaiti supertanker Kazimah III was set on fire on October 1, two more tankers were reported hit on October 2, on October 4 the product tanker Lipsi was hit in the engine room and left drifting, two more tankers were struck on the evening of October 4, a tanker was hit on October 5 and reported an engine-room fire, the LNG carrier Maran Gas Mystras was hit leaving the strait around October 4, on October 6 a projectile hit the Panama-flagged On Peace off Oman, injuring 12 of her crew, 11 of them Indian, per India's foreign ministry, and on the evening of October 7 UKMTO said a tanker about 51 nautical miles north of Madinat ash Shamal, off Qatar, was hit by multiple projectiles with casualties; maritime security sources later named her as the chemical tanker Acers, with minor crew injuries, per Reuters. Reuters, citing three maritime security sources, reported on October 7 that at least 12 attacks hit tankers around the strait in the week of September 28 to October 5, the most in any week since the war began. The UK Maritime Trade Operations centre hasn't said who fired. The Guard-linked Fars news agency said on October 3 that the Revolutionary Guard's navy had targeted seven \"violating\" tankers in five days, and Iranian state media say three Emirati tankers among those hit were on Iran's non-compliance list. On October 5 Guard forces warned a tanker north of Khasab, Oman, that it would be targeted unless it turned back, and it complied, per UKMTO. On September 23 a seafarer was killed when projectiles hit the bulk carrier Cape Dao off Oman. Drones launched from Iraq shut Saudi Arabia's East-West pipeline, the largest route around the strait, on September 11; it restarted at a low rate on September 22 and loadings at Yanbu resumed within the week, with Kpler putting flow near 2.65 million barrels a day on September 28, about half the pre-attack rate, per Reuters as carried by Baird Maritime. On October 6 Saudi Arabia's energy minister, Prince Abdulaziz bin Salman, said the line was back up to 5.8 million barrels a day, per Al Jazeera; no third party has confirmed that figure. How much is moving is contested, and the answer depends on what is counted. Reuters, on provisional Kpler data, reported on October 5 that Middle East crude exports topped their pre-war average of about 18 million barrels a day on four days in late September. That total leans on routes around the strait and on ship-to-ship transfers in the Gulf of Oman: DW, citing Kpler, says about 40% of the crude left the Gulf without crossing the strait in September. The National, citing Kpler, puts flows through the strait itself at 6.02 million barrels a day in September, less than a third of February's. Vessel counts, ours included, stay far below pre-war levels, though they can't see tankers that cross with AIS off. On the talks, foreign minister Abbas Araghchi set out a seven-day plan on September 25: the United States would release frozen assets, lift oil sanctions and end its blockade, fighting would stop, and Iran would reopen the strait within the week. President Trump rejected it in public on September 26, and on September 30 Iran said it had received a US response, whose terms haven't been published. On October 4 parliament speaker Mohammad Bagher Ghalibaf said the strait won't open until Iran's seven conditions, which he said rest on the June Islamabad Memorandum, are met; CNBC says they include an end to the US blockade and the release of Iranian assets. On October 1 the United States added sanctions on Iran's rail system and a shadow banking network. On October 6 President Trump said the strait \"belongs to the United States of America\" and that US forces sink Iranian ships that run the blockade with no oil aboard. Iran's oil minister, Mohsen Paknejad, resigned on October 4 with crude exports stalled under the blockade, and Hamid Bovard of the National Iranian Oil Company is acting minister, per Bloomberg. On October 7 Revolutionary Guard adviser Mohammad Reza Naqdi said, per the Guard-linked Fars agency, that the strait stays closed until Iran's demands are met and that routes Iran calls illegal will soon be blocked. Secretary of State Marco Rubio said the strait is open and Iran has lost control of it, and US Central Command called the closure claim false. Vice President JD Vance told Reuters that Iran must make a meaningful cut to its enrichment capacity, and a senior Iranian official told Reuters that Washington must first meet Tehran's conditions before nuclear talks can start. On October 8 President Trump said the US won't attack Iran before the November 3 midterm elections and that the blockade stays in force, and Iran said it would answer Washington's reply to its seven-day plan within a few days. On October 9 Iranian media reported that tankers on routes Iran hasn't approved may have hit mines, which no maritime authority has confirmed and US Central Command disputes, saying it has cleared the primary lanes. The same day the Revolutionary Guard claimed a strike on an LPG tanker it named as the NV Sunshine, which no maritime authority has confirmed, and said ships using routes Iran hasn't approved will be pursued across the region, not only in the strait. Separately, UKMTO logged a projectile strike and fire on a vessel about 13 nautical miles west of Al Jazeera, UAE, without naming the ship or who fired. US Central Command says it had redirected 133 commercial vessels under the blockade by October 9, and Brent settled at $104.72 that day, per our own feed. On October 10 and 11 UKMTO reported more outbound tankers hit on the port side by projectiles, with the crews reported safe, per gCaptain, and gCaptain counted six vessels reported struck in and around the strait on October 11. The Guard said supertankers had hit mines on October 10 and 11, then a third on October 12, none confirmed by a maritime authority, per Mehr and Anadolu, and its navy chief said ships that switch off their tracking will be treated as hostile, per Mehr. On October 10 US Central Command said a US fighter jet disabled the propulsion of the Panama-flagged cargo ship Ocean Molica in the Gulf of Oman, with her crew unharmed, per Reuters. On the evening of October 12 UKMTO reported a products tanker and then three vessels struck by unknown projectiles, and none of the reports says who fired. On the talks, Mohsen Rezaei, whom Reuters calls Iran's security chief, called Washington's reply to Iran's seven conditions \"insufficient\" on October 11, and on October 12 foreign ministry spokesman Esmaeil Baghaei said Iran is still reviewing the reply and will answer through intermediaries, per MarineLink. Fitch said it expects a durable deal to reopen the strait in early 2027, per Anadolu. On the second front, a Houthi missile struck Riyadh's main airport on October 10, killing 12 people, per Saudi Arabia's civil aviation authority; an injured man later died, bringing the toll to 13, and a second strike on October 11 killed one more, per Al Jazeera. On October 13 the Saudi-led coalition struck Houthi oil sites in Yemen, per AFP, while President Trump said the US may join Saudi strikes on the Houthis. On October 13 UKMTO reported two more ships hit by projectiles with minor damage, the International Monetary Fund cut its 2026 growth forecasts for Gulf economies because of the prolonged closure, per The National, and Brent settled at $105.69, per Al Jazeera. On October 14 a container ship sank near the strait: the Guard said a ship carrying more than 2,500 containers hit a mine, per AP, while maritime security sources told Reuters the Singapore-flagged GFS Pride sank after a projectile hit her. Singapore's port authority said all 21 of her crew were evacuated and that her sister ship GFS Giselle, hit on October 14, reached anchorage with her crew safe. The bulk carrier Cape Dao, hit on September 23, has also sunk, and per IMO casualty data GFS Pride and Cape Dao are the second and third ships sunk since February 28, per Reuters. UKMTO counted 15 attacks on ships from October 6 to October 14, 11 of them in the last four days, per Al Jazeera, and on October 16 BBC Verify said 12 vessels were struck in a week, a record. On October 15 US Central Command said the US and its partners control the strait, citing more than 40 commercial ships through it in 24 hours, and that a Guard projectile, not a mine, hit GFS Pride, per gCaptain; PortWatch counted about four crossings a day in the week to October 18. Iran's army chief said the strait stays closed until Iran's rights are respected, per IRNA, and on October 16 its army spokesman said it would reopen if the United States leaves the region, per CBS News. On October 18 foreign minister Abbas Araghchi said Iran's seven-day plan is still on the table and urged Washington to accept it: the strait would reopen on the sixth day if the US meets Iran's conditions, with talks on a final deal on the seventh, per Reuters; Iran also threatened enormous damage if it is attacked. Iran's navy says more \"violating\" tankers have caught fire east of the strait, which no maritime authority has confirmed, and Reuters reported on October 16 that Iran has shipped some LPG and jet fuel since July despite the blockade. On October 17 the Guard said two supertankers hit mines and caught fire, per Reuters, and from the evening of October 18 Iranian media claimed another, per Mehr; no maritime authority has confirmed any of them. US Central Command said the vast majority of Iran's attempted attacks fail, and the US military said 97% of ships cross the strait safely. The IMO's chief urged ships to avoid the strait, per Xinhua, and the IMO put the number of trapped seafarers at about 6,000, per Fox News, and on October 19 a tanker was hit off Saudi Arabia's Gulf coast and her crew evacuated, per Naharnet. On October 20 the Guard said two more \"violating\" tankers hit mines in the strait and caught fire, and that it shot down a US MQ-9 drone, its 54th claimed; no maritime authority or US Central Command has confirmed either. UKMTO logged a report of a tanker incident involving military forces about 121 nautical miles east of Duqm, Oman, and Iran's strait authority says its non-compliance list now holds about 120 vessels, up from 82 at the start of October. On October 21 UKMTO said a projectile hit a tanker about 11 nautical miles west of Bukha, Oman, with her crew safe, and a Revolutionary Guard official said Iran could target the undersea internet cables in the strait if Iran is attacked. On October 22 the Guard claimed seven more tankers hit, four by its navy and three by mines, none of them confirmed, and threatened American bases if US escorts continue, while President Trump said Iran was inventing the strikes to lift oil prices. On October 23 Iranian state television said ships Iran calls non-compliant can no longer cross, oil from a tanker closed beaches in Umm Al Quwain, UAE, and the US ambassador to the UN said the war could last another year. That evening the Guard claimed two more supertankers hit mines, which no maritime authority has confirmed, and President Trump said the US may restart large-scale strikes. On October 24 Saudi defences shot down a Houthi missile fired toward Riyadh and Iran's armed forces chief warned US warships away from the Gulf. On October 25 US Central Command's commander said the strait's main routes are clear of Iranian mines, which the Guard's unconfirmed mine claims contradict, Iran said it shot down a US drone over Bandar Abbas, and its foreign minister said the strait won't be managed as it was before the war. Iranian media denied an Al Arabiya report that Iran offered to reopen the strait if the blockade is lifted, though Iran's envoy in Islamabad said Iran had told Pakistan as much. On October 26 Saudi, Turkish and Pakistani security chiefs went to Tehran for talks, CNN reported that US forces could begin major strikes within 96 hours of an order from President Trump, and INTERTANKO put crossings on the US-backed route above 30 a day, against the 4 PortWatch counted on October 18 and about three a day in the week to October 25, and Iran's state broadcaster said the strait could reopen within four to five days if its conditions, among them an end to the US blockade, are met. On October 27 Iran's strait authority said it will take legal action against every ship of the South Korean tanker owner Sinokor from November 1, and the Houthis claimed a missile strike on Saudi Arabia's Ras Tanura refinery, which Riyadh hasn't confirmed. Later that day Iran's army said a tanker had hit mines east of the strait and caught fire, which no maritime authority has confirmed, and a Pakistani official told Reuters that Pakistan, Turkey, Saudi Arabia and Qatar could guarantee a US-approved proposal if Iran accepted it. On October 29 the Guard claimed three tankers hit mines on a route it calls unauthorized, which no maritime authority has confirmed, and UKMTO reported a vessel on fire north of Khasab, Oman. Late that day UKMTO said assailants in a small craft attached explosives to a tanker off Khasab, named by Splash247 as the Louise 1, and on October 30 Iran raised its unconfirmed mine count to four tankers. Later on October 30 AFP reported Oman had evacuated 25 crew from the burning tanker RITI, UKMTO reported a vessel hit and on fire south of Iran's Lavan Island, and the Qatari LNG carrier Al Mayeda was hit by unidentified objects in the Gulf. On October 31 Iran's navy claimed another tanker hit mines, which no maritime authority has confirmed, and foreign minister Abbas Araghchi said Iran and Qatari mediators had a proposal to reopen the strait in two days if the US meets Iran's conditions, against seven in Iran's own plan and the four to five its state broadcaster gave on October 26. Tehran says it's waiting for a US reply, and President Trump said he's \"not in that much of a hurry\". On November 1 UKMTO relayed a Mayday reporting a vessel hit by an unknown projectile in the strait at 15:09 GMT, which The Maritime Executive identified as the UAE tug Selat Storm. Late on November 1 projectiles hit the product tanker Largo Atom in the northern Gulf, far from the strait, per UKMTO and Vanguard Tech, and on November 2 one of the 14 Indian crew of the MSV Al Jusufi was killed when she was struck near Limah, Oman, per India's foreign ministry. On the evening of November 3 two projectiles hit a tanker's engine room off Limah, and late on November 4 two more hit a tanker about 50 nautical miles north of Qatar, per UKMTO. From November 1 to 8 the Guard and Iran's army navy claimed more tankers hit mines, which no maritime authority has confirmed. UKMTO counted 35 vessels hit in October, the most of any month of the war, per Reuters. Late on November 2, the eve of the US midterms, US forces struck Iran's Qeshm Island in what US officials called limited, defensive strikes, per NBC News and CBS News. On November 6 Tasnim claimed two missiles hit Qeshm and President Trump spoke of \"minor strikes\" without confirming Qeshm, per CNBC, and on November 7 US Central Command said it disabled the blockade runner Huda in the Gulf of Oman, while UKMTO logged a tanker fire off Khasab and a projectile hit on an outbound tanker. Qatar is mediating toward an interim deal, while Mohsen Rezaei, secretary of Iran's Supreme National Security Council, called Washington's latest response \"not convincing\". On November 8 President Trump told CNN renewed strikes are \"highly unlikely\" to be necessary and depend on Iran signing \"a very strong agreement\", and Iraq's foreign minister told Al Jazeera that Baghdad has understandings with Washington to export through the strait along a lane near Oman, per Reuters, with no terms published. On November 9 a Guard navy official said navigation aids in the southern strait were destroyed and no unauthorized vessel crossed overnight, a claim no maritime authority has confirmed, and Iran's foreign ministry said its two-day reopening plan stays on the table. After meeting Qatar's prime minister in Washington later that day, Trump said \"Iran militarily is effectively over\" and the US is \"just keeping it the status quo\", per Al Jazeera, while Rezaei called Trump's claims about talks \"fake news\". On November 10 the Guard claimed two more tankers exploded on a route it calls unauthorized, which no maritime authority has confirmed, Trump said the war should end \"fairly soon\", and Brent fell below $90 for the first time since August. On November 10 a projectile hit the supertanker Fujairah Energy in the Persian Gulf and injured four crew, per India's shipping minister, and on November 11 he raised the Saudi-flagged tanker NCC Fajr incident, which UKMTO later classed as an attack by an unknown projectile north of Khasab with her crew safe, while the Guard claimed two more mine strikes that no maritime authority has confirmed and Rezaei said no enriched uranium will leave Iran. On November 11 the Liberia-flagged tanker Dominica Prosperity was hit off Ras al-Khaimah, UAE, and her 22 crew were taken off, per Ambrey and gCaptain, and on November 12 the Guard claimed two supertankers carrying more than 4 million barrels were disabled, which no maritime authority has confirmed. Iranian state media reported an 'enemy' strike on Sirik County late on November 12, which the Guard called an air strike on a telecoms tower, and Iran's army said four tankers were hit after ignoring warnings, which no maritime authority has confirmed. On November 13 the Guard claimed a strike on a US radar in Bahrain and a mine blast on a gas carrier, neither confirmed, and Trump said he may use force 'right now' if US allies or ships are threatened. Iran claimed more tankers hit mines each day from November 14 to 16, including a supertanker it said sank, which no maritime authority has confirmed, while UKMTO reported an attack on a tanker just before the strait on November 15 and a projectile hit that set a tanker's engine room on fire on November 16. Trump wrote on November 12 that the US doesn't need a deal with Iran, while Ghalibaf said the strait will never return to its pre-war status. Democrats won both chambers of Congress in the November 3 midterms, a loss Vice President JD Vance blamed on the war, and Brent fell below $100 on November 4 for the first time since October 7, per NBC News. Brent touched $110 on October 16, per CNBC, settled at $109.86 that day, was near $108 on October 19 and near $111 on October 20, per our own feed. It settled at $113.17 on October 22, per Bloomberg, and settled at $116.72 on October 23 before trading near $115 from October 26 to 28. It settled at $98.32 on November 6, fell about 5% to about $92 late on November 9 and traded near $89.50 on the afternoon of November 10 and near $92.77 on November 11, up about 3.5% over 24 hours, per our own feed. It settled at $95.84 on November 13, little changed on the day, and traded near $93.6 on November 16. On October 15 missiles hit the presidential palace in Aden, killing five, per Al Jazeera, and Yemen's government blamed the Houthis."
     },
-    "oilAsOf": "2026-11-16T14:42:34.545Z",
+    "oilAsOf": "2026-11-17T14:18:05.341Z",
     "pipelineBypass": [
         {
             "authoredAt": "2026-10-27T00:00:00.000Z",
@@ -710,152 +711,152 @@
         {
             "closeAt": "2027-01-01T04:59:00Z",
             "id": "polymarket_665374",
-            "liquidityUsd": 318861.0547,
+            "liquidityUsd": 216694.361,
             "probability": 0.075,
             "question": "Will the U.S. invade Iran before 2027?",
             "sourceUrl": "https://polymarket.com/event/will-the-us-invade-iran-before-2027",
             "stale": false,
             "staleSince": null,
             "title": "Will the U.S. invade Iran before 2027?",
-            "updatedAt": "2026-11-16T14:30:22.289Z",
+            "updatedAt": "2026-11-17T14:15:13.384Z",
             "venue": "polymarket",
             "volumeUnit": "usd",
-            "volumeUsd": 80365542.16315801
+            "volumeUsd": 80405751.02448404
         },
         {
             "closeAt": "2027-01-01T04:59:00Z",
             "id": "polymarket_2176270",
-            "liquidityUsd": 263024.8151,
+            "liquidityUsd": 257810.7863,
             "probability": 0.045,
             "question": "Strait of Hormuz traffic returns to normal by December 31?",
             "sourceUrl": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-december-31",
             "stale": false,
             "staleSince": null,
             "title": "Strait of Hormuz traffic returns to normal by December 31?",
-            "updatedAt": "2026-11-16T14:30:22.289Z",
+            "updatedAt": "2026-11-17T14:15:13.384Z",
             "venue": "polymarket",
             "volumeUnit": "usd",
-            "volumeUsd": 17959926.783386994
+            "volumeUsd": 17978717.163786996
         },
         {
             "closeAt": "2027-01-01T04:59:00Z",
             "id": "polymarket_3128886",
-            "liquidityUsd": 402106.54769,
-            "probability": 0.1845,
+            "liquidityUsd": 379433.46521,
+            "probability": 0.1825,
             "question": "US announces end of Iranian blockade by December 31, 2026?",
             "sourceUrl": "https://polymarket.com/event/us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
             "stale": false,
             "staleSince": null,
             "title": "US announces end of Iranian blockade by...?: US announces end of Iranian blockade by December 31, 2026?",
-            "updatedAt": "2026-11-16T14:30:22.289Z",
+            "updatedAt": "2026-11-17T14:15:13.384Z",
             "venue": "polymarket",
             "volumeUnit": "usd",
-            "volumeUsd": 6510294.993849
+            "volumeUsd": 6547040.575491999
         },
         {
             "closeAt": "2026-12-01T04:59:00Z",
             "id": "polymarket_4906128",
-            "liquidityUsd": 305703.90206,
-            "probability": 0.0415,
+            "liquidityUsd": 246939.19492,
+            "probability": 0.046,
             "question": "US announces end of Iranian blockade by November 30, 2026?",
             "sourceUrl": "https://polymarket.com/event/us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
             "stale": false,
             "staleSince": null,
             "title": "US announces end of Iranian blockade by...?: US announces end of Iranian blockade by November 30, 2026?",
-            "updatedAt": "2026-11-16T14:30:22.289Z",
+            "updatedAt": "2026-11-17T14:15:13.384Z",
             "venue": "polymarket",
             "volumeUnit": "usd",
-            "volumeUsd": 3415647.1790050003
+            "volumeUsd": 3494769.985628
         },
         {
             "closeAt": "2026-12-01T04:59:00Z",
             "id": "polymarket_3501951",
-            "liquidityUsd": 200353.01008,
+            "liquidityUsd": 195510.80161,
             "probability": 0.011,
             "question": "Strait of Hormuz traffic returns to normal by November 30?",
             "sourceUrl": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-november-30-20260810151158765",
             "stale": false,
             "staleSince": null,
             "title": "Strait of Hormuz traffic returns to normal by November 30?",
-            "updatedAt": "2026-11-16T14:30:22.289Z",
+            "updatedAt": "2026-11-17T14:15:13.384Z",
             "venue": "polymarket",
             "volumeUnit": "usd",
-            "volumeUsd": 2068166.305568
+            "volumeUsd": 2095826.8340039998
         },
         {
             "closeAt": "2027-01-01T04:59:00Z",
             "id": "polymarket_3128768",
-            "liquidityUsd": 23371.2132,
-            "probability": 0.215,
+            "liquidityUsd": 20337.2965,
+            "probability": 0.205,
             "question": "Iran full airspace closure by December 31?",
             "sourceUrl": "https://polymarket.com/event/iran-full-airspace-closure-byptptpt-20260625195253028",
             "stale": false,
             "staleSince": null,
             "title": "Iran full airspace closure by...?: Iran full airspace closure by December 31?",
-            "updatedAt": "2026-11-16T14:30:22.289Z",
+            "updatedAt": "2026-11-17T14:15:13.384Z",
             "venue": "polymarket",
             "volumeUnit": "usd",
-            "volumeUsd": 1124411.6928319999
+            "volumeUsd": 1125961.4854439998
         },
         {
             "closeAt": "2026-12-01T04:59:00Z",
             "id": "polymarket_5087226",
-            "liquidityUsd": 161949.3032,
-            "probability": 0.055,
+            "liquidityUsd": 146301.39401,
+            "probability": 0.044,
             "question": "US-Iran Hormuz Agreement by November 30?",
             "sourceUrl": "https://polymarket.com/event/us-iran-hormuz-agreement-byptptpt-20260803235957575",
             "stale": false,
             "staleSince": null,
             "title": "US-Iran Hormuz Agreement by...?: US-Iran Hormuz Agreement by November 30?",
-            "updatedAt": "2026-11-16T14:30:22.289Z",
+            "updatedAt": "2026-11-17T14:15:13.384Z",
             "venue": "polymarket",
             "volumeUnit": "usd",
-            "volumeUsd": 944954.210248
+            "volumeUsd": 980442.2591310001
         },
         {
             "closeAt": "2027-01-01T04:59:00Z",
             "id": "polymarket_1170144",
-            "liquidityUsd": 87785.78011,
-            "probability": 0.0145,
+            "liquidityUsd": 79133.00329,
+            "probability": 0.016,
             "question": "Will the US officially declare war on Iran by December 31, 2026?",
             "sourceUrl": "https://polymarket.com/event/will-the-us-officially-declare-war-on-iran-by",
             "stale": false,
             "staleSince": null,
             "title": "Will the US officially declare war on Iran by...?: Will the US officially declare war on Iran by December 31, 2026?",
-            "updatedAt": "2026-11-16T14:30:22.289Z",
+            "updatedAt": "2026-11-17T14:15:13.384Z",
             "venue": "polymarket",
             "volumeUnit": "usd",
-            "volumeUsd": 925017.582728
+            "volumeUsd": 927019.3616180001
         },
         {
             "closeAt": "2027-04-01T03:59:00Z",
             "id": "polymarket_4906129",
-            "liquidityUsd": 163838.0811,
-            "probability": 0.545,
+            "liquidityUsd": 197763.3026,
+            "probability": 0.535,
             "question": "US announces end of Iranian blockade by March 31, 2027?",
             "sourceUrl": "https://polymarket.com/event/us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
             "stale": false,
             "staleSince": null,
             "title": "US announces end of Iranian blockade by...?: US announces end of Iranian blockade by March 31, 2027?",
-            "updatedAt": "2026-11-16T14:30:22.289Z",
+            "updatedAt": "2026-11-17T14:15:13.384Z",
             "venue": "polymarket",
             "volumeUnit": "usd",
-            "volumeUsd": 666719.0236029999
+            "volumeUsd": 677917.557127
         },
         {
             "closeAt": "2027-07-01T13:59:00Z",
             "id": "kalshi_KXHORMUZNORM-26MAR17-B270701",
             "liquidityUsd": null,
-            "probability": 0.36,
+            "probability": 0.37,
             "question": "Will the 7-day moving average of transit calls through the Strait of Hormuz as reported by the IMF PortWatch be above 60 before July 1, 2027? (Before Jul 1, 2027)",
             "sourceUrl": "https://kalshi.com/markets/KXHORMUZNORM-26MAR17",
             "stale": false,
             "staleSince": null,
             "title": "Will the 7-day moving average of transit calls through the Strait of Hormuz as reported by the IMF PortWatch be above 60 before July 1, 2027?",
-            "updatedAt": "2026-11-16T14:30:22.289Z",
+            "updatedAt": "2026-11-17T14:15:13.384Z",
             "venue": "kalshi",
             "volumeUnit": "contracts",
-            "volumeUsd": 1679769.92
+            "volumeUsd": 1679838.49
         }
     ],
     "premium": {
@@ -864,19 +865,19 @@
         "url": "https://straits.live/api#premium"
     },
     "schema": "https://straits.live/status",
-    "shipsTransiting": 132,
+    "shipsTransiting": 165,
     "spr": {
         "asOfDate": "2026-11-06",
         "change4wMbbl": -3.45,
         "currentMbbl": 279.54,
-        "updatedAt": "2026-11-15T20:01:08.074Z"
+        "updatedAt": "2026-11-16T20:00:42.695Z"
     },
     "status": "closed",
-    "stranded": 781,
+    "stranded": 738,
     "strandedNote": "`stranded` counts vessels seen holding position within the last hour (from the half-hourly stranded rollup when it is current, as strandedOffshore is, else from the live positions), including ones at berth working cargo at regional ports such as Dubai and Abu Dhabi; a vessel with a stale AIS fix is left out and counted in aisStaleFixInZone instead, not folded into stranded. `strandedOffshore` excludes vessels within 25km of a working port and is the narrower figure the site's own narrative uses. `strandedOffshoreCoverageThin` is true when the newest hour's receiver coverage fell under 80% of its 7-day median; the count is then low because fewer ships were heard, not because ships left, and `measuredPopulation` shows how many hulls were measured.",
-    "strandedOffshore": 38,
+    "strandedOffshore": 39,
     "strandedOffshoreCoverageThin": false,
-    "throughputPercent": 4,
+    "throughputPercent": 2,
     "tradeImpact": {
         "alternativeRouteExtraDays": 14,
         "authoredAt": "2026-05-05T00:00:00.000Z",
@@ -902,26 +903,26 @@
         "worldOilAtRiskPct": 25
     },
     "transits": {
-        "asOfAgeDays": 8,
-        "asOfDate": "2026-11-08",
+        "asOfAgeDays": 2,
+        "asOfDate": "2026-11-15",
         "baseline": 85,
         "baselineSource": "portwatch-precrisis",
         "basis": "portwatch",
         "cadence": "daily",
         "cadenceNote": "Completed daily transits (IMF PortWatch crossing count). Not the same as aisConcurrentInZone, which is a snapshot of vessels moving inside the wider Persian Gulf watch box right now, not the Strait channel itself.",
-        "count": 3,
+        "count": 2,
         "freshestDayNote": "The newest PortWatch row is always a Sunday, because IMF publishes weekly on Tuesday against data carrying a ~2-day lag, so the row is about 2 days old when a publish lands and up to 9 days old before the next one. Sunday is the lowest-traffic weekday in this series, so the freshest print reads low against the day before it even in a normal week. Compare it with earlier Sundays, or with baselineMedian, rather than with previousNTotal.",
-        "provisional": false,
+        "provisional": true,
         "stale": false,
-        "throughputPct": 4
+        "throughputPct": 2
     },
     "transitsBaseline": {
-        "mean": 139.08,
-        "median": 137.5,
-        "p10": 77,
-        "p90": 199,
+        "mean": 136.3,
+        "median": 134,
+        "p10": 75,
+        "p90": 196,
         "sampleHours": 720,
-        "updatedAt": "2026-11-16T14:30:23.913Z",
+        "updatedAt": "2026-11-17T14:00:45.782Z",
         "windowHours": 720
     },
     "verdict": {
@@ -933,15 +934,15 @@
     "vesselRisk": {
         "darkSignal": {
             "ageMin": 0,
-            "asOf": "2026-11-16T14:30:23.221Z",
+            "asOf": "2026-11-17T14:01:20.136Z",
             "available": true
         },
-        "high": 22,
-        "low": 1467,
-        "moderate": 66,
-        "total": 1555,
-        "updatedAt": "2026-11-16T14:30:23.591Z",
+        "high": 16,
+        "low": 1432,
+        "moderate": 61,
+        "total": 1509,
+        "updatedAt": "2026-11-17T14:01:20.441Z",
         "window": "24h"
     },
-    "wti": 86.83
+    "wti": 87.12
 }
