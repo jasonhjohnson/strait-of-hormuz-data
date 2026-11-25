@@ -18,13 +18,13 @@ All files live in [`data/`](data/) and refresh once a day (see
 | File | What it is | Cadence | Source |
 |---|---|---|---|
 | [`data/transits.csv`](data/transits.csv) | Daily vessel-transit counts through the strait. The series the major prediction-market reopening contracts (Kalshi `KXHORMUZNORM`, Polymarket) resolve on, via its 7-day moving average against a 60-transit threshold. | Daily rows, weekly IMF publish | IMF PortWatch |
-| [`data/hormuz-index.csv`](data/hormuz-index.csv) | The composite Hormuz Index: Crisis Pressure and Escalation Forecast, both 0-100, joined on timestamp with band labels. 5-minute resolution, last 7 days. | 5-minute | straits.live (computed) |
+| [`data/hormuz-index.csv`](data/hormuz-index.csv) | The composite Hormuz Index: Crisis Pressure and Escalation Forecast, both 0-100, joined on timestamp with band labels. 10-minute resolution (5-minute before 2026-11-03), last 7 days. | 10-minute | straits.live (computed) |
 | [`data/hormuz-index-daily.csv`](data/hormuz-index-daily.csv) | Daily open/high/low/close rollup of both index composites, full history. | Daily | straits.live (computed) |
 | [`data/oil.csv`](data/oil.csv) | Brent and WTI front-month futures prices, timestamped. Best-effort hourly since 2026-05-05, with gaps over weekends and whenever the collector is offline. | Hourly, best effort | straits.live |
 | [`data/events.csv`](data/events.csv) | Indexed strikes, ship incidents, closures, and diplomatic developments, each with a cited source URL. | As indexed | straits.live |
 | [`data/status.csv`](data/status.csv) | One-row snapshot of the current dashboard state. | Latest poll | straits.live (computed) |
 | [`data/status.json`](data/status.json) | The full live status bundle (verdict, transits, Brent, insurance, Hormuz Index summary, carriers, events). The recommended machine entry point. | Latest poll | straits.live (computed) |
-| [`data/hormuz-index.json`](data/hormuz-index.json) | Current Hormuz Index reading with per-component breakdown plus 24h history. | 5-minute | straits.live (computed) |
+| [`data/hormuz-index.json`](data/hormuz-index.json) | Current Hormuz Index reading with per-component breakdown plus 24h history. | 10-minute | straits.live (computed) |
 | [`data/transits.json`](data/transits.json) | Same transit series as `transits.csv` with the full vessel-type and capacity breakdown on the latest record. | Daily | IMF PortWatch |
 
 ### Column contracts
@@ -85,7 +85,7 @@ All files live in [`data/`](data/) and refresh once a day (see
 
 `status.csv`
 
-One row, 47 columns, in this order. Re-poll to build a history. Columns without a note are named for what they hold; the full text is at <https://straits.live/data>.
+One row, 56 columns, in this order. Re-poll to build a history. Columns without a note are named for what they hold; the full text is at <https://straits.live/data>.
 
 | Column | Type | Meaning |
 |---|---|---|
@@ -94,7 +94,7 @@ One row, 47 columns, in this order. Re-poll to build a history. Columns without 
 | `verdict_status` | string |  |
 | `verdict_short` | string |  |
 | `ais_status` | string |  |
-| `brent_usd` | number | Brent front-month futures price, USD per barrel. While the futures feed has been stale for over 2 hours it carries the EIA daily spot close instead; brent_basis says which |
+| `brent_usd` | number | Brent front-month futures price, USD per barrel. While the futures feed has been stale for over 2 hours and the latest EIA observation is under 24 hours old (rare, as that series runs days behind) it carries the EIA daily spot close instead; brent_basis says which |
 | `wti_usd` | number | WTI front-month futures price, USD per barrel. Carries the EIA daily spot close in the same cases as brent_usd |
 | `brent_change_24h_pct` | number |  |
 | `brent_change_source` | string | How brent_change_24h_pct was measured: 'trailing-24h', 'prev-close' or 'frozen-weekend'. Only 'trailing-24h' is a literal 24 hours |
@@ -136,6 +136,15 @@ One row, 47 columns, in this order. Re-poll to build a history. Columns without 
 | `transits_ma7` | number | 7-day mean of daily transits ending on transits_asof_date; empty when those 7 days are not contiguous |
 | `ships_stranded_offshore` | integer | Subset of ships_stranded waiting offshore: leaves out vessels within 25 km of a working port. The figure the site's own text uses |
 | `brent_basis` | string | What brent_usd and wti_usd are: 'futures' (front-month futures) or 'eia-spot' (EIA daily spot close, used as a backstop when the futures feed is down; a different instrument that can sit $20 or more above futures). Empty when there is no Brent value |
+| `events_recent_stories` | integer | The rows counted in events_recent_count grouped into stories, since several outlets can report one incident. Appended 8 October 2026 |
+| `ais_dark_eligible_tankers` | integer | The screened tankers ais_dark_tankers is drawn from: the population behind that count. Appended 16 October 2026 |
+| `ais_dark_ambient_rate` | number | Share of eligible non-tankers that went dark on the same test. Appended 16 October 2026 |
+| `ais_dark_expected` | number | Dark-tanker count that ais_dark_ambient_rate predicts for ais_dark_eligible_tankers. Appended 16 October 2026 |
+| `ais_dark_significant` | boolean | True only when ais_dark_tankers clears ais_dark_expected. Appended 16 October 2026 |
+| `insurance_authored_at` | datetime | When a person last changed the hand-authored insurance_multiple. Appended 16 October 2026 |
+| `insurance_figures_stale` | boolean | True once the insurance figures pass the site's age limit, when insurance_multiple goes empty. Appended 16 October 2026 |
+| `tehran_rate_updated_at` | datetime | When the last good Tehran open-market rate quote was taken |
+| `ships_stranded_offshore_coverage_thin` | boolean | True when ships_stranded_offshore reads low because receiver coverage is thin, not because ships left; empty when the AIS feed is not current. Appended 24 November 2026 |
 
 The CSV column order is a stable contract: new columns are appended, never
 reordered or renamed.

@@ -53,8 +53,8 @@
     {
       "name": "hormuz-index",
       "path": "data/hormuz-index.csv",
-      "title": "Hormuz Index history (5-minute)",
-      "description": "The two composite 0-100 indices at 5-minute resolution for the last 7 days. Versioned methodology at https://straits.live/methodology.",
+      "title": "Hormuz Index history (10-minute)",
+      "description": "The two composite 0-100 indices at 10-minute resolution (5-minute before 2026-11-03) for the last 7 days. Versioned methodology at https://straits.live/methodology.",
       "format": "csv",
       "mediatype": "text/csv",
       "schema": {
@@ -160,7 +160,7 @@
           { "name": "verdict_status", "type": "string" },
           { "name": "verdict_short", "type": "string" },
           { "name": "ais_status", "type": "string" },
-          { "name": "brent_usd", "type": "number", "title": "Brent front-month futures price, USD per barrel. While the futures feed has been stale for over 2 hours it carries the EIA daily spot close instead; brent_basis says which" },
+          { "name": "brent_usd", "type": "number", "title": "Brent front-month futures price, USD per barrel. While the futures feed has been stale for over 2 hours and the latest EIA observation is under 24 hours old (rare, as that series runs days behind) it carries the EIA daily spot close instead; brent_basis says which" },
           { "name": "wti_usd", "type": "number", "title": "WTI front-month futures price, USD per barrel. Carries the EIA daily spot close in the same cases as brent_usd" },
           { "name": "brent_change_24h_pct", "type": "number" },
           { "name": "brent_change_source", "type": "string", "title": "How brent_change_24h_pct was measured: 'trailing-24h', 'prev-close' or 'frozen-weekend'. Only 'trailing-24h' is a literal 24 hours" },
@@ -201,7 +201,16 @@
           { "name": "transits_provisional", "type": "boolean", "title": "True while the newest PortWatch row is within 3 days of today and can still be revised on the next publish" },
           { "name": "transits_ma7", "type": "number", "title": "7-day mean of daily transits ending on transits_asof_date; empty when those 7 days are not contiguous" },
           { "name": "ships_stranded_offshore", "type": "integer", "title": "Subset of ships_stranded waiting offshore: leaves out vessels within 25 km of a working port. The figure the site's own text uses" },
-          { "name": "brent_basis", "type": "string", "title": "What brent_usd and wti_usd are: 'futures' (front-month futures) or 'eia-spot' (EIA daily spot close, used as a backstop when the futures feed is down; a different instrument that can sit $20 or more above futures). Empty when there is no Brent value" }
+          { "name": "brent_basis", "type": "string", "title": "What brent_usd and wti_usd are: 'futures' (front-month futures) or 'eia-spot' (EIA daily spot close, used as a backstop when the futures feed is down; a different instrument that can sit $20 or more above futures). Empty when there is no Brent value" },
+          { "name": "events_recent_stories", "type": "integer", "title": "The rows counted in events_recent_count grouped into stories, since several outlets can report one incident. Appended 8 October 2026" },
+          { "name": "ais_dark_eligible_tankers", "type": "integer", "title": "The screened tankers ais_dark_tankers is drawn from: the population behind that count. Appended 16 October 2026" },
+          { "name": "ais_dark_ambient_rate", "type": "number", "title": "Share of eligible non-tankers that went dark on the same test. Appended 16 October 2026" },
+          { "name": "ais_dark_expected", "type": "number", "title": "Dark-tanker count that ais_dark_ambient_rate predicts for ais_dark_eligible_tankers. Appended 16 October 2026" },
+          { "name": "ais_dark_significant", "type": "boolean", "title": "True only when ais_dark_tankers clears ais_dark_expected. Appended 16 October 2026" },
+          { "name": "insurance_authored_at", "type": "datetime", "title": "When a person last changed the hand-authored insurance_multiple. Appended 16 October 2026" },
+          { "name": "insurance_figures_stale", "type": "boolean", "title": "True once the insurance figures pass the site's age limit, when insurance_multiple goes empty. Appended 16 October 2026" },
+          { "name": "tehran_rate_updated_at", "type": "datetime", "title": "When the last good Tehran open-market rate quote was taken" },
+          { "name": "ships_stranded_offshore_coverage_thin", "type": "boolean", "title": "True when ships_stranded_offshore reads low because receiver coverage is thin, not because ships left; empty when the AIS feed is not current. Appended 24 November 2026" }
         ]
       }
     }
